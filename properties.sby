@@ -5,10 +5,15 @@ mode prove
 smtbmc
 
 [script]
-read -formal wrapper.v rest of your source files.v
-prep -top wrapped_project
+read -formal wrapper.v memLCDdriver.v spi_s.v sfifo.v fifomem.v clockdiv.v memlcd_fsm.v
+prep -top wrapped_memLCDdriver
 
 [files]
 wrapper.v
 properties.v
-rest of your source files.v
+memLCDdriver/src/memLCDdriver.v
+memLCDdriver/src/spi_s.v
+memLCDdriver/src/sfifo.v
+memLCDdriver/src/fifomem.v
+memLCDdriver/src/clockdiv.v
+memLCDdriver/src/memlcd_fsm.v

@@ -3,7 +3,7 @@
     `define MPRJ_IO_PADS 38    
 `endif
 // update this to the name of your module
-module wrapped_project(
+module wrapped_memLCDdriver(
 `ifdef USE_POWER_PINS
     inout vdda1,	// User area 1 3.3V supply
     inout vdda2,	// User area 2 3.3V supply
@@ -77,6 +77,34 @@ module wrapped_project(
     // Instantiate your module here, 
     // connecting what you need of the above signals. 
     // Use the buffered outputs for your module's outputs.
+    memLCDdriver memLCDdriver (
+        // System Control Signals
+        .i_clk(wb_clk_i), // 100MHz
+        .i_reset(io_in[8]),
+        .o_wfull(buf_io_out[12]),
+        .o_wfull_almost(buf_io_out[13]),
+        .o_rempty(buf_io_out[14]),
+        .o_rempty_almost(buf_io_out[15]),
+        // SPI RX Port
+        .i_spi_mosi(io_in[9]),
+        .i_spi_cs_n(io_in[10]),
+        .i_spi_clk(io_in[11]),
+        // Memory LCD signals
+        .o_va(buf_io_out[16]),
+        .o_vb(buf_io_out[17]),
+        .o_vcom(buf_io_out[18]),
+        .o_gsp(buf_io_out[19]),
+        .o_gck(buf_io_out[20]),
+        .o_gen(buf_io_out[21]),
+        .o_intb(buf_io_out[22]),
+        .o_bsp(buf_io_out[23]),
+        .o_bck(buf_io_out[24]),
+        .o_rgb(buf_io_out[30:25])
+    );
+
+
+
+
 
 endmodule 
 `default_nettype wire
