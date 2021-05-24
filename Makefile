@@ -10,3 +10,7 @@ test_wrapper:
 show_wrapper:
 	gtkwave wrapper.vcd wrapper.gtkw
 
+clean:
+	rm -rf *vcd sim_build fpga/*log fpga/*bin test/__pycache__
+
+.PHONY: clean
