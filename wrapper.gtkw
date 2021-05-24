@@ -1,0 +1,59 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Thu May 20 19:14:12 2021
+[*]
+[dumpfile] "/home/zerotoasic/dev-asic/wrapped_memLCDdriver/wrapper.vcd"
+[dumpfile_mtime] "Thu May 20 19:13:59 2021"
+[dumpfile_size] 21631213
+[savefile] "/home/zerotoasic/dev-asic/wrapped_memLCDdriver/wrapper.gtkw"
+[timestart] 0
+[size] 1499 795
+[pos] 3 0
+*-19.510714 2381120 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] wrapped_memLCDdriver.
+[sst_width] 233
+[signals_width] 295
+[sst_expanded] 1
+[sst_vpaned_height] 212
+@28
+wrapped_memLCDdriver.wb_clk_i
++{io_in[8] - i_reset} (29)wrapped_memLCDdriver.io_in[37:0]
+wrapped_memLCDdriver.active
++{io_in[9] - i_spi_mosi} (28)wrapped_memLCDdriver.io_in[37:0]
++{io_in[11] - i_spi_clk} (26)wrapped_memLCDdriver.io_in[37:0]
++{io_in[10] - i_spi_cs_n} (27)wrapped_memLCDdriver.io_in[37:0]
+@200
+-
+@28
++{io_out[15] - o_rempty_almost} (22)wrapped_memLCDdriver.io_out[37:0]
++{io_out[14] - o_rempty} (23)wrapped_memLCDdriver.io_out[37:0]
+@29
++{io_out[13] - o_wfull_almost} (24)wrapped_memLCDdriver.io_out[37:0]
+@28
++{io_out[12] - o_wfull} (25)wrapped_memLCDdriver.io_out[37:0]
+@200
+-
+@28
++{io_out[22] - o_intb} (15)wrapped_memLCDdriver.io_out[37:0]
++{io_out[19] - o_gsp} (18)wrapped_memLCDdriver.io_out[37:0]
++{io_out[21] - o_gen} (16)wrapped_memLCDdriver.io_out[37:0]
++{io_out[20] - o_gck} (17)wrapped_memLCDdriver.io_out[37:0]
++{io_out[23] - o_bsp} (14)wrapped_memLCDdriver.io_out[37:0]
++{io_out[24] - o_bck} (13)wrapped_memLCDdriver.io_out[37:0]
+@24
+wrapped_memLCDdriver.memLCDdriver.o_rgb[5:0]
+@28
++{io_out[30] - o_rgb[5]} (7)wrapped_memLCDdriver.io_out[37:0]
++{io_out[29] - o_rgb[4]} (8)wrapped_memLCDdriver.io_out[37:0]
++{io_out[28] - o_rgb[3]} (9)wrapped_memLCDdriver.io_out[37:0]
++{io_out[27] - o_rgb[2]} (10)wrapped_memLCDdriver.io_out[37:0]
++{io_out[26] - o_rgb[1]} (11)wrapped_memLCDdriver.io_out[37:0]
++{io_out[25] - o_rgb[0]} (12)wrapped_memLCDdriver.io_out[37:0]
+@200
+-
+@28
++{io_out[18] - o_vcom} (19)wrapped_memLCDdriver.io_out[37:0]
++{io_out[17] - o_vb} (20)wrapped_memLCDdriver.io_out[37:0]
++{io_out[16] - o_va} (21)wrapped_memLCDdriver.io_out[37:0]
+[pattern_trace] 1
+[pattern_trace] 0
