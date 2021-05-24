@@ -1,20 +1,20 @@
 --- 
 # information
 project: 
-  title: "title"
-  description: "description"
+  title: "memLCDdriver"
+  description: "SPI to 64-color memory LCD interface"
   picture: docs/empty.png
-  author: "Author"
-  github: https://github.com/link
+  author: "Matt Beach"
+  github: https://github.com/matt-beach/wrapped_memLCDdriver.git
   license: LICENSE
 
 # test within caravel
 caravel_test:
   recipe: "coco_test"
-  directory: "caravel_test"
-  id: 1
-  module_name: "wrapped_project"
-  instance_name: "wrapped_project"
+  directory: "caravel_memLCDdriver"
+  id: 0
+  module_name: "wrapped_memLCDdriver"
+  instance_name: "wrapped_memLCDdriver"
 
 # module test
 module_test:

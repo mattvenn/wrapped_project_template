@@ -74,13 +74,11 @@ module wrapped_memLCDdriver(
     // permanently set oeb so that outputs are always enabled: 0 is output, 1 is high-impedance
     assign buf_io_oeb = {`MPRJ_IO_PADS{1'b0}};
 
-    // Instantiate your module here, 
-    // connecting what you need of the above signals. 
-    // Use the buffered outputs for your module's outputs.
     memLCDdriver memLCDdriver (
         // System Control Signals
         .i_clk(wb_clk_i), // 100MHz
         .i_reset(io_in[8]),
+        .i_vcom_start(io_in[32]),
         .o_wfull(buf_io_out[12]),
         .o_wfull_almost(buf_io_out[13]),
         .o_rempty(buf_io_out[14]),
@@ -89,6 +87,7 @@ module wrapped_memLCDdriver(
         .i_spi_mosi(io_in[9]),
         .i_spi_cs_n(io_in[10]),
         .i_spi_clk(io_in[11]),
+        .o_spi_cts(buf_io_out[31]),
         // Memory LCD signals
         .o_va(buf_io_out[16]),
         .o_vb(buf_io_out[17]),
@@ -101,10 +100,6 @@ module wrapped_memLCDdriver(
         .o_bck(buf_io_out[24]),
         .o_rgb(buf_io_out[30:25])
     );
-
-
-
-
 
 endmodule 
 `default_nettype wire
