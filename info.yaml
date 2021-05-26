@@ -11,7 +11,7 @@ project:
 # test within caravel
 caravel_test:
   recipe: "coco_test"
-  directory: "caravel_memLCDdriver"
+  directory: "caravel_test"
   id: 0
   module_name: "wrapped_memLCDdriver"
   instance_name: "wrapped_memLCDdriver"
@@ -19,7 +19,7 @@ caravel_test:
 # module test
 module_test:
   recipe: "all" 
-  directory: "project directory"
+  directory: "wrapped_memLCDdriver/memLCDdriver"
   makefile: "Makefile"
 
 # run the wrapper formal proof
@@ -34,11 +34,16 @@ openlane:
 # source required for various configs and module instantiation
 source:
     - wrapper.v
-    - other source files here
+    - memLCDdriver/src/memLCDdriver.v
+    - memLCDdriver/src/spi_s.v
+    - memLCDdriver/src/sfifo.v
+    - memLCDdriver/src/fifomem.v
+    - memLCDdriver/src/clockdiv.v
+    - memLCDdriver/src/memlcd_fsm.v
 
 # gds - check size = 300x300, nothing on metal 5, do a DRC, check 141 tristate buffers, check LVS
 gds:
   directory: "gds"
-  gds_filename: "project.gds"
-  lvs_filename: "project.lvs.powered.v"
-  lef_filename: "project.lef"
+  gds_filename: "wrapped_memLCDdriver.gds"
+  lvs_filename: "wrapped_memLCDdriver.lvs.powered.v"
+  lef_filename: "wrapped_memLCDdriver.lef"

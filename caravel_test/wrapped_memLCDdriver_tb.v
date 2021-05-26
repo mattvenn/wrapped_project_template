@@ -21,10 +21,10 @@
 `include "caravel_netlists.v"
 `include "spiflash.v"
 
-module project_tb;
+module wrapped_memLCDdriver_tb;
     initial begin
-        $dumpfile ("project.vcd");
-        $dumpvars (0, project_tb);
+        $dumpfile ("wrapped_memLCDdriver_tb.vcd");
+        $dumpvars (0, wrapped_memLCDdriver_tb);
         #1;
     end
 
@@ -79,7 +79,7 @@ module project_tb;
 	);
 
 	spiflash #(
-		.FILENAME("project.hex")
+		.FILENAME("wrapped_memLCDdriver.hex")
 	) spiflash (
 		.csb(flash_csb),
 		.clk(flash_clk),

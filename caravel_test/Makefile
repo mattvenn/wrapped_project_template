@@ -36,11 +36,11 @@ PDK_PATH?=/ef/tech/SW/sky130A
 SIM?=RTL
 
 # include the modules that cocotb needs for test
-export PYTHONPATH := $(UPRJ_RTL_PATH)/wrapped_project/project/test
+export PYTHONPATH := $(UPRJ_RTL_PATH)/wrapped_memLCDdriver/memLCDdriver/test
 
 .SUFFIXES:
 
-PATTERN = project
+PATTERN = wrapped_memLCDdriver
 
 all:  coco_test
 
@@ -49,12 +49,12 @@ hex:  ${PATTERN:=.hex}
 coco_test: ${PATTERN}.hex
 	rm -rf sim_build/
 	mkdir sim_build/
-	iverilog -o sim_build/sim.vvp -s project_tb project_tb.v -DSIM -DFUNCTIONAL \
+	iverilog -o sim_build/sim.vvp -s wrapped_memLCDdriver_tb wrapped_memLCDdriver_tb.v -DSIM -DFUNCTIONAL \
 	-I $(PDK_PATH) \
 	-I $(CARAVEL_BEHAVIOURAL_MODELS) -I $(CARAVEL_RTL_PATH) \
 	-I $(UPRJ_BEHAVIOURAL_MODELS)    -I $(UPRJ_RTL_PATH)
 	
-	MODULE=test_project vvp -M $$(cocotb-config --prefix)/cocotb/libs -m libcocotbvpi_icarus sim_build/sim.vvp
+	MODULE=test_wrapped_memLCDdriver vvp -M $$(cocotb-config --prefix)/cocotb/libs -m libcocotbvpi_icarus sim_build/sim.vvp
 
 %.vvp: %_tb.v %.hex
 ifeq ($(SIM),RTL)
@@ -89,6 +89,6 @@ test:
 # ---- Clean ----
 
 clean:
-	rm -f *.elf *.hex *.bin *.vvp *.vcd *.log
+	rm -rf *.elf *.hex *.bin *.vvp *.vcd *.log sim_build/
 
 .PHONY: clean hex all
