@@ -106,7 +106,7 @@ module wrapped_memLCDdriver(
         .o_bsp(buf_io_out[23]),
         .o_bck(buf_io_out[24]),
         .o_rgb(buf_io_out[30:25]),
-        .o_oeb(io_oeb[31:12])
+        .o_oeb(buf_io_oeb[31:12])
     );
 
 endmodule 
