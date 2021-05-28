@@ -68,6 +68,9 @@ async def test_wrapper(dut):
     await reset(dut)
 
     # Send Data over SPI
-    await send_spi_data(dut, 16)
+    await send_spi_data(dut, 4)
 
-    await ClockCycles(dut.wb_clk_i, 1000)
+    await ClockCycles(dut.wb_clk_i, 10000)
+
+    assert dut.memLCDdriver.memlcd_fsm.r_count_v == 4
+    assert dut.memLCDdriver.memlcd_fsm.r_count_h == 121
