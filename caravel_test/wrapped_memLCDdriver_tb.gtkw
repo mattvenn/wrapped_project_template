@@ -1,0 +1,60 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Fri May 28 17:52:30 2021
+[*]
+[dumpfile] "/home/zerotoasic/dev-asic/caravel_wrapped_memLCDdriver/verilog/dv/caravel_test/wrapped_memLCDdriver_tb.vcd"
+[dumpfile_mtime] "Fri May 28 17:34:32 2021"
+[dumpfile_size] 740730429
+[savefile] "/home/zerotoasic/dev-asic/caravel_wrapped_memLCDdriver/verilog/dv/caravel_test/wrapped_memLCDdriver_tb.gtkw"
+[timestart] 602810000
+[size] 1386 674
+[pos] 230 77
+*-21.969088 451810000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] wrapped_memLCDdriver_tb.
+[treeopen] wrapped_memLCDdriver_tb.uut.
+[treeopen] wrapped_memLCDdriver_tb.uut.mprj.
+[treeopen] wrapped_memLCDdriver_tb.uut.mprj.wrapped_memLCDdriver.
+[treeopen] wrapped_memLCDdriver_tb.uut.mprj.wrapped_memLCDdriver.memLCDdriver.
+[sst_width] 296
+[signals_width] 205
+[sst_expanded] 1
+[sst_vpaned_height] 170
+@28
+wrapped_memLCDdriver_tb.clk
+wrapped_memLCDdriver_tb.i_reset
+wrapped_memLCDdriver_tb.i_vcom_start
+wrapped_memLCDdriver_tb.o_va
+wrapped_memLCDdriver_tb.o_vb
+wrapped_memLCDdriver_tb.o_vcom
+@200
+-
+@28
+wrapped_memLCDdriver_tb.i_spi_clk
+wrapped_memLCDdriver_tb.i_spi_mosi
+wrapped_memLCDdriver_tb.i_spi_cs_n
+wrapped_memLCDdriver_tb.o_spi_cts
+@200
+-
+@28
+wrapped_memLCDdriver_tb.o_rempty
+wrapped_memLCDdriver_tb.o_rempty_almost
+wrapped_memLCDdriver_tb.o_wfull
+wrapped_memLCDdriver_tb.o_wfull_almost
+@200
+-
+@28
+wrapped_memLCDdriver_tb.o_intb
+wrapped_memLCDdriver_tb.o_gsp
+wrapped_memLCDdriver_tb.o_gck
+wrapped_memLCDdriver_tb.o_gen
+wrapped_memLCDdriver_tb.o_bsp
+wrapped_memLCDdriver_tb.o_bck
+@25
+wrapped_memLCDdriver_tb.o_rgb[5:0]
+@200
+-
+@24
+wrapped_memLCDdriver_tb.uut.mprj.wrapped_memLCDdriver.memLCDdriver.memlcd_fsm.r_count_v[9:0]
+wrapped_memLCDdriver_tb.uut.mprj.wrapped_memLCDdriver.memLCDdriver.memlcd_fsm.r_count_h[6:0]
+[pattern_trace] 1
+[pattern_trace] 0

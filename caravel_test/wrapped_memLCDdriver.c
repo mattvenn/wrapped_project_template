@@ -41,11 +41,34 @@ void main()
 
 	*/
 
-    // 1 input for input signal
-	reg_mprj_io_8 =   GPIO_MODE_USER_STD_INPUT_NOPULL;
+    // Input signals: [11:8]
+	reg_mprj_io_8 	=   GPIO_MODE_USER_STD_INPUT_NOPULL;
+	reg_mprj_io_9 	=   GPIO_MODE_USER_STD_INPUT_NOPULL;
+	reg_mprj_io_10 	=   GPIO_MODE_USER_STD_INPUT_NOPULL;
+	reg_mprj_io_11 	=   GPIO_MODE_USER_STD_INPUT_NOPULL;
+	reg_mprj_io_32 	=   GPIO_MODE_USER_STD_INPUT_NOPULL;
 
-    // 1 output for segments, starting at 9
-	reg_mprj_io_9 =   GPIO_MODE_USER_STD_OUTPUT;
+    // Output signals [32:12]
+	reg_mprj_io_12 	=   GPIO_MODE_USER_STD_OUTPUT;
+	reg_mprj_io_13 	=   GPIO_MODE_USER_STD_OUTPUT;
+	reg_mprj_io_14 	=   GPIO_MODE_USER_STD_OUTPUT;
+	reg_mprj_io_15 	=   GPIO_MODE_USER_STD_OUTPUT;
+	reg_mprj_io_16 	=   GPIO_MODE_USER_STD_OUTPUT;
+	reg_mprj_io_17 	=   GPIO_MODE_USER_STD_OUTPUT;
+	reg_mprj_io_18 	=   GPIO_MODE_USER_STD_OUTPUT;
+	reg_mprj_io_19 	=   GPIO_MODE_USER_STD_OUTPUT;
+	reg_mprj_io_20 	=   GPIO_MODE_USER_STD_OUTPUT;
+	reg_mprj_io_21 	=   GPIO_MODE_USER_STD_OUTPUT;
+	reg_mprj_io_22 	=   GPIO_MODE_USER_STD_OUTPUT;
+	reg_mprj_io_23 	=   GPIO_MODE_USER_STD_OUTPUT;
+	reg_mprj_io_24 	=   GPIO_MODE_USER_STD_OUTPUT;
+	reg_mprj_io_25 	=   GPIO_MODE_USER_STD_OUTPUT;
+	reg_mprj_io_26 	=   GPIO_MODE_USER_STD_OUTPUT;
+	reg_mprj_io_27 	=   GPIO_MODE_USER_STD_OUTPUT;
+	reg_mprj_io_28 	=   GPIO_MODE_USER_STD_OUTPUT;
+	reg_mprj_io_29 	=   GPIO_MODE_USER_STD_OUTPUT;
+	reg_mprj_io_30 	=   GPIO_MODE_USER_STD_OUTPUT;
+	reg_mprj_io_31 	=   GPIO_MODE_USER_STD_OUTPUT;
 
     /* Apply configuration */
     reg_mprj_xfer = 1;
@@ -54,11 +77,11 @@ void main()
     // activate the project by setting the 1st bit of 2nd bank of LA - depends on the project ID
     reg_la1_iena = 0; // input enable off
     reg_la1_oenb = 0; // output enable on
-    reg_la1_data = 1 << 1;
+    reg_la1_data = 1 << 0;
 
     // do something with the logic analyser
-    reg_la0_iena = 0;
-    reg_la0_oenb = 0;
-    reg_la0_data |= 100;
+    // reg_la0_iena = 0;
+    // reg_la0_oenb = 0;
+    // reg_la0_data |= 100;
 }
 
