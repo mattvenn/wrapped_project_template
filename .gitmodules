@@ -1,0 +1,3 @@
+[submodule "qarma"]
+	path = qarma
+	url = https://github.com/vbrange/verilog_qarma.git
