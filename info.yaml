@@ -19,7 +19,7 @@ caravel_test:
 # module test
 module_test:
   recipe: "all" 
-  directory: "aes"
+  directory: "qarma"
   makefile: "Makefile"
 
 # run the wrapper formal proof
