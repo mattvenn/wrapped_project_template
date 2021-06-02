@@ -5,10 +5,12 @@ mode prove
 smtbmc
 
 [script]
-read -formal wrapper.v rest of your source files.v
+read -formal wrapper.v qarma_control.v qarma_64.v
 prep -top wrapped_project
 
 [files]
 wrapper.v
 properties.v
-rest of your source files.v
+qarma_control.v
+qarma/qarma_64.v
+
