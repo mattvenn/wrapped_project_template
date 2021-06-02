@@ -59,11 +59,6 @@ void main()
     /* that external pin changes don't affect it.			*/
 
     reg_spimaster_config = 0xa002; // Enable, prescaler = 2,
-                                   // connect to housekeeping SPI
-
-    // Connect the housekeeping SPI to the SPI master
-    // so that the CSB line is not left floating.  This allows
-    // all of the GPIO pins to be used for user functions.
 
     // All GPIO pins are configured to be output
     // Used to flad the start/end of a test
@@ -106,11 +101,9 @@ void main()
     while (reg_mprj_xfer == 1)
         ;
 
-    // Configure All LA probes as inputs to the cpu
-    reg_la0_oenb = reg_la0_iena = 0xFFFFFFFF; // [31:0]
-    reg_la1_oenb = reg_la1_iena = 0xFFFFFFFF; // [63:32]
-    reg_la2_oenb = reg_la2_iena = 0xFFFFFFFF; // [95:64]
-    reg_la3_oenb = reg_la3_iena = 0xFFFFFFFF; // [127:96]
+    reg_la1_oenb = 0;
+    reg_la1_iena = 0;
+    reg_la1_data = 1 << 8; // QARMA is project #8.
 
     // Flag start of the test
     reg_mprj_datal = 0x41410000;
