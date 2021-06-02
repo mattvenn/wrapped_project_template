@@ -1,3 +1,5 @@
+![Overview](docs/qarma.png)
+
 # wrapped_qarma
 This is a wrapper around a small-area QARMA64 cipher core, for use in the Zero-to-Asic Group Submission.
 
