@@ -3,15 +3,15 @@
 project: 
   title: "Quad PWM FET Drivers"
   description: "4 PWM FET Drivers for Power Applications"
-  picture: docs/quad_pwm_fet_drivers.gds.png
+  picture: docs/wrapped_quad_pwm_fet_drivers.gds.png
   author: "Chris DePalm"
   github: https://github.com/ChrisDePalm/wrapped_quad_pwm_fet_drivers.git
   license: LICENSE
 
 # test within caravel
 caravel_test:
-#  recipe: "coco_test"
-#  directory: "quad_pwm_fet_drivers"
+  recipe: "test"
+  directory: "caravel_test"
   id: 5
   module_name: "wrapped_quad_pwm_fet_drivers"
   instance_name: "wrapped_quad_pwm_fet_drivers"
