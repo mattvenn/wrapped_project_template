@@ -1,25 +1,25 @@
 --- 
 # information
 project: 
-  title: "title"
-  description: "description"
-  picture: docs/empty.png
-  author: "Author"
-  github: https://github.com/link
+  title: "Quad PWM FET Drivers"
+  description: "4 PWM FET Drivers for Power Applications"
+  picture: docs/quad_pwm_fet_drivers.gds.png
+  author: "Chris DePalm"
+  github: https://github.com/ChrisDePalm/wrapped_quad_pwm_fet_drivers.git
   license: LICENSE
 
 # test within caravel
 caravel_test:
-  recipe: "coco_test"
-  directory: "caravel_test"
-  id: 1
-  module_name: "wrapped_project"
-  instance_name: "wrapped_project"
+#  recipe: "coco_test"
+#  directory: "quad_pwm_fet_drivers"
+  id: 5
+  module_name: "wrapped_quad_pwm_fet_drivers"
+  instance_name: "wrapped_quad_pwm_fet_drivers"
 
 # module test
 module_test:
-  recipe: "all" 
-  directory: "project directory"
+  recipe: "test_wrapper_gl" 
+  directory: "."
   makefile: "Makefile"
 
 # run the wrapper formal proof
@@ -33,12 +33,13 @@ openlane:
 
 # source required for various configs and module instantiation
 source:
+    - /src/pwm_fet_driver_unit.v
+    - /src/pwm_fet_quad.v
     - wrapper.v
-    - other source files here
-
+    
 # gds - check size = 300x300, nothing on metal 5, do a DRC, check 141 tristate buffers, check LVS
 gds:
   directory: "gds"
-  gds_filename: "project.gds"
-  lvs_filename: "project.lvs.powered.v"
-  lef_filename: "project.lef"
+  gds_filename: "quad_pwm_fet_drivers.gds"
+  lvs_filename: "quad_pwm_fet_drivers.lvs.powered.v"
+  lef_filename: "quad_pwm_fet_drivers.lef"
