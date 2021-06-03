@@ -166,7 +166,7 @@ async def test_wrapper(dut):
 	cocotb.fork(pwm_measure.start())
 	
 	# PWM Test
-	if False:
+	if True:
 		dut._log.info("PWM Test")
 		for PRESCALER in range(1):
 			for BREAK_BEFORE_MAKE in range(16):
