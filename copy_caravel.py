@@ -4,7 +4,8 @@ import os
 import yaml
 import shutil
 
-CARAVEL_TESTBENCH = r'/asic_tools/caravel_user_project/verilog/dv/la_test2'
+CARAVEL_TESTBENCH_ROOT = r'~/asic_tools/caravel_user_project/verilog/dv/'
+CARAVEL_TEST = r'./caravel_test'
 '''
 def get_project_name(info='./info.yaml'):
 	with open(info) as f:
