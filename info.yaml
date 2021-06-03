@@ -10,7 +10,7 @@ project:
 
 # test within caravel
 caravel_test:
-  recipe: "test"
+  recipe: "project"
   directory: "caravel_test"
   id: 5
   module_name: "wrapped_quad_pwm_fet_drivers"
