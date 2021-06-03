@@ -1,15 +1,15 @@
-# Information about your project
+# PWM FET Drivers
 
-This is a template project you can clone and use to take part in the multi project submission to the
-Google/Efabless/Skywater shuttle.
+This is a Zerotoasic MPW2 project submission to Google/Efabless/Skywater shuttle program.
 
-The tools that will test and create the aggregated design are here: https://github.com/mattvenn/multi_project_tools
+This project includes four PWM FET drivers.  The intended application is for multi-channel power supplies, motor-driver, H-bridge, and digital to analog applications.
 
-# Project info.yaml
-
-You need to fill in the fields of [info.yaml](info.yaml)
-
-See [here for more information](https://github.com/mattvenn/multi_project_tools/blob/main/docs/project_spec.md)
+Features Include:
+> - Four independently controllable PWM generators.
+> - 32-Bit Wishbone Interface
+> - Four independent voltage and current limit inputs
+> - Three emergency shut-down fault inputs
+> - Adjustable prescaler (1:1 to 1:128)
 
 # License
 
