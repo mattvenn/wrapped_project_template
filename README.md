@@ -11,6 +11,10 @@ Features Include:
 > - Three emergency shut-down fault inputs
 > - Adjustable prescaler (1:1 to 1:128)
 
+# Requirements
+
+The [cocotbext-wishbone](https://github.com/jamieiles/cocotbext-wishbone.git) package is required to run the test_wrapper and test_wrapper_gl recipes. 
+
 # License
 
 This project is [licensed under Apache 2](LICENSE)
