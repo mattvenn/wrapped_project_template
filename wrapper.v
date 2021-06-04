@@ -13,32 +13,31 @@ module wrapped_quad_pwm_fet_drivers (
 	inout vssd1,	// User area 1 digital ground
 	inout vssd2,	// User area 2 digital ground
 `endif
-
-	// Wishbone Slave ports (WB MI A)
-	input wb_clk_i,
-	input wb_rst_i,
-	input wbs_stb_i,
-	input wbs_cyc_i,
-	input wbs_we_i,
-	input [3:0] wbs_sel_i,
-	input [31:0] wbs_dat_i,
-	input [31:0] wbs_adr_i,
-	output wbs_ack_o,
-	output [31:0] wbs_dat_o,
+	// wishbone interface
+	input wire wb_clk_i,            // clock, runs at system clock
+	input wire wb_rst_i,            // main system reset
+	input wire wbs_stb_i,           // wishbone write strobe
+	input wire wbs_cyc_i,           // wishbone cycle
+	input wire wbs_we_i,            // wishbone write enable
+	input wire [3:0] wbs_sel_i,     // wishbone write word select
+	input wire [31:0] wbs_dat_i,    // wishbone data in
+	input wire [31:0] wbs_adr_i,    // wishbone address
+	output wire wbs_ack_o,          // wishbone ack
+	output wire [31:0] wbs_dat_o,   // wishbone data out
 
 	// Logic Analyzer Signals
 	// only provide first 32 bits to reduce wiring congestion
-	input  wire [31:0] la_data_in,
-	output wire [31:0] la_data_out,
-	input  wire [31:0] la_oen,
+	input  wire [31:0] la_data_in,  // from PicoRV32 to your project
+	output wire [31:0] la_data_out, // from your project to PicoRV32
+	input  wire [31:0] la_oenb,     // output enable bar (low for active)
+
+	// IOs
+	input  wire [`MPRJ_IO_PADS-1:0] io_in,  // in to your project
+	output wire [`MPRJ_IO_PADS-1:0] io_out, // out fro your project
+	output wire [`MPRJ_IO_PADS-1:0] io_oeb, // out enable bar (low active)
 
 	// IRQ
 	output wire [2:0] irq,          // interrupt from project to PicoRV32
-
-	// IOs
-	input  wire [`MPRJ_IO_PADS-1:0] io_in,
-	output wire [`MPRJ_IO_PADS-1:0] io_out,
-	output wire [`MPRJ_IO_PADS-1:0] io_oeb,
 	
 	// active input, only connect tristated outputs if this is high
 	input wire active
@@ -57,8 +56,8 @@ module wrapped_quad_pwm_fet_drivers (
 	assign wbs_ack_o    = active ? buf_wbs_ack_o    : 1'b0;
 	assign wbs_dat_o    = active ? buf_wbs_dat_o    : 32'b0;
 	assign la_data_out  = active ? buf_la_data_out  : 32'b0;
-	assign io_out       = active ? buf_io_out       : `MPRJ_IO_PADS'b0;
-	assign io_oeb       = active ? buf_io_oeb       : `MPRJ_IO_PADS'b0;
+	assign io_out       = active ? buf_io_out       : {`MPRJ_IO_PADS{1'b0}};
+	assign io_oeb       = active ? buf_io_oeb       : {`MPRJ_IO_PADS{1'b0}};
 	assign irq          = active ? buf_irq          : 3'b0;
 	`include "properties.v"
 	`else
@@ -66,12 +65,18 @@ module wrapped_quad_pwm_fet_drivers (
 	assign wbs_ack_o    = active ? buf_wbs_ack_o    : 1'bz;
 	assign wbs_dat_o    = active ? buf_wbs_dat_o    : 32'bz;
 	assign la_data_out  = active ? buf_la_data_out  : 32'bz;
-	assign io_out       = active ? buf_io_out       : `MPRJ_IO_PADS'bz;
-	assign io_oeb       = active ? buf_io_oeb       : `MPRJ_IO_PADS'bz;
+	assign io_out       = active ? buf_io_out       : {`MPRJ_IO_PADS{1'bz}};
+	assign io_oeb       = active ? buf_io_oeb       : {`MPRJ_IO_PADS{1'bz}};
 	assign irq          = active ? buf_irq          : 3'bz;
 	`endif
 
-	quad_pwm_fet_drivers quad_pwm_fet_drivers (
+	// permanently set oeb so that outputs are always enabled: 0 is output, 1 is high-impedance
+	assign buf_io_oeb = {`MPRJ_IO_PADS{1'b0}};
+
+	// Instantiate your module here, 
+	// connecting what you need of the above signals. 
+	// Use the buffered outputs for your module's outputs.
+	quad_pwm_fet_drivers quad_pwm_fet_drivers_0 (
 		.wb_clk_i(wb_clk_i),
 		.wb_rst_i(wb_rst_i),
 		.wbs_stb_i(wbs_stb_i),
@@ -89,5 +94,6 @@ module wrapped_quad_pwm_fet_drivers (
 		.buf_io_oeb(buf_io_oeb),
 		.buf_irq(buf_irq)
 	);
+
 endmodule 
 `default_nettype wire
