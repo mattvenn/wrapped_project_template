@@ -5,8 +5,8 @@ mode prove
 smtbmc
 
 [script]
-read -formal wrapper.v rest of your source files.v
-prep -top wrapped_project
+read -formal wrapper.v vga_background.v vga_core.v vga_pixel_selector.v vga_sprite.v vga_timing.v vga_top.v
+prep -top fbless_graphics_core
 
 [files]
 wrapper.v

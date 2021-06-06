@@ -10,7 +10,7 @@ project:
 
 # test within caravel
 caravel_test:
-  recipe: "coco_test"
+  recipe: "all"
   directory: "caravel_test"
   id: 10
   module_name: "fbless_graphics_core"

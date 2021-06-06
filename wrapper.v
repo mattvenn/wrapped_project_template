@@ -105,9 +105,9 @@ module fbless_graphics_core(
 
         // Logic Analyzer
 
-        .la_data_in(la_data_in),
-        .la_data_out(buf_la_data_out),
-        .la_oenb (la_oenb),
+        .la_data_in(wide_la_data_in),
+        .la_data_out(wide_la_data_out),
+        .la_oenb (wide_la_oenb),
 
         // IO Pads
 
@@ -118,6 +118,14 @@ module fbless_graphics_core(
         // IRQ
         .user_irq(user_irq)
     );
+
+    wire [127:0] wide_la_data_in;
+    wire [127:0] wide_la_data_out;
+    wire [127:0] wide_la_oenb;
+
+    assign wide_la_data_in = { 96'b0, la_data_in };
+    assign wide_la_oenb = { 96'b1, la_oenb };
+    assign buf_la_data_out = wide_la_data_out[31:0];
 
 endmodule 
 `default_nettype wire
