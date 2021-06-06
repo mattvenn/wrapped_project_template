@@ -116,7 +116,7 @@ module fbless_graphics_core(
         .io_oeb(buf_io_oeb),
 
         // IRQ
-        .user_irq(user_irq)
+        .user_irq(buf_irq)
     );
 
     wire [127:0] wide_la_data_in;
