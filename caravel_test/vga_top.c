@@ -107,6 +107,11 @@ void main()
         reg_mprj_xfer = 1;
         while (reg_mprj_xfer == 1);
 
+        // activate the project with 2nd bank of the LA
+        reg_la1_iena = 0; // input enable off
+        reg_la1_oenb = 0; // output enable bar low (enabled)
+        reg_la1_data = 1 << 10;
+
 
         vga_bg0_reg = 0x55555555;
         vga_bg1_reg = 0xaaaaaaaa;
