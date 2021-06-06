@@ -1,0 +1,3 @@
+[submodule "fbless-graphics-core"]
+	path = fbless-graphics-core
+	url = git@github.com:tomgwozdz/fbless-graphics-core.git

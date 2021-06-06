@@ -1,25 +1,25 @@
 --- 
 # information
 project: 
-  title: "title"
-  description: "description"
-  picture: docs/empty.png
-  author: "Author"
-  github: https://github.com/link
+  title: "Framebufferless Video Core"
+  description: "A framebufferless VGA video generator, under CPU control"
+  picture: fbless_graphics_core.gds.png
+  author: "Tom Gwozdz"
+  github: https://github.com/tomgwozdz/fbless-graphics-core
   license: LICENSE
 
 # test within caravel
 caravel_test:
   recipe: "coco_test"
   directory: "caravel_test"
-  id: 1
-  module_name: "wrapped_project"
-  instance_name: "wrapped_project"
+  id: 10
+  module_name: "fbless_graphics_core"
+  instance_name: "fbless_graphics_core"
 
 # module test
 module_test:
   recipe: "all" 
-  directory: "project directory"
+  directory: "fbless-graphics-core"
   makefile: "Makefile"
 
 # run the wrapper formal proof
@@ -34,11 +34,16 @@ openlane:
 # source required for various configs and module instantiation
 source:
     - wrapper.v
-    - other source files here
+    - fbless-graphics-core/src/vga_background.v
+    - fbless-graphics-core/src/vga_core.v
+    - fbless-graphics-core/src/vga_pixel_selector.v
+    - fbless-graphics-core/src/vga_sprite.v
+    - fbless-graphics-core/src/vga_timing.v
+    - fbless-graphics-core/src/vga_top.v
 
 # gds - check size = 300x300, nothing on metal 5, do a DRC, check 141 tristate buffers, check LVS
 gds:
   directory: "gds"
-  gds_filename: "project.gds"
-  lvs_filename: "project.lvs.powered.v"
-  lef_filename: "project.lef"
+  gds_filename: "fbless_graphics_core.gds"
+  lvs_filename: "fbless_graphics_core.lvs.powered.v"
+  lef_filename: "fbless_graphics_core.lef"

@@ -1,0 +1,66 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Sun Jun  6 00:19:11 2021
+[*]
+[dumpfile] "/home/zerotoasic/caravel_user_project/verilog/dv/vga_core/vga_top.vcd"
+[dumpfile_mtime] "Sun Jun  6 00:11:22 2021"
+[dumpfile_size] 372812630
+[savefile] "/home/zerotoasic/caravel_user_project/verilog/dv/vga_core/vga_top.gtkw"
+[timestart] 132500000
+[size] 2488 1271
+[pos] -1 -1
+*-26.000000 473887500 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] vga_top_tb.
+[treeopen] vga_top_tb.uut.
+[treeopen] vga_top_tb.uut.mprj.
+[treeopen] vga_top_tb.uut.mprj.vga_top_0.
+[treeopen] vga_top_tb.uut.mprj.vga_top_0.vga_core_0.
+[treeopen] vga_top_tb.uut.soc.
+[treeopen] vga_top_tb.uut.soc.soc.
+[sst_width] 279
+[signals_width] 323
+[sst_expanded] 1
+[sst_vpaned_height] 378
+@28
+vga_top_tb.uut.mprj.vga_top_0.vga_core_0.clk
+vga_top_tb.uut.mprj.vga_top_0.vga_core_0.reset
+vga_top_tb.uut.mprj.vga_top_0.vga_core_0.enabled
+vga_top_tb.uut.mprj.vga_top_0.vga_core_0.wb_cyc_i
+vga_top_tb.uut.mprj.vga_top_0.vga_core_0.wb_ack_o
+vga_top_tb.uut.mprj.vga_top_0.vga_core_0.wb_we_i
+vga_top_tb.uut.mprj.vga_top_0.vga_core_0.wb_stb_i
+@22
+vga_top_tb.uut.mprj.vga_top_0.vga_core_0.wb_sel_i[3:0]
+vga_top_tb.uut.mprj.vga_top_0.vga_core_0.wb_data_o[31:0]
+vga_top_tb.uut.mprj.vga_top_0.vga_core_0.wb_data_i[31:0]
+@28
+vga_top_tb.uut.mprj.vga_top_0.vga_core_0.wb_cyc_i
+@22
+vga_top_tb.uut.mprj.vga_top_0.vga_core_0.wb_addr_i[31:0]
+@28
+vga_top_tb.uut.mprj.vga_top_0.vga_core_0.wb_ack_o
+vga_top_tb.uut.soc.soc.wb_bridge.wb_stb_i[1:0]
+vga_top_tb.uut.soc.soc.cpu.wbm_stb_o
+@22
+vga_top_tb.uut.soc.soc.intercon.wbs_stb_o[13:0]
+@200
+-
+@28
+vga_top_tb.uut.mprj.vga_top_0.vga_core_0.vga_hs
+vga_top_tb.uut.mprj.vga_top_0.vga_core_0.vga_vs
+@22
+vga_top_tb.uut.mprj.vga_top_0.vga_core_0.vga_r[3:0]
+vga_top_tb.uut.mprj.vga_top_0.vga_core_0.vga_g[3:0]
+vga_top_tb.uut.mprj.vga_top_0.vga_core_0.vga_b[3:0]
+@28
+vga_top_tb.uut.mprj.vga_top_0.vga_core_0.vga_h_active
+vga_top_tb.uut.mprj.vga_top_0.vga_core_0.vga_v_active
+vga_top_tb.uut.mprj.vga_top_0.vga_core_0.collision_bits[11:0]
+vga_top_tb.uut.mprj.vga_top_0.vga_core_0.vga_sprite_0.active
+vga_top_tb.uut.mprj.vga_top_0.vga_core_0.vga_sprite_1.active
+vga_top_tb.uut.mprj.vga_top_0.vga_core_0.vga_sprite_2.active
+@24
+vga_top_tb.uut.mprj.vga_top_0.vga_core_0.h_counter[9:0]
+vga_top_tb.uut.mprj.vga_top_0.vga_core_0.v_counter[9:0]
+[pattern_trace] 1
+[pattern_trace] 0

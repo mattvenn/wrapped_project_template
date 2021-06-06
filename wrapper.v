@@ -3,7 +3,7 @@
     `define MPRJ_IO_PADS 38    
 `endif
 // update this to the name of your module
-module wrapped_project(
+module fbless_graphics_core(
 `ifdef USE_POWER_PINS
     inout vdda1,	// User area 1 3.3V supply
     inout vdda2,	// User area 2 3.3V supply
@@ -72,11 +72,52 @@ module wrapped_project(
     `endif
 
     // permanently set oeb so that outputs are always enabled: 0 is output, 1 is high-impedance
-    assign buf_io_oeb = {`MPRJ_IO_PADS{1'b0}};
+    // assign buf_io_oeb = {`MPRJ_IO_PADS{1'b0}};
 
     // Instantiate your module here, 
     // connecting what you need of the above signals. 
     // Use the buffered outputs for your module's outputs.
+    vga_top vga_top_0 (
+        `ifdef USE_POWER_PINS
+        .vdda1(vdda1),  // User area 1 3.3V power
+        .vdda2(vdda2),  // User area 2 3.3V power
+        .vssa1(vssa1),  // User area 1 analog ground
+        .vssa2(vssa2),  // User area 2 analog ground
+        .vccd1(vccd1),  // User area 1 1.8V power
+        .vccd2(vccd2),  // User area 2 1.8V power
+        .vssd1(vssd1),  // User area 1 digital ground
+        .vssd2(vssd2),  // User area 2 digital ground
+        `endif
+
+        .wb_clk_i(wb_clk_i),
+        .wb_rst_i(wb_rst_i),
+
+        // MGMT SoC Wishbone Slave
+
+        .wbs_cyc_i(wbs_cyc_i),
+        .wbs_stb_i(wbs_stb_i),
+        .wbs_we_i(wbs_we_i),
+        .wbs_sel_i(wbs_sel_i),
+        .wbs_adr_i(wbs_adr_i),
+        .wbs_dat_i(wbs_dat_i),
+        .wbs_ack_o(buf_wbs_ack_o),
+        .wbs_dat_o(buf_wbs_dat_o),
+
+        // Logic Analyzer
+
+        .la_data_in(la_data_in),
+        .la_data_out(buf_la_data_out),
+        .la_oenb (la_oenb),
+
+        // IO Pads
+
+        .io_in (io_in),
+        .io_out(buf_io_out),
+        .io_oeb(buf_io_oeb),
+
+        // IRQ
+        .user_irq(user_irq)
+    );
 
 endmodule 
 `default_nettype wire

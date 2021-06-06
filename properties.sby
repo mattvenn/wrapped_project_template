@@ -11,4 +11,9 @@ prep -top wrapped_project
 [files]
 wrapper.v
 properties.v
-rest of your source files.v
+fbless-graphics-core/src/vga_background.v
+fbless-graphics-core/src/vga_core.v
+fbless-graphics-core/src/vga_pixel_selector.v
+fbless-graphics-core/src/vga_sprite.v
+fbless-graphics-core/src/vga_timing.v
+fbless-graphics-core/src/vga_top.v
