@@ -27,9 +27,10 @@ UPRJ_VERILOG_PATH ?= ../../../verilog
 UPRJ_RTL_PATH = $(UPRJ_VERILOG_PATH)/rtl
 UPRJ_BEHAVIOURAL_MODELS = ../
 
-HACK_SOC_PATH = ../../../../wrapped_hack_soc/hack_soc
+WRAPPED_HACK_SOC_PATH = ../../../../wrapped_hack_soc
+HACK_SOC_PATH = $(WRAPPED_HACK_SOC_PATH)/hack_soc
 
-HACK_SOC_SOURCES = $(HACK_SOC_PATH)/src/*.v  wrapped_hack_soc.v rom_23LC1024.v
+HACK_SOC_SOURCES = $(HACK_SOC_PATH)/src/*.v  $(WRAPPED_HACK_SOC_PATH)/wrapped_hack_soc.v rom_23LC1024.v
 
 
 ## RISCV GCC 

@@ -11,7 +11,7 @@ project:
 # test within caravel
 caravel_test:
   recipe: "coco_test"
-  directory: "caravel_wrapped_hack_soc"
+  directory: "caravel_wrapped_hack_soc_test"
   id: 6
   module_name: "wrapped_hack_soc"
   instance_name: "wrapped_hack_soc"
