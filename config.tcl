@@ -40,3 +40,6 @@ set ::env(FP_PIN_ORDER_CFG) $script_dir/pin_order.cfg
 
 # turn off CVC as we have multiple power domains
 set ::env(RUN_CVC) 0
+
+# Disable inserted clock buffers (tristate bug fix)
+set ::env(PL_RESIZER_BUFFER_OUTPUT_PORTS) 0
