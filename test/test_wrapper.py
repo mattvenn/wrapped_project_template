@@ -4,6 +4,8 @@ from cocotb.triggers import RisingEdge, FallingEdge, ClockCycles, Edge
 from cocotbext.wishbone.driver import WishboneMaster
 from cocotbext.wishbone.driver import WBOp
 
+SHORT_RUN = True
+
 # Register Definitions
 PWM_DRIVE_PWM             = 0x30000000
 PWM_DRIVE_SETUP           = 0x30000004
@@ -110,6 +112,12 @@ class BusEmulator(object):
 	async def fault(self,channel,value):
 		self.dut.io_in[get_io_signal_number(channel,'FAULT')] <= value
 	
+	async def v_limit(self,channel,value):
+		self.dut.io_in[get_io_signal_number(channel,'V_LIMIT')] <= value
+	
+	async def i_limit(self,channel,value):
+		self.dut.io_in[get_io_signal_number(channel,'I_LIMIT')] <= value
+	
 	async def wait_cycle(self,cycles):
 		await ClockCycles(self.dut.wb_clk_i, cycles)
 
@@ -167,9 +175,16 @@ async def test_wrapper(dut):
 	
 	# PWM Test
 	if True:
+		if SHORT_RUN == True:
+			PRESCALER_TEST = range(8)
+			BREAK_BEFORE_MAKE_TEST = [0,1,15]
+		else:
+			PRESCALER_TEST = range(8)
+			BREAK_BEFORE_MAKE_TEST = range(16)
+			
 		dut._log.info("PWM Test")
-		for PRESCALER in range(1):
-			for BREAK_BEFORE_MAKE in range(16):
+		for PRESCALER in PRESCALER_TEST:
+			for BREAK_BEFORE_MAKE in BREAK_BEFORE_MAKE_TEST:
 				await be.write_reg(PWM_DRIVE_RESET,0)
 				await be.read_reg(PWM_DRIVE_RESET)
 				assert(be.read == 0)
@@ -183,9 +198,10 @@ async def test_wrapper(dut):
 				await be.read_reg(PWM_DRIVE_RESET)
 				assert(be.read == 0x01010101)
 				
-				#test_pwm = [0x00,0x01,0x02,0xFE,0xFF,0xFF,0xFF]
-				test_pwm = range(255-BREAK_BEFORE_MAKE)
-				#test_pwm = [0x7F]
+				if SHORT_RUN == True:
+					test_pwm = [0x00,0x01,0x02,0xFC-BREAK_BEFORE_MAKE,0xFD-BREAK_BEFORE_MAKE,0xFE-BREAK_BEFORE_MAKE]
+				else:
+					test_pwm = range(0xFF-BREAK_BEFORE_MAKE)
 
 				await SyncWithCycle()
 				for PWM in test_pwm:
@@ -212,9 +228,16 @@ async def test_wrapper(dut):
 		
 	# Fault Test
 	if True:
-		dut._log.info("Fault Test")
-		for PRESCALER in range(8):
-			for BREAK_BEFORE_MAKE in range(16):
+		if SHORT_RUN == True:
+			PRESCALER_TEST = range(8)
+			BREAK_BEFORE_MAKE_TEST = [0,1,15]
+		else:
+			PRESCALER_TEST = range(8)
+			BREAK_BEFORE_MAKE_TEST = range(16)
+		
+		dut._log.info("BEGIN FAULT TEST")
+		for PRESCALER in PRESCALER_TEST:
+			for BREAK_BEFORE_MAKE in BREAK_BEFORE_MAKE_TEST:
 				await be.write_reg(PWM_DRIVE_RESET,0)
 				await be.read_reg(PWM_DRIVE_RESET)
 				assert(be.read == 0)
@@ -239,5 +262,65 @@ async def test_wrapper(dut):
 				await be.wait_cycle(2)
 				
 				await be.read_reg(PWM_DRIVE_RESET)
-				print(hex(be.read))
 				assert(be.read == 0x01818181)
+		for i in range(3):
+			await be.fault(i,0)
+	
+	# IV-LIMIT
+	if True:
+		if SHORT_RUN == True:
+			PRESCALER_TEST = range(8)
+			BREAK_BEFORE_MAKE_TEST = [0,1,15]
+		else:
+			PRESCALER_TEST = range(8)
+			BREAK_BEFORE_MAKE_TEST = range(16)
+		
+		for i in range(2):
+			if i == 0:
+				dut._log.info("BEGIN V-LIMIT TEST")
+			else:
+				dut._log.info("BEGIN I-LIMIT TEST")
+			for PRESCALER in PRESCALER_TEST:
+				for BREAK_BEFORE_MAKE in BREAK_BEFORE_MAKE_TEST:
+					await be.write_reg(PWM_DRIVE_RESET,0)
+					await be.read_reg(PWM_DRIVE_RESET)
+					assert(be.read == 0)
+					
+					if i == 0:
+						dut._log.info('V-LIMIT (PRESCALER = %d,BREAK_BEFORE_MAKE = %d)' % (PRESCALER,BREAK_BEFORE_MAKE))
+					else:
+						dut._log.info('I-LIMIT (PRESCALER = %d,BREAK_BEFORE_MAKE = %d)' % (PRESCALER,BREAK_BEFORE_MAKE))
+					
+					await GlobalSetup(PRESCALER,BREAK_BEFORE_MAKE)
+					await GlobalPWM(0x7F)
+
+					for i in range(4):
+						await be.v_limit(i,0)
+						await be.i_limit(i,0)
+						
+					await be.write_reg(PWM_DRIVE_RESET,0x01010101)
+					await be.read_reg(PWM_DRIVE_RESET)
+					assert(be.read == 0x01010101)
+					
+					await SyncWithCycle()
+					
+					await be.wait_cycle(0x50*(1<<PRESCALER))
+					check = 0x50
+					if PRESCALER == 0:
+						check += 4
+					if PRESCALER == 1:
+						check += 2
+					if PRESCALER == 2:
+						check += 1
+					
+					for i in range(4):
+						if i == 0:
+							await be.v_limit(i,1)
+						else:
+							await be.i_limit(i,1)
+						
+					await be.wait_cycle(2)
+					
+					check = (check<<24)|(check<<16)|(check<<8)|(check)
+					await be.read_reg(PWM_DRIVE_IV_LIMIT)
+					assert(be.read == check)
