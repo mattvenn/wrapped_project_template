@@ -3,7 +3,7 @@
 project: 
   title: "memLCDdriver"
   description: "SPI to 64-color memory LCD interface"
-  picture: docs/empty.png
+  picture: docs/wrapped_memLCDdriver.gds.png
   author: "Matt Beach"
   github: https://github.com/matt-beach/wrapped_memLCDdriver.git
   license: LICENSE
