@@ -5,10 +5,23 @@ mode prove
 smtbmc
 
 [script]
-read -formal wrapper.v rest of your source files.v
-prep -top wrapped_project
+read -formal wrapper.v 
+read -sv dmux8way.v hack_alu.v hack_clock.v hack_cpu.v hack_soc.v pc.v register.v spi_sram_encoder.v video_signal_generator_640x480.v spi_video_ram_2.v vram_write_fifo.v rom_stream_loader.v
+prep -top wrapped_hack_soc
 
 [files]
 wrapper.v
 properties.v
-rest of your source files.v
+hack_soc/src/dmux8way.v
+hack_soc/src/hack_alu.v
+hack_soc/src/hack_clock.v
+hack_soc/src/hack_cpu.v
+hack_soc/src/hack_soc.v
+hack_soc/src/pc.v
+hack_soc/src/register.v
+hack_soc/src/spi_sram_encoder.v
+hack_soc/src/video_signal_generator_640x480.v
+hack_soc/src/spi_video_ram_2.v
+hack_soc/src/vram_write_fifo.v
+hack_soc/src/rom_stream_loader.v
+includes/params.v hack_soc/src/includes/params.v 

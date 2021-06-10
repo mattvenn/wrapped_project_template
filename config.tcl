@@ -2,14 +2,26 @@
 set script_dir [file dirname [file normalize [info script]]]
 
 # name of your project, should also match the name of the top module
-set ::env(DESIGN_NAME) project_name
+set ::env(DESIGN_NAME) wrapped_hack_soc
 
 # add your source files here
 set ::env(VERILOG_FILES) "$::env(DESIGN_DIR)/wrapper.v \
-    $::env(DESIGN_DIR)/other source files.v"
+    $::env(DESIGN_DIR)/hack_soc/src/*.v"
+
+
+set ::env(VERILOG_INCLUDE_DIRS) "$::env(DESIGN_DIR)/hack_soc"
 
 # target density, change this if you can't get your design to fit
-set ::env(PL_TARGET_DENSITY) 0.4
+set ::env(PL_TARGET_DENSITY) 0.51
+
+# Cell padding; increases the width of cells. 
+# (Default: 4 microns -- 4 sites)
+#set ::env(CELL_PAD) "4"
+
+# Diode cell padding; increases the width of diode cells during placement checks.
+# (Default: 2 microns -- 2 sites)
+#set ::env(DIODE_PADDING) "2"
+
 
 # set absolute size of the die to 300 x 300 um
 set ::env(DIE_AREA) "0 0 300 300"
@@ -19,7 +31,7 @@ set ::env(FP_SIZING) absolute
 set ::env(SYNTH_DEFINES) "MPRJ_IO_PADS=38"
 
 # clock period is ns
-set ::env(CLOCK_PERIOD) "10"
+set ::env(CLOCK_PERIOD) "20"
 set ::env(CLOCK_PORT) "wb_clk_i"
 
 # macro needs to work inside Caravel, so can't be core and can't use metal 5
@@ -35,3 +47,14 @@ set ::env(FP_PIN_ORDER_CFG) $script_dir/pin_order.cfg
 
 # turn off CVC as we have multiple power domains
 set ::env(RUN_CVC) 0
+
+
+set ::env(PL_RESIZER_BUFFER_OUTPUT_PORTS) 0
+
+
+# Enables running Klayout XOR on 2 GDS-IIs, the defaults are the one produced by magic vs the one produced by klayout. 1 = Enabled, 0 = Disabled
+# (Default: 1)
+set ::env(RUN_KLAYOUT_XOR) 0
+
+
+set ::env(SYNTH_STRATEGY) "AREA 2"

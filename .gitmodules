@@ -1,0 +1,3 @@
+[submodule "hack_soc"]
+	path = hack_soc
+	url = https://github.com/mbalestrini/hack_soc.git

@@ -1,25 +1,25 @@
 --- 
 # information
 project: 
-  title: "title"
-  description: "description"
+  title: "hack soc"
+  description: ""
   picture: docs/empty.png
-  author: "Author"
-  github: https://github.com/link
+  author: "Maximo Balestrini"
+  github: https://github.com/mbalestrini/wrapped_hack_soc
   license: LICENSE
 
 # test within caravel
 caravel_test:
   recipe: "coco_test"
-  directory: "caravel_test"
-  id: 1
-  module_name: "wrapped_project"
-  instance_name: "wrapped_project"
+  directory: "caravel_wrapped_hack_soc"
+  id: 6
+  module_name: "wrapped_hack_soc"
+  instance_name: "wrapped_hack_soc"
 
 # module test
 module_test:
   recipe: "all" 
-  directory: "project directory"
+  directory: "hack_soc/test"
   makefile: "Makefile"
 
 # run the wrapper formal proof
@@ -33,12 +33,25 @@ openlane:
 
 # source required for various configs and module instantiation
 source:
-    - wrapper.v
-    - other source files here
+    - wrapped_hack_soc.v
+    - hack_soc/src/dmux8way.v
+    - hack_soc/src/hack_alu.v
+    - hack_soc/src/hack_clock.v
+    - hack_soc/src/hack_cpu.v
+    - hack_soc/src/   - hack_soc.v
+    - hack_soc/src/pc.v
+    - hack_soc/src/register.v
+    - hack_soc/src/spi_sram_encoder.v
+    - hack_soc/src/video_signal_generator_640x480.v
+    - hack_soc/src/spi_video_ram_2.v
+    - hack_soc/src/vram_write_fifo.v
+    - hack_soc/src/rom_stream_loader.v
+    - hack_soc/src/includes/params.v 
+
 
 # gds - check size = 300x300, nothing on metal 5, do a DRC, check 141 tristate buffers, check LVS
 gds:
   directory: "gds"
-  gds_filename: "project.gds"
-  lvs_filename: "project.lvs.powered.v"
-  lef_filename: "project.lef"
+  gds_filename: "wrapped_hack_soc.gds"
+  lvs_filename: "wrapped_hack_soc.lvs.powered.v"
+  lef_filename: "wrapped_hack_soc.lef"
