@@ -263,8 +263,6 @@ async def test_wrapper(dut):
 				
 				await be.read_reg(PWM_DRIVE_RESET)
 				assert(be.read == 0x01818181)
-		for i in range(3):
-			await be.fault(i,0)
 	
 	# IV-LIMIT
 	if True:
@@ -275,29 +273,32 @@ async def test_wrapper(dut):
 			PRESCALER_TEST = range(8)
 			BREAK_BEFORE_MAKE_TEST = range(16)
 		
-		for i in range(2):
-			if i == 0:
+		for vi in range(2):
+			if vi == 0:
 				dut._log.info("BEGIN V-LIMIT TEST")
 			else:
 				dut._log.info("BEGIN I-LIMIT TEST")
+			
 			for PRESCALER in PRESCALER_TEST:
 				for BREAK_BEFORE_MAKE in BREAK_BEFORE_MAKE_TEST:
+					for i in range(4):
+						await be.v_limit(i,0)
+						await be.i_limit(i,0)
+					for i in range(3):
+						await be.fault(i,0)
+					
 					await be.write_reg(PWM_DRIVE_RESET,0)
 					await be.read_reg(PWM_DRIVE_RESET)
 					assert(be.read == 0)
 					
-					if i == 0:
+					if vi == 0:
 						dut._log.info('V-LIMIT (PRESCALER = %d,BREAK_BEFORE_MAKE = %d)' % (PRESCALER,BREAK_BEFORE_MAKE))
 					else:
 						dut._log.info('I-LIMIT (PRESCALER = %d,BREAK_BEFORE_MAKE = %d)' % (PRESCALER,BREAK_BEFORE_MAKE))
 					
 					await GlobalSetup(PRESCALER,BREAK_BEFORE_MAKE)
 					await GlobalPWM(0x7F)
-
-					for i in range(4):
-						await be.v_limit(i,0)
-						await be.i_limit(i,0)
-						
+					
 					await be.write_reg(PWM_DRIVE_RESET,0x01010101)
 					await be.read_reg(PWM_DRIVE_RESET)
 					assert(be.read == 0x01010101)
@@ -314,7 +315,7 @@ async def test_wrapper(dut):
 						check += 1
 					
 					for i in range(4):
-						if i == 0:
+						if vi == 0:
 							await be.v_limit(i,1)
 						else:
 							await be.i_limit(i,1)
