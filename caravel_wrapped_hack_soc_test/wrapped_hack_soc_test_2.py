@@ -62,40 +62,54 @@ async def test_all(dut):
     print("Hack soc reset done")
 
 
-    await ClockCycles(dut.uut.mprj.mprj.soc.hack_clk, 200)
+    for i in range(0,24):
+        await ClockCycles(dut.uut.mprj.mprj.soc.hack_clk, 1)
+        print("PC: ", int(dut.uut.mprj.mprj.soc.hack_pc.value), " INSTRUCTION:", hex(dut.uut.mprj.mprj.soc.hack_instruction.value))
+        if(i==4):
+            # Set first word of the screen to 0x53ED
+            # In vram the bits are saved inverted, so 0x53ED becomes 0xB7CA
+            assert(dut.vram.MemoryBlock[0] == 0xB7)
+            assert(dut.vram.MemoryBlock[1] == 0xCA)
+            print("  vram instruction write check passed")
+        if(i==7):
+            # Set Memory[4] = 0x53ED
+            assert(dut.ram.MemoryBlock[4*2] == 0x53)
+            assert(dut.ram.MemoryBlock[4*2+1] == 0xED)
+            print("  ram instruction write check passed")
+        if(i==11):
+            # Read Keyboard and store value on Memory[5]
+            # Firmware inputs keycode 0x61 thourgh LA[8:1]
+            assert(dut.ram.MemoryBlock[5*2] == 0x00)
+            assert(dut.ram.MemoryBlock[5*2+1] == 0x61)
+            print("  keyboard read and memory write check passed")
+        if(i==13):
+            # Loop forever incrementing Memory[6]=Memory[6]+1
+            # Memory[6] = 0
+            assert(dut.ram.MemoryBlock[6*2] == 0x00)
+            assert(dut.ram.MemoryBlock[6*2+1] == 0x00)
+        if(i==15):            
+            # Loop forever incrementing Memory[6]=Memory[6]+1
+            # Memory[6] = 1            
+            assert(dut.ram.MemoryBlock[6*2] == 0x00)
+            assert(dut.ram.MemoryBlock[6*2+1] == 0x01)
+        if(i==19):            
+            # Loop forever incrementing Memory[6]=Memory[6]+1
+            # Memory[6] = 2
+            assert(dut.ram.MemoryBlock[6*2] == 0x00)
+            assert(dut.ram.MemoryBlock[6*2+1] == 0x02)            
+        if(i==23):            
+            # Loop forever incrementing Memory[6]=Memory[6]+1
+            # Memory[6] = 3
+            assert(dut.ram.MemoryBlock[6*2] == 0x00)
+            assert(dut.ram.MemoryBlock[6*2+1] == 0x03)
+            print("  incremental loop check passed")
     
+
+
+    await ClockCycles(dut.uut.mprj.mprj.soc.hack_clk, 5)
+
+    print("All checks passed")
+
     
     # encoder0 = Encoder(dut.clk, dut.enc0_a, dut.enc0_b, clocks_per_phase = clocks_per_phase, noise_cycles = clocks_per_phase / 4)
 
-    
-
-    
-
-
-    # # wait for the reset signal - time out if necessary - should happen around 165us
-    # await with_timeout(RisingEdge(dut.uut.mprj.wrapped_rgb_mixer.rgb_mixer0.reset), 180, 'us')
-    # await FallingEdge(dut.uut.mprj.wrapped_rgb_mixer.rgb_mixer0.reset)
-
-    # assert dut.uut.mprj.wrapped_rgb_mixer.rgb_mixer0.enc0 == 0
-    # assert dut.uut.mprj.wrapped_rgb_mixer.rgb_mixer0.enc1 == 0
-    # assert dut.uut.mprj.wrapped_rgb_mixer.rgb_mixer0.enc2 == 0
-
-    # # pwm should all be low at start
-    # assert dut.pwm0_out == 0
-    # assert dut.pwm1_out == 0
-    # assert dut.pwm1_out == 0
-
-    # # do 3 ramps for each encoder 
-    # max_count = 255
-    # await run_encoder_test(encoder0, dut.uut.mprj.wrapped_rgb_mixer.rgb_mixer0.enc0, max_count)
-    # await run_encoder_test(encoder1, dut.uut.mprj.wrapped_rgb_mixer.rgb_mixer0.enc1, max_count)
-    # await run_encoder_test(encoder2, dut.uut.mprj.wrapped_rgb_mixer.rgb_mixer0.enc2, max_count)
-
-    # # sync to pwm
-    # await RisingEdge(dut.pwm0_out)
-    # # pwm should all be on for max_count 
-    # for i in range(max_count): 
-    #     assert dut.pwm0_out == 1
-    #     assert dut.pwm1_out == 1
-    #     assert dut.pwm2_out == 1
-    #     await ClockCycles(dut.clk, 1)

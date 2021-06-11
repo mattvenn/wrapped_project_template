@@ -32,6 +32,7 @@ HACK_SOC_PATH = $(WRAPPED_HACK_SOC_PATH)/hack_soc
 
 HACK_SOC_SOURCES = $(HACK_SOC_PATH)/src/*.v  $(WRAPPED_HACK_SOC_PATH)/wrapped_hack_soc.v rom_23LC1024.v
 
+DUMP_TRACE = 
 
 ## RISCV GCC 
 GCC_PATH?=/ef/apps/bin
@@ -49,10 +50,15 @@ all: coco_test # ${PATTERN:=.vcd}
 
 hex:  ${PATTERN:=.hex}
 
+coco_test_with_trace:
+	make coco_test DUMP_TRACE=-DDUMP_TRACE
+	
+
+
 coco_test: ${PATTERN}.hex
 	rm -rf sim_build/
 	mkdir sim_build/
-	iverilog -o sim_build/sim.vvp -s $(PATTERN)_tb $(PATTERN)_tb.v -DSIM -DFUNCTIONAL \
+	iverilog -o sim_build/sim.vvp -s $(PATTERN)_tb $(PATTERN)_tb.v -DSIM -DFUNCTIONAL $(DUMP_TRACE) \
 	-I $(PDK_PATH) \
 	-I $(CARAVEL_BEHAVIOURAL_MODELS) -I $(CARAVEL_RTL_PATH) \
 	-I $(UPRJ_BEHAVIOURAL_MODELS)    -I $(UPRJ_RTL_PATH) \
