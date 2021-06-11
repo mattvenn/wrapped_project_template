@@ -51,14 +51,14 @@ module QarmaControl #(
         if (wbs_stb_i && wbs_cyc_i && !wbs_we_i) begin
             //$display("Monitor: READ");
 
-            case (wbs_adr_i[5:0])
-                6'h000: wbs_dat_o <= qarma_status;
+            case (wbs_adr_i[31:0])
+                32'h30000000: wbs_dat_o <= qarma_status;
 
-                6'h020: wbs_dat_o <= qarma_in[ 31: 0];
-                6'h024: wbs_dat_o <= qarma_in[ 63:32];
+                32'h30000020: wbs_dat_o <= qarma_in[ 31: 0];
+                32'h30000024: wbs_dat_o <= qarma_in[ 63:32];
 
-                6'h030: wbs_dat_o <= qarma_out[ 31: 0];
-                6'h034: wbs_dat_o <= qarma_out[ 63:32];
+                32'h30000030: wbs_dat_o <= qarma_out[ 31: 0];
+                32'h30000034: wbs_dat_o <= qarma_out[ 63:32];
             endcase
 
             wbs_ack_o <= 1;
@@ -66,20 +66,20 @@ module QarmaControl #(
         else if (wbs_stb_i && wbs_cyc_i && wbs_we_i) begin
             //$display("Monitor: WRITE");
 
-            case (wbs_adr_i[5:0])
-                6'h004: qarma_nrst <= 0;
-                6'h008: qarma_nrst <= 1;
+            case (wbs_adr_i[31:0])
+                32'h30000004: qarma_nrst <= 0;
+                32'h30000008: qarma_nrst <= 1;
 
-                6'h010: qarma_key[ 31: 0] <= wbs_dat_i;
-                6'h014: qarma_key[ 63:32] <= wbs_dat_i;
-                6'h018: qarma_key[ 95:64] <= wbs_dat_i;
-                6'h01C: qarma_key[127:96] <= wbs_dat_i;
+                32'h30000010: qarma_key[ 31: 0] <= wbs_dat_i;
+                32'h30000014: qarma_key[ 63:32] <= wbs_dat_i;
+                32'h30000018: qarma_key[ 95:64] <= wbs_dat_i;
+                32'h3000001C: qarma_key[127:96] <= wbs_dat_i;
 
-                6'h020: qarma_in[ 31: 0] <= wbs_dat_i;
-                6'h024: qarma_in[ 63:32] <= wbs_dat_i;
+                32'h30000020: qarma_in[ 31: 0] <= wbs_dat_i;
+                32'h30000024: qarma_in[ 63:32] <= wbs_dat_i;
 
-                6'h040: qarma_tweak[ 31: 0] <= wbs_dat_i;
-                6'h044: qarma_tweak[ 63:32] <= wbs_dat_i;
+                32'h30000040: qarma_tweak[ 31: 0] <= wbs_dat_i;
+                32'h30000044: qarma_tweak[ 63:32] <= wbs_dat_i;
             endcase
             wbs_ack_o <= 1;
         end
