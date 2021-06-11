@@ -57,7 +57,7 @@ else
 endif
 
 %.vcd: %.vvp
-	vvp $< | tee /dev/stderr | grep -q 'Test Passed out=0x0001'
+	vvp $< | tee /dev/stderr | grep -q 'Test Passed out=0x0002'
 
 %.elf: %.c $(CARAVEL_FIRMWARE_PATH)/sections.lds $(CARAVEL_FIRMWARE_PATH)/start.s
 	${GCC_PATH}/${GCC_PREFIX}-gcc -I $(CARAVEL_PATH) -march=rv32imc -mabi=ilp32 -Wl,-Bstatic,-T,$(CARAVEL_FIRMWARE_PATH)/sections.lds,--strip-debug -ffreestanding -nostdlib -o $@ $(CARAVEL_FIRMWARE_PATH)/start.s $<
