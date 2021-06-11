@@ -1,6 +1,6 @@
 import cocotb
 from cocotb.clock import Clock
-from cocotb.triggers import RisingEdge, FallingEdge, ClockCycles, with_timeout
+from cocotb.triggers import RisingEdge, FallingEdge, ClockCycles, First, with_timeout
 
 
 async def test_start(dut):
@@ -35,11 +35,34 @@ async def test_all(dut):
     # hack_external_reset
     dut.mprj_io[26].value = 0
 
-    await with_timeout(FallingEdge(dut.uut.mprj.mprj.soc.hack_reset), 310, 'us')
 
-    print("HACK_SOC reset done")
     
-    await ClockCycles(dut.uut.mprj.mprj.soc.hack_clk, 40)
+    print("Waiting for the rom loader to start...")
+    await with_timeout(RisingEdge(dut.uut.mprj.mprj.soc.rom_loader_load), 1000, 'us')
+
+
+    count = 0
+    print("Loading rom: 0/16 instructions loaded\r", end='\r')
+    while(dut.uut.mprj.mprj.soc.rom_loader_load==1):
+        trigger_sck = FallingEdge(dut.uut.mprj.mprj.soc.rom_loader_sck)
+        trigger_load = FallingEdge(dut.uut.mprj.mprj.soc.rom_loader_load)
+        t = await(First(trigger_sck, trigger_load))
+        if(t==trigger_sck):
+            count = count + 1
+            print("Loading rom: ", count, "/16 instructions loaded", end='\r')
+        # await(ClockCycles(dut.clk, 1))
+
+    print("")
+    print("Rom loader to finished")
+    # await with_timeout(RisingEdge(dut.uut.mprj.mprj.soc.rom_loader_load), 2000, 'us')
+
+
+    print("Waiting reset of the Hack cpu...")
+    await with_timeout(FallingEdge(dut.uut.mprj.mprj.soc.hack_reset), 350, 'us')
+    print("Hack soc reset done")
+
+
+    await ClockCycles(dut.uut.mprj.mprj.soc.hack_clk, 200)
     
     
     # encoder0 = Encoder(dut.clk, dut.enc0_a, dut.enc0_b, clocks_per_phase = clocks_per_phase, noise_cycles = clocks_per_phase / 4)

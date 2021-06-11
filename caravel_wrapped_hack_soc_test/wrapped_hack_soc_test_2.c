@@ -19,6 +19,10 @@
 
 #include <stdint.h> 
 
+#define ARRAY_LENGTH(x) (sizeof(x) / sizeof((x)[0]))
+
+#include "caravel_test_hack_program.c"
+
 /*
 	IO Test:
 		- Configures MPRJ lower 8-IO pins as outputs
@@ -30,12 +34,11 @@ struct logic_analyzer_t {
 	// Outputs from Pico
 	uint8_t reset;
 	uint8_t keycode;
-	uint8_t rom_loader_reset;
+	uint8_t rom_loader_sck;
 	uint8_t rom_loader_load;
 	uint16_t rom_loader_data;
 	// Inputs to Pico
-	uint8_t rom_loader_ack;
-	uint8_t rom_loader_load_received;
+	uint8_t rom_loader_ack;	
 } logic_analyzer;
 
 
@@ -120,10 +123,6 @@ void main()
     reg_mprj_xfer = 1;
     while (reg_mprj_xfer == 1);
 
-    // activate the project by setting the [project ID] bit of 2nd bank of LA
-    reg_la1_iena = 0; // input enable off
-    reg_la1_oenb = 0; // output enable on
-    reg_la1_data = 1 << 6;
 
 
 
@@ -131,46 +130,72 @@ void main()
 	reg_la0_oenb = 0;
 	reg_la0_iena = 0;
 
-	reg_la0_data = 1;
-	reg_la0_data = 0;
+	// rom_loader_ack is input 
+	reg_la0_oenb = reg_la0_oenb | ( 1<< 27 );
+	reg_la0_iena = reg_la0_iena | ( 1<< 27 );
 
-/*
-	// rom_loader_reset is input 
-	reg_la0_oenb = reg_la0_oenb | ~( 1<< 27 );
-	reg_la0_iena = reg_la0_iena | ~( 1<< 27 );
+	
 
-	// rom_loader_load_received is input
-	reg_la0_oenb = reg_la0_oenb | ~( 1<< 28 );
-	reg_la0_iena = reg_la0_iena | ~( 1<< 28 );
-
-
+	uint32_t tmp_la0_data;
 
 	logic_analyzer.reset = 1;
-	logic_analyzer.keycode = 0;
-	logic_analyzer.rom_loader_reset = 1;
+	logic_analyzer.keycode = 97;
 	logic_analyzer.rom_loader_load = 0;
-	logic_analyzer.rom_loader_data = 0;
-
+	// logic_analyzer.rom_loader_sck = 0;
+	// logic_analyzer.rom_loader_data = 0;
 
 	// Set initial output values
-	reg_la0_data = 	(logic_analyzer.reset << 0) |
+	tmp_la0_data = 	(logic_analyzer.reset << 0) |
 					(logic_analyzer.keycode << 1) |
-					(logic_analyzer.rom_loader_reset << 9) |
-					(logic_analyzer.rom_loader_load << 10) |
-					(logic_analyzer.rom_loader_data << 11);
+					(logic_analyzer.rom_loader_load << 10);
+					// (logic_analyzer.rom_loader_sck << 9) |
+					// (logic_analyzer.rom_loader_data << 11);
+	reg_la0_data = tmp_la0_data;
 
 
-	// RESET design 
+
+
+    // activate the project by setting the [project ID] bit of 2nd bank of LA
+    reg_la1_iena = 0; // input enable off
+    reg_la1_oenb = 0; // output enable on
+    reg_la1_data = 1 << 6;
+
+
+	// Releas reset
 	logic_analyzer.reset = 0;
-	logic_analyzer.rom_loader_reset = 0;
-	reg_la0_data = (reg_la0_data & ~(1<<0)) | (logic_analyzer.reset << 0);
-	reg_la0_data = (reg_la0_data & ~(1<<9)) | (logic_analyzer.rom_loader_reset << 9);
+	tmp_la0_data = (tmp_la0_data & ~(1<<0)) | (logic_analyzer.reset << 0);
+	reg_la0_data = tmp_la0_data;
+
+
+	uint8_t program_size = ARRAY_LENGTH(hack_program);
+
+
+
+	// Start ROM LOADING
+	logic_analyzer.rom_loader_load = 1;
+	tmp_la0_data = (tmp_la0_data & ~(1<<10)) | (logic_analyzer.rom_loader_load << 10);
+
 	
-	logic_analyzer.reset = 0;
-	logic_analyzer.rom_loader_reset = 0;
-	reg_la0_data = (reg_la0_data & ~(1<<0)) | (logic_analyzer.reset << 0);
-	reg_la0_data = (reg_la0_data & ~(1<<9)) | (logic_analyzer.rom_loader_reset << 9);
-*/	
+	for (int i = 0; i < program_size; ++i) {
+		
+		logic_analyzer.rom_loader_data = hack_program[i];				
+		tmp_la0_data = (tmp_la0_data & ~(0xffff<<11)) | (logic_analyzer.rom_loader_data << 11);
+		logic_analyzer.rom_loader_sck = 1;
+		tmp_la0_data = (tmp_la0_data & ~(1<<9)) | (logic_analyzer.rom_loader_sck << 9);
+		reg_la0_data = tmp_la0_data;
+
+		logic_analyzer.rom_loader_sck = 0;
+		tmp_la0_data = (tmp_la0_data & ~(1<<9)) | (logic_analyzer.rom_loader_sck << 9);
+		reg_la0_data = tmp_la0_data;		
+		
+	}
+
+
+	// Finished ROM LOADING
+	logic_analyzer.rom_loader_load = 0;
+	tmp_la0_data = (tmp_la0_data & ~(1<<10)) | (logic_analyzer.rom_loader_load << 10);
+	reg_la0_data = tmp_la0_data;		
+
 
     // // do something with the logic analyser
     // reg_la0_iena = 0;

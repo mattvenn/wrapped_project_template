@@ -93,14 +93,12 @@ module wrapped_hack_soc(
     // Logic Analyzer    
     wire hack_soc_reset = la_data_in[0];
     wire [7:0] keycode = la_data_in[8:1];
-    wire rom_loader_reset = la_data_in[9];
+    wire rom_loader_sck = la_data_in[9];
     wire rom_loader_load = la_data_in[10];
     wire [15:0] rom_loader_data = la_data_in[26:11];
     wire rom_loader_ack;
     assign buf_la_data_out[27] = rom_loader_ack;
-    wire rom_loader_load_received;
-    assign buf_la_data_out[28] = rom_loader_load_received;
-
+    
 
 
     // ram
@@ -253,13 +251,12 @@ module wrapped_hack_soc(
 
         // ROM LOADING LINES
         // inputs
-        .rom_loader_reset(rom_loader_reset),
         .rom_loader_load(rom_loader_load),
+        .rom_loader_sck(rom_loader_sck),
         .rom_loader_data(rom_loader_data),
         // outputs
         .rom_loader_ack(rom_loader_ack),
-        .rom_loader_load_received(rom_loader_load_received),
-
+        
 
         // Keyboard
         .keycode(keycode),

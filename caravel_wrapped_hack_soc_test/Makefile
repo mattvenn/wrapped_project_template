@@ -59,6 +59,7 @@ coco_test: ${PATTERN}.hex
 	-I $(HACK_SOC_PATH)/src  $(HACK_SOC_SOURCES) 
 	
 	MODULE=$(PATTERN) vvp -M $$(cocotb-config --prefix)/cocotb/libs -m libcocotbvpi_icarus sim_build/sim.vvp
+	! grep failure results.xml
 
 
 %.vvp: %_tb.v %.hex
@@ -68,19 +69,21 @@ ifeq ($(SIM),RTL)
 	-I $(UPRJ_BEHAVIOURAL_MODELS)    -I $(UPRJ_RTL_PATH) \
 	-I $(HACK_SOC_PATH)/src  $(HACK_SOC_SOURCES) \
 	$< -o $@ 
+	! grep failure results.xml
 else  
 	iverilog -DFUNCTIONAL -DSIM -DGL -I $(PDK_PATH) \
 	-I $(CARAVEL_BEHAVIOURAL_MODELS) -I $(CARAVEL_RTL_PATH) -I $(CARAVEL_VERILOG_PATH) \
 	-I $(UPRJ_BEHAVIOURAL_MODELS) -I$(UPRJ_RTL_PATH)   -I $(UPRJ_VERILOG_PATH) \
 	-I $(HACK_SOC_PATH)/src $(HACK_SOC_SOURCES) \
 	$< -o $@ 
+	! grep failure results.xml
 endif
 
 %.vcd: %.vvp
 	vvp $<
 
-%.elf: %.c $(CARAVEL_FIRMWARE_PATH)/sections.lds $(CARAVEL_FIRMWARE_PATH)/start.s
-	${GCC_PATH}/${GCC_PREFIX}-gcc -I $(CARAVEL_PATH) -march=rv32imc -mabi=ilp32 -Wl,-Bstatic,-T,$(CARAVEL_FIRMWARE_PATH)/sections.lds,--strip-debug -ffreestanding -nostdlib -o $@ $(CARAVEL_FIRMWARE_PATH)/start.s $<
+%.elf: %.c caravel_test_hack_program.c $(CARAVEL_FIRMWARE_PATH)/sections.lds $(CARAVEL_FIRMWARE_PATH)/start.s
+	${GCC_PATH}/${GCC_PREFIX}-gcc -O3 -I $(CARAVEL_PATH) -march=rv32imc -mabi=ilp32 -Wl,-Bstatic,-T,$(CARAVEL_FIRMWARE_PATH)/sections.lds,--strip-debug -ffreestanding -nostdlib -o $@ $(CARAVEL_FIRMWARE_PATH)/start.s $<
 
 %.hex: %.elf
 	${GCC_PATH}/${GCC_PREFIX}-objcopy -O verilog $< $@ 
@@ -93,6 +96,6 @@ endif
 # ---- Clean ----
 
 clean:
-	rm -f *.elf *.hex *.bin *.vvp *.vcd *.log
+	rm -f *.elf *.hex *.bin *.vvp *.vcd *.log results.xml
 
 .PHONY: clean hex all

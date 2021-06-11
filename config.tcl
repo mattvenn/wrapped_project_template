@@ -16,7 +16,7 @@ set ::env(PL_TARGET_DENSITY) 0.51
 
 # Cell padding; increases the width of cells. 
 # (Default: 4 microns -- 4 sites)
-#set ::env(CELL_PAD) "4"
+set ::env(CELL_PAD) "0"
 
 # Diode cell padding; increases the width of diode cells during placement checks.
 # (Default: 2 microns -- 2 sites)

@@ -1,9 +1,9 @@
 --- 
 # information
 project: 
-  title: "hack soc"
-  description: ""
-  picture: docs/empty.png
+  title: "Hack soc"
+  description: "Hardware implementation of the Hack Computer from the Nand to Tetris courses"
+  picture: docs/project.jpg
   author: "Maximo Balestrini"
   github: https://github.com/mbalestrini/wrapped_hack_soc
   license: LICENSE
@@ -38,7 +38,7 @@ source:
     - hack_soc/src/hack_alu.v
     - hack_soc/src/hack_clock.v
     - hack_soc/src/hack_cpu.v
-    - hack_soc/src/   - hack_soc.v
+    - hack_soc/src/hack_soc.v
     - hack_soc/src/pc.v
     - hack_soc/src/register.v
     - hack_soc/src/spi_sram_encoder.v
