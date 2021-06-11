@@ -33,8 +33,8 @@ openlane:
 
 # source required for various configs and module instantiation
 source:
-    - /src/pwm_fet_driver_unit.v
-    - /src/pwm_fet_quad.v
+    - src/pwm_fet_driver_unit.v
+    - src/pwm_fet_quad.v
     - wrapper.v
     
 # gds - check size = 300x300, nothing on metal 5, do a DRC, check 141 tristate buffers, check LVS
