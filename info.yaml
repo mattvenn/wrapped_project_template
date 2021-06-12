@@ -40,6 +40,6 @@ source:
 # gds - check size = 300x300, nothing on metal 5, do a DRC, check 141 tristate buffers, check LVS
 gds:
   directory: "gds"
-  gds_filename: "project.gds"
-  lvs_filename: "project.lvs.powered.v"
-  lef_filename: "project.lef"
+  gds_filename: "wrapped_qarma.gds"
+  lvs_filename: "wrapped_qarma.lvs.powered.v"
+  lef_filename: "wrapped_qarma.lef"
