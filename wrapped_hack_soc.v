@@ -98,6 +98,7 @@ module wrapped_hack_soc(
     wire [15:0] rom_loader_data = la_data_in[26:11];
     wire rom_loader_ack;
     assign buf_la_data_out[27] = rom_loader_ack;
+    wire hack_external_reset_from_la = la_data_in[28];
     
 
 
@@ -166,11 +167,14 @@ module wrapped_hack_soc(
     assign {vram_sio3_i, vram_sio2_i, vram_sio1_i, vram_sio0_i} = io_in[25:22];
 
 
+    wire hack_external_reset_from_io;
+    assign buf_io_oeb[26] = 1'b1;
+    assign hack_external_reset_from_io = io_in[26];
+
     // hack_external_reset
     wire hack_external_reset;
-    assign buf_io_oeb[26] = 1'b1;
-    assign hack_external_reset = io_in[26];
-    
+    assign hack_external_reset = hack_external_reset_from_la | hack_external_reset_from_io;
+
 
     // display
     wire display_vsync;

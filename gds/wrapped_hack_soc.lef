@@ -2705,7 +2705,7 @@ MACRO wrapped_hack_soc
   END vssa2
   OBS
       LAYER li1 ;
-        RECT 5.520 10.795 295.175 288.405 ;
+        RECT 5.520 10.795 294.400 288.405 ;
       LAYER met1 ;
         RECT 1.910 6.840 298.010 288.560 ;
       LAYER met2 ;

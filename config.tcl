@@ -5,7 +5,7 @@ set script_dir [file dirname [file normalize [info script]]]
 set ::env(DESIGN_NAME) wrapped_hack_soc
 
 # add your source files here
-set ::env(VERILOG_FILES) "$::env(DESIGN_DIR)/wrapper.v \
+set ::env(VERILOG_FILES) "$::env(DESIGN_DIR)/wrapped_hack_soc.v \
     $::env(DESIGN_DIR)/hack_soc/src/*.v"
 
 

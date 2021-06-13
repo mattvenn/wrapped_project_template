@@ -39,6 +39,7 @@ struct logic_analyzer_t {
 	uint16_t rom_loader_data;
 	// Inputs to Pico
 	uint8_t rom_loader_ack;	
+	uint8_t hack_external_reset;
 } logic_analyzer;
 
 
@@ -138,16 +139,21 @@ void main()
 
 	uint32_t tmp_la0_data;
 
+	// system reset
 	logic_analyzer.reset = 1;
 	logic_analyzer.keycode = 97;
 	logic_analyzer.rom_loader_load = 0;
+	// hack_cpu reset
+	logic_analyzer.hack_external_reset = 1;
 	// logic_analyzer.rom_loader_sck = 0;
 	// logic_analyzer.rom_loader_data = 0;
 
 	// Set initial output values
 	tmp_la0_data = 	(logic_analyzer.reset << 0) |
 					(logic_analyzer.keycode << 1) |
-					(logic_analyzer.rom_loader_load << 10);
+					(logic_analyzer.rom_loader_load << 10) |
+					(logic_analyzer.hack_external_reset << 28) ;
+					;
 					// (logic_analyzer.rom_loader_sck << 9) |
 					// (logic_analyzer.rom_loader_data << 11);
 	reg_la0_data = tmp_la0_data;
@@ -161,7 +167,7 @@ void main()
     reg_la1_data = 1 << 6;
 
 
-	// Releas reset
+	// Release system reset
 	logic_analyzer.reset = 0;
 	tmp_la0_data = (tmp_la0_data & ~(1<<0)) | (logic_analyzer.reset << 0);
 	reg_la0_data = tmp_la0_data;
@@ -196,6 +202,12 @@ void main()
 	tmp_la0_data = (tmp_la0_data & ~(1<<10)) | (logic_analyzer.rom_loader_load << 10);
 	reg_la0_data = tmp_la0_data;		
 
+
+
+	logic_analyzer.hack_external_reset = 0;
+	tmp_la0_data = (tmp_la0_data & ~(1<<28)) | (logic_analyzer.hack_external_reset << 28);
+	reg_la0_data = tmp_la0_data;		
+	
 
     // // do something with the logic analyser
     // reg_la0_iena = 0;
