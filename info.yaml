@@ -35,7 +35,7 @@ openlane:
 source:
     - wrapper.v
     - qarma_control.v
-    - qarma/qarma_128_encrypt.v
+    - qarma/qarma_64.v
 
 # gds - check size = 300x300, nothing on metal 5, do a DRC, check 141 tristate buffers, check LVS
 gds:
