@@ -13,8 +13,8 @@ caravel_test:
   recipe: "coco_test"
   directory: "caravel_test"
   id: 8
-  module_name: "QarmaControl"
-  instance_name: "qarma_control"
+  module_name: "wrapped_qarma"
+  instance_name: "WrappedQarma"
 
 # module test
 module_test:
