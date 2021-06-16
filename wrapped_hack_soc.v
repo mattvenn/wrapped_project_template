@@ -190,7 +190,12 @@ module wrapped_hack_soc(
     
 
     // GPIO
-    wire [15:0] gpio;
+    wire [3:0] gpio_i;
+    wire [3:0] gpio_o;
+	assign buf_io_oeb[33:30] = 4'b1111;
+    assign gpio_i = io_in[33:30];
+	assign buf_io_oeb[37:34] = 4'b0000;
+	assign buf_io_out[37:34] = gpio_o;
 
     hack_soc soc(
         .clk(clk),
@@ -266,7 +271,9 @@ module wrapped_hack_soc(
         .keycode(keycode),
 
         // GPIO
-        .gpio(gpio)
+        .gpio_i(gpio_i),
+		.gpio_o(gpio_o)
+
 
     );
 

@@ -18,6 +18,11 @@ module wrapped_hack_soc_test_2_tb;
     wire [37:0] mprj_io;
 	
 	
+	// HACK GPIO_I
+	// Same somple input data on GPIO_I
+	assign mprj_io[33:30] = 4'b1101; 
+
+	
 	wire ram_cs_n;
 	wire ram_sck;
 	wire rom_cs_n;
@@ -127,6 +132,9 @@ module wrapped_hack_soc_test_2_tb;
 		.SIO2(mprj_io[24]), 
 		.HOLD_N_SIO3(mprj_io[25]), 
 		.RESET(reset_rams));
+
+
+
 
 
 	// wire debug_a = uut.mprj.mprj.io_in[16] == uut.mprj_io[16]; 

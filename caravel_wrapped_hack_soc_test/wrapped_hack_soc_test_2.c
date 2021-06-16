@@ -65,6 +65,23 @@ void main()
 	*/
 
 
+
+// ** HACK GPIO ** //
+	// gpio_o
+	reg_mprj_io_37 = GPIO_MODE_USER_STD_OUTPUT;
+	reg_mprj_io_36 = GPIO_MODE_USER_STD_OUTPUT;
+	reg_mprj_io_35 = GPIO_MODE_USER_STD_OUTPUT;
+	reg_mprj_io_34 = GPIO_MODE_USER_STD_OUTPUT;
+
+	// gpio_i
+	reg_mprj_io_33 = GPIO_MODE_USER_STD_INPUT_NOPULL;
+	reg_mprj_io_32 = GPIO_MODE_USER_STD_INPUT_NOPULL;
+	reg_mprj_io_31 = GPIO_MODE_USER_STD_INPUT_NOPULL;
+	reg_mprj_io_30 = GPIO_MODE_USER_STD_INPUT_NOPULL;
+
+
+
+
 // ** DISPLAY VSYNC< HSYNC, RGB ** //
 	// rgb
 	reg_mprj_io_29 = GPIO_MODE_USER_STD_OUTPUT;

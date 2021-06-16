@@ -1,16 +1,17 @@
 [*]
 [*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
-[*] Sun Jun 13 21:01:21 2021
+[*] Wed Jun 16 04:09:57 2021
 [*]
 [dumpfile] "/home/videogamo/Work/ZeroToAsic_Course/caravel_user_project/verilog/dv/caravel_wrapped_hack_soc_test/wrapped_hack_soc_test_2_tb.vcd"
-[dumpfile_mtime] "Sun Jun 13 20:48:41 2021"
-[dumpfile_size] 143425890
+[dumpfile_mtime] "Wed Jun 16 04:08:42 2021"
+[dumpfile_size] 158376799
 [savefile] "/home/videogamo/Work/ZeroToAsic_Course/caravel_user_project/verilog/dv/caravel_wrapped_hack_soc_test/wrapped_hack_soc_test_2_tb.gtkw"
 [timestart] 0
 [size] 1920 1147
-[pos] -1 -1
-*-26.000000 143426100 143475000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[pos] -9 -23
+*-26.000000 235200000 143475000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] wrapped_hack_soc_test_2_tb.
+[treeopen] wrapped_hack_soc_test_2_tb.uut.
 [treeopen] wrapped_hack_soc_test_2_tb.uut.mprj.
 [treeopen] wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.
 [treeopen] wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.
@@ -439,5 +440,8 @@ wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
 wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.spi_video_ram_1.current_state[2:0]
 @24
 wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.spi_video_ram_1.state_counter[10:0]
+@22
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.gpio_i[3:0]
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.gpio_o[3:0]
 [pattern_trace] 1
 [pattern_trace] 0
