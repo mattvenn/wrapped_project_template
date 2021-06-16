@@ -7,14 +7,15 @@ project:
   author: "Viktor H. Brange"
   github: https://github.com/vbrange/verilog_qarma
   license: LICENSE
+  waive_gds: GDS is ~370x370um
 
 # test within caravel
 caravel_test:
-  recipe: "coco_test"
-  directory: "caravel_test"
+  recipe: "all"
+  directory: "caravel_qarma_test"
   id: 8
   module_name: "wrapped_qarma"
-  instance_name: "WrappedQarma"
+  instance_name: "wrapped_qarma"
 
 # module test
 module_test:
