@@ -12,7 +12,7 @@ set ::env(VERILOG_FILES) "$::env(DESIGN_DIR)/wrapped_hack_soc.v \
 set ::env(VERILOG_INCLUDE_DIRS) "$::env(DESIGN_DIR)/hack_soc"
 
 # target density, change this if you can't get your design to fit
-set ::env(PL_TARGET_DENSITY) 0.51
+set ::env(PL_TARGET_DENSITY) 0.52
 
 # Cell padding; increases the width of cells. 
 # (Default: 4 microns -- 4 sites)

@@ -27,10 +27,9 @@ UPRJ_VERILOG_PATH ?= ../../../verilog
 UPRJ_RTL_PATH = $(UPRJ_VERILOG_PATH)/rtl
 UPRJ_BEHAVIOURAL_MODELS = ../
 
-WRAPPED_HACK_SOC_PATH = ../../../../wrapped_hack_soc
+WRAPPED_HACK_SOC_PATH = ../../rtl/wrapped_hack_soc
 HACK_SOC_PATH = $(WRAPPED_HACK_SOC_PATH)/hack_soc
 
-HACK_SOC_SOURCES = $(HACK_SOC_PATH)/src/*.v  $(WRAPPED_HACK_SOC_PATH)/wrapped_hack_soc.v rom_23LC1024.v
 
 DUMP_TRACE = 
 
@@ -62,7 +61,7 @@ coco_test: ${PATTERN}.hex
 	-I $(PDK_PATH) \
 	-I $(CARAVEL_BEHAVIOURAL_MODELS) -I $(CARAVEL_RTL_PATH) \
 	-I $(UPRJ_BEHAVIOURAL_MODELS)    -I $(UPRJ_RTL_PATH) \
-	-I $(HACK_SOC_PATH)/src  $(HACK_SOC_SOURCES) 
+	-I $(HACK_SOC_PATH)/src  \
 	
 	MODULE=$(PATTERN) vvp -M $$(cocotb-config --prefix)/cocotb/libs -m libcocotbvpi_icarus sim_build/sim.vvp
 	! grep failure results.xml

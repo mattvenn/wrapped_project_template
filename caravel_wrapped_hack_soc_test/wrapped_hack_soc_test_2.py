@@ -38,14 +38,14 @@ async def test_all(dut):
 
     
     print("Waiting for the rom loader to start...")
-    await with_timeout(RisingEdge(dut.uut.mprj.mprj.soc.rom_loader_load), 1000, 'us')
+    await with_timeout(RisingEdge(dut.uut.mprj.wrapped_hack_soc.soc.rom_loader_load), 1000, 'us')
 
 
     count = 0
     print("Loading rom: 0/16 instructions loaded\r", end='\r')
-    while(dut.uut.mprj.mprj.soc.rom_loader_load==1):
-        trigger_sck = FallingEdge(dut.uut.mprj.mprj.soc.rom_loader_sck)
-        trigger_load = FallingEdge(dut.uut.mprj.mprj.soc.rom_loader_load)
+    while(dut.uut.mprj.wrapped_hack_soc.soc.rom_loader_load==1):
+        trigger_sck = FallingEdge(dut.uut.mprj.wrapped_hack_soc.soc.rom_loader_sck)
+        trigger_load = FallingEdge(dut.uut.mprj.wrapped_hack_soc.soc.rom_loader_load)
         t = await(First(trigger_sck, trigger_load))
         if(t==trigger_sck):
             count = count + 1
@@ -54,17 +54,17 @@ async def test_all(dut):
 
     print("")
     print("Rom loader to finished")
-    # await with_timeout(RisingEdge(dut.uut.mprj.mprj.soc.rom_loader_load), 2000, 'us')
+    # await with_timeout(RisingEdge(dut.uut.mprj.wrapped_hack_soc.soc.rom_loader_load), 2000, 'us')
 
 
     print("Waiting reset of the Hack cpu...")
-    await with_timeout(FallingEdge(dut.uut.mprj.mprj.soc.hack_reset), 350, 'us')
+    await with_timeout(FallingEdge(dut.uut.mprj.wrapped_hack_soc.soc.hack_reset), 350, 'us')
     print("Hack soc reset done")
 
 
     for i in range(0,24):
-        await ClockCycles(dut.uut.mprj.mprj.soc.hack_clk, 1)
-        print("PC: ", int(dut.uut.mprj.mprj.soc.hack_pc.value), " INSTRUCTION:", hex(dut.uut.mprj.mprj.soc.hack_instruction.value))
+        await ClockCycles(dut.uut.mprj.wrapped_hack_soc.soc.hack_clk, 1)
+        print("PC: ", int(dut.uut.mprj.wrapped_hack_soc.soc.hack_pc.value), " INSTRUCTION:", hex(dut.uut.mprj.wrapped_hack_soc.soc.hack_instruction.value))
         if(i==4):
             # Set first word of the screen to 0x53ED
             # In vram the bits are saved inverted, so 0x53ED becomes 0xB7CA
@@ -106,7 +106,7 @@ async def test_all(dut):
     
 
 
-    await ClockCycles(dut.uut.mprj.mprj.soc.hack_clk, 5)
+    await ClockCycles(dut.uut.mprj.wrapped_hack_soc.soc.hack_clk, 5)
 
     print("All checks passed")
 

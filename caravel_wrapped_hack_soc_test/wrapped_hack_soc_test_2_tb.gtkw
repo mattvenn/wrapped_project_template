@@ -1,207 +1,250 @@
 [*]
 [*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
-[*] Fri Jun 11 20:31:11 2021
+[*] Sun Jun 13 21:01:21 2021
 [*]
 [dumpfile] "/home/videogamo/Work/ZeroToAsic_Course/caravel_user_project/verilog/dv/caravel_wrapped_hack_soc_test/wrapped_hack_soc_test_2_tb.vcd"
-[dumpfile_mtime] "Fri Jun 11 19:25:52 2021"
-[dumpfile_size] 221597411
+[dumpfile_mtime] "Sun Jun 13 20:48:41 2021"
+[dumpfile_size] 143425890
 [savefile] "/home/videogamo/Work/ZeroToAsic_Course/caravel_user_project/verilog/dv/caravel_wrapped_hack_soc_test/wrapped_hack_soc_test_2_tb.gtkw"
-[timestart] 231179000
+[timestart] 0
 [size] 1920 1147
-[pos] -9 -23
-*-20.000000 234750000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[pos] -1 -1
+*-26.000000 143426100 143475000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] wrapped_hack_soc_test_2_tb.
-[treeopen] wrapped_hack_soc_test_2_tb.uut.
 [treeopen] wrapped_hack_soc_test_2_tb.uut.mprj.
-[treeopen] wrapped_hack_soc_test_2_tb.uut.mprj.mprj.
-[treeopen] wrapped_hack_soc_test_2_tb.uut.mprj.mprj.soc.
-[treeopen] wrapped_hack_soc_test_2_tb.uut.mprj.mprj.soc.spi_video_ram_1.
+[treeopen] wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.
+[treeopen] wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.
+[treeopen] wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.spi_video_ram_1.
 [sst_width] 335
 [signals_width] 284
 [sst_expanded] 1
 [sst_vpaned_height] 344
 @28
 wrapped_hack_soc_test_2_tb.RSTB
-wrapped_hack_soc_test_2_tb.uut.mprj.mprj.active
-wrapped_hack_soc_test_2_tb.uut.mprj.mprj.hack_soc_reset
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.active
 @c00022
-wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_oenb[31:0]
+wrapped_hack_soc_test_2_tb.mprj_io[37:0]
 @28
-(0)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_oenb[31:0]
-(1)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_oenb[31:0]
-(2)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_oenb[31:0]
-(3)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_oenb[31:0]
-(4)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_oenb[31:0]
-(5)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_oenb[31:0]
-(6)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_oenb[31:0]
-(7)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_oenb[31:0]
-(8)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_oenb[31:0]
-(9)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_oenb[31:0]
-(10)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_oenb[31:0]
-(11)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_oenb[31:0]
-(12)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_oenb[31:0]
-(13)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_oenb[31:0]
-(14)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_oenb[31:0]
-(15)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_oenb[31:0]
-(16)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_oenb[31:0]
-(17)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_oenb[31:0]
-(18)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_oenb[31:0]
-(19)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_oenb[31:0]
-(20)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_oenb[31:0]
-(21)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_oenb[31:0]
-(22)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_oenb[31:0]
-(23)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_oenb[31:0]
-(24)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_oenb[31:0]
-(25)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_oenb[31:0]
-(26)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_oenb[31:0]
-(27)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_oenb[31:0]
-(28)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_oenb[31:0]
-(29)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_oenb[31:0]
-(30)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_oenb[31:0]
-(31)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_oenb[31:0]
+(0)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
+(1)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
+(2)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
+(3)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
+(4)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
+(5)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
+(6)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
+(7)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
+(8)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
+(9)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
+(10)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
+(11)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
+(12)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
+(13)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
+(14)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
+(15)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
+(16)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
+(17)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
+(18)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
+(19)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
+(20)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
+(21)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
+(22)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
+(23)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
+(24)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
+(25)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
+(26)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
+(27)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
+(28)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
+(29)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
+(30)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
+(31)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
+(32)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
+(33)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
+(34)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
+(35)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
+(36)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
+(37)wrapped_hack_soc_test_2_tb.mprj_io[37:0]
+@1401200
+-group_end
+@28
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.hack_soc_reset
+@c00022
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
+@28
+(0)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
+(1)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
+(2)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
+(3)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
+(4)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
+(5)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
+(6)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
+(7)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
+(8)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
+(9)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
+(10)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
+(11)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
+(12)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
+(13)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
+(14)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
+(15)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
+(16)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
+(17)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
+(18)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
+(19)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
+(20)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
+(21)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
+(22)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
+(23)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
+(24)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
+(25)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
+(26)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
+(27)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
+(28)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
+(29)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
+(30)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
+(31)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_oenb[31:0]
 @1401200
 -group_end
 @c00022
-wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_in[31:0]
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
 @28
-(0)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_in[31:0]
-(1)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_in[31:0]
-(2)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_in[31:0]
+(0)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
+(1)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
+(2)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
 @c00200
 -rom_loader
 @c00028
-#{load_received} (3)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_in[31:0]
+#{load_received} (3)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
 @28
-(3)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_in[31:0]
+(3)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
 @1401200
 -group_end
 @c00028
-#{ack} (4)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_in[31:0]
+#{ack} (4)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
 @28
-(4)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_in[31:0]
+(4)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
 @1401200
 -group_end
 @28
-(5)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_in[31:0]
-(6)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_in[31:0]
-(7)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_in[31:0]
-(8)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_in[31:0]
-(9)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_in[31:0]
-(10)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_in[31:0]
-(11)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_in[31:0]
-(12)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_in[31:0]
-(13)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_in[31:0]
-(14)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_in[31:0]
-(15)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_in[31:0]
-(16)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_in[31:0]
-(17)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_in[31:0]
-(18)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_in[31:0]
-(19)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_in[31:0]
-(20)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_in[31:0]
+(5)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
+(6)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
+(7)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
+(8)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
+(9)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
+(10)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
+(11)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
+(12)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
+(13)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
+(14)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
+(15)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
+(16)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
+(17)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
+(18)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
+(19)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
+(20)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
 @800028
-#{load} (21)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_in[31:0]
+#{load} (21)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
 @28
-(21)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_in[31:0]
+(21)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
 @1001200
 -group_end
 @c00028
-+{sck} #{reset} (22)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_in[31:0]
++{sck} #{reset} (22)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
 @28
-(22)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_in[31:0]
+(22)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
 @1401200
 -group_end
 -rom_loader
 @800022
-#{unused} (30)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_in[31:0] (29)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_in[31:0] (28)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_in[31:0] (27)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_in[31:0] (26)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_in[31:0] (25)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_in[31:0] (24)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_in[31:0] (23)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_in[31:0]
+#{unused} (30)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0] (29)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0] (28)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0] (27)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0] (26)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0] (25)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0] (24)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0] (23)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
 @28
-(23)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_in[31:0]
-(24)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_in[31:0]
-(25)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_in[31:0]
-(26)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_in[31:0]
-(27)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_in[31:0]
-(28)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_in[31:0]
-(29)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_in[31:0]
-(30)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_in[31:0]
+(23)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
+(24)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
+(25)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
+(26)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
+(27)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
+(28)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
+(29)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
+(30)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
 @1001200
 -group_end
 @c00200
 -project_reset
 @28
-(31)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_in[31:0]
+(31)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_in[31:0]
 @1401200
 -project_reset
 -group_end
 @c00022
-wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_out[31:0]
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
 @28
-(0)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_out[31:0]
-(1)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_out[31:0]
-(2)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_out[31:0]
-(3)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_out[31:0]
-(4)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_out[31:0]
-(5)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_out[31:0]
-(6)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_out[31:0]
-(7)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_out[31:0]
-(8)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_out[31:0]
-(9)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_out[31:0]
-(10)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_out[31:0]
-(11)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_out[31:0]
-(12)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_out[31:0]
-(13)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_out[31:0]
-(14)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_out[31:0]
-(15)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_out[31:0]
-(16)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_out[31:0]
-(17)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_out[31:0]
-(18)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_out[31:0]
-(19)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_out[31:0]
-(20)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_out[31:0]
-(21)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_out[31:0]
-(22)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_out[31:0]
-(23)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_out[31:0]
-(24)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_out[31:0]
-(25)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_out[31:0]
-(26)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_out[31:0]
-(27)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_out[31:0]
-(28)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_out[31:0]
-(29)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_out[31:0]
-(30)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_out[31:0]
-(31)wrapped_hack_soc_test_2_tb.uut.mprj.mprj.la_data_out[31:0]
+(0)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
+(1)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
+(2)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
+(3)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
+(4)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
+(5)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
+(6)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
+(7)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
+(8)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
+(9)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
+(10)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
+(11)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
+(12)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
+(13)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
+(14)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
+(15)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
+(16)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
+(17)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
+(18)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
+(19)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
+(20)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
+(21)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
+(22)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
+(23)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
+(24)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
+(25)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
+(26)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
+(27)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
+(28)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
+(29)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
+(30)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
+(31)wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.la_data_out[31:0]
 @1401200
 -group_end
 @800200
 -hack_cpu
 @28
-wrapped_hack_soc_test_2_tb.uut.mprj.mprj.soc.hack_clk
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.hack_clk
 [color] 7
-wrapped_hack_soc_test_2_tb.uut.mprj.mprj.soc.hack_reset
-wrapped_hack_soc_test_2_tb.uut.mprj.mprj.hack_external_reset
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.hack_reset
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.hack_external_reset
 @24
-wrapped_hack_soc_test_2_tb.uut.mprj.mprj.soc.hack_pc[14:0]
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.hack_pc[14:0]
 @28
-wrapped_hack_soc_test_2_tb.uut.mprj.mprj.soc.cpu.PC.load
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.cpu.PC.load
 @22
-wrapped_hack_soc_test_2_tb.uut.mprj.mprj.soc.hack_instruction[15:0]
-wrapped_hack_soc_test_2_tb.uut.mprj.mprj.soc.hack_addressM[14:0]
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.hack_instruction[15:0]
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.hack_addressM[14:0]
 @28
-wrapped_hack_soc_test_2_tb.uut.mprj.mprj.soc.hack_writeM
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.hack_writeM
 @22
-wrapped_hack_soc_test_2_tb.uut.mprj.mprj.soc.hack_inM[15:0]
-wrapped_hack_soc_test_2_tb.uut.mprj.mprj.soc.hack_outM[15:0]
-wrapped_hack_soc_test_2_tb.uut.mprj.mprj.soc.cpu.areg_out[15:0]
-wrapped_hack_soc_test_2_tb.uut.mprj.mprj.soc.cpu.dreg_out[15:0]
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.hack_inM[15:0]
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.hack_outM[15:0]
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.cpu.areg_out[15:0]
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.cpu.dreg_out[15:0]
 @1000200
 -hack_cpu
 @c00200
 -display
 @28
-wrapped_hack_soc_test_2_tb.uut.mprj.mprj.soc.video_generator_1.i_rst
-wrapped_hack_soc_test_2_tb.uut.mprj.mprj.soc.display_active
-wrapped_hack_soc_test_2_tb.uut.mprj.mprj.soc.display_vsync
-wrapped_hack_soc_test_2_tb.uut.mprj.mprj.soc.display_hsync
-wrapped_hack_soc_test_2_tb.uut.mprj.mprj.soc.display_rgb
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.video_generator_1.i_rst
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.display_active
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.display_vsync
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.display_hsync
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.display_rgb
 @22
-wrapped_hack_soc_test_2_tb.uut.mprj.mprj.soc.display_vpos[9:0]
-wrapped_hack_soc_test_2_tb.uut.mprj.mprj.soc.display_hpos[9:0]
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.display_vpos[9:0]
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.display_hpos[9:0]
 @1401200
 -display
 @c00022
@@ -322,6 +365,9 @@ wrapped_hack_soc_test_2_tb.ram.MemoryByte0000F[7:0]
 wrapped_hack_soc_test_2_tb.vram.CS_N
 wrapped_hack_soc_test_2_tb.vram.InstructionREAD
 wrapped_hack_soc_test_2_tb.vram.InstructionWRITE
+@29
+wrapped_hack_soc_test_2_tb.vram.InstructionEQIO
+@28
 wrapped_hack_soc_test_2_tb.vram.RESET
 wrapped_hack_soc_test_2_tb.vram.SCK
 @22
@@ -329,7 +375,7 @@ wrapped_hack_soc_test_2_tb.vram.ClockCounter[31:0]
 wrapped_hack_soc_test_2_tb.vram.AddrRegister[16:0]
 wrapped_hack_soc_test_2_tb.vram.DataShifterO[7:0]
 wrapped_hack_soc_test_2_tb.vram.DataShifterI[7:0]
-@800200
+@c00200
 -mem
 @22
 wrapped_hack_soc_test_2_tb.vram.MemoryByte00000[7:0]
@@ -342,8 +388,56 @@ wrapped_hack_soc_test_2_tb.vram.MemoryByte00006[7:0]
 wrapped_hack_soc_test_2_tb.vram.MemoryByte00007[7:0]
 wrapped_hack_soc_test_2_tb.vram.MemoryByte00008[7:0]
 wrapped_hack_soc_test_2_tb.vram.MemoryByte00009[7:0]
-@1000200
+@1401200
 -mem
+@1000200
 -vram
+@c00022
+wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
+@28
+(0)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
+(1)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
+(2)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
+(3)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
+(4)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
+(5)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
+(6)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
+(7)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
+(8)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
+(9)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
+(10)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
+(11)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
+(12)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
+(13)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
+(14)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
+(15)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
+(16)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
+(17)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
+(18)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
+(19)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
+(20)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
+(21)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
+(22)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
+(23)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
+(24)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
+(25)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
+(26)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
+(27)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
+(28)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
+(29)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
+(30)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
+(31)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
+(32)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
+(33)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
+(34)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
+(35)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
+(36)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
+(37)wrapped_hack_soc_test_2_tb.uut.mprj_io_oeb[37:0]
+@1401200
+-group_end
+@28
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.spi_video_ram_1.current_state[2:0]
+@24
+wrapped_hack_soc_test_2_tb.uut.mprj.wrapped_hack_soc.soc.spi_video_ram_1.state_counter[10:0]
 [pattern_trace] 1
 [pattern_trace] 0

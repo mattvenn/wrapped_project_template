@@ -4,6 +4,7 @@
 `include "uprj_netlists.v"
 `include "caravel_netlists.v"
 `include "spiflash.v"
+`include "rom_23LC1024.v"
 
 module wrapped_hack_soc_test_2_tb;
 	reg clock;
