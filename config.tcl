@@ -13,7 +13,7 @@ set ::env(VERILOG_FILES) "$::env(DESIGN_DIR)/wrapper.v \
 set ::env(PL_TARGET_DENSITY) 0.50
 
 # set absolute size of the die to 300 x 300 um
-set ::env(DIE_AREA) "0 0 360 360"
+set ::env(DIE_AREA) "0 0 400 400"
 set ::env(FP_SIZING) absolute
 
 # define number of IO pads
