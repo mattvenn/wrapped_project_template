@@ -1,4 +1,4 @@
-# Information about your project
+# Hardware implementation of the Hack Computer from the Nand to Tetris courses
 
 This is a template project you can clone and use to take part in the multi project submission to the
 Google/Efabless/Skywater shuttle.
