@@ -23,11 +23,18 @@
 
 #include "caravel_test_hack_program.c"
 
-/*
-	IO Test:
-		- Configures MPRJ lower 8-IO pins as outputs
-		- Observes counter value through the MPRJ lower 8 IO pins (in the testbench)
-*/
+#define MULTIPROJECT_ID					6
+
+#define RESET__LA1_BIT					0
+#define KEYCODE__LA1_BIT				1
+#define KEYCODE__LA1_LENGTH				8
+#define ROM_LOADER_SCK__LA1_BIT			9
+#define ROM_LOADER_LOAD__LA1_BIT		10
+#define ROM_LOADER_DATA__LA1_BIT		11
+#define ROM_LOADER_DATA__LA1_LENGTH		16
+#define ROM_LOADER_ACK__LA1_BIT			27
+#define HACK_EXTERNAL_RESET__LA1_BIT	28
+
 
 
 struct logic_analyzer_t {
@@ -145,16 +152,16 @@ void main()
 
 
 	// Default value for LA[31:0] = OUTPUT
-	reg_la0_oenb = 0;
-	reg_la0_iena = 0;
+	reg_la1_oenb = 0;
+	reg_la1_iena = 0;
 
 	// rom_loader_ack is input 
-	reg_la0_oenb = reg_la0_oenb | ( 1<< 27 );
-	reg_la0_iena = reg_la0_iena | ( 1<< 27 );
+	reg_la1_oenb = reg_la1_oenb | ( 1<< ROM_LOADER_ACK__LA1_BIT );
+	reg_la1_iena = reg_la1_iena | ( 1<< ROM_LOADER_ACK__LA1_BIT );
 
 	
 
-	uint32_t tmp_la0_data;
+	uint32_t tmp_la1_data;
 
 	// system reset
 	logic_analyzer.reset = 1;
@@ -166,28 +173,28 @@ void main()
 	// logic_analyzer.rom_loader_data = 0;
 
 	// Set initial output values
-	tmp_la0_data = 	(logic_analyzer.reset << 0) |
-					(logic_analyzer.keycode << 1) |
-					(logic_analyzer.rom_loader_load << 10) |
-					(logic_analyzer.hack_external_reset << 28) ;
+	tmp_la1_data = 	(logic_analyzer.reset << RESET__LA1_BIT) |
+					(logic_analyzer.keycode << KEYCODE__LA1_BIT) |
+					(logic_analyzer.rom_loader_load << ROM_LOADER_LOAD__LA1_BIT) |
+					(logic_analyzer.hack_external_reset << HACK_EXTERNAL_RESET__LA1_BIT) ;
 					;
 					// (logic_analyzer.rom_loader_sck << 9) |
 					// (logic_analyzer.rom_loader_data << 11);
-	reg_la0_data = tmp_la0_data;
+	reg_la1_data = tmp_la1_data;
 
 
 
 
     // activate the project by setting the [project ID] bit of 2nd bank of LA
-    reg_la1_iena = 0; // input enable off
-    reg_la1_oenb = 0; // output enable on
-    reg_la1_data = 1 << 6;
+    reg_la0_iena = 0; // input enable off
+    reg_la0_oenb = 0; // output enable on
+    reg_la0_data = 1 << MULTIPROJECT_ID;
 
 
 	// Release system reset
 	logic_analyzer.reset = 0;
-	tmp_la0_data = (tmp_la0_data & ~(1<<0)) | (logic_analyzer.reset << 0);
-	reg_la0_data = tmp_la0_data;
+	tmp_la1_data = (tmp_la1_data & ~(1<<RESET__LA1_BIT)) | (logic_analyzer.reset << RESET__LA1_BIT);
+	reg_la1_data = tmp_la1_data;
 
 
 	uint8_t program_size = ARRAY_LENGTH(hack_program);
@@ -196,39 +203,39 @@ void main()
 
 	// Start ROM LOADING
 	logic_analyzer.rom_loader_load = 1;
-	tmp_la0_data = (tmp_la0_data & ~(1<<10)) | (logic_analyzer.rom_loader_load << 10);
+	tmp_la1_data = (tmp_la1_data & ~(1<<ROM_LOADER_LOAD__LA1_BIT)) | (logic_analyzer.rom_loader_load << ROM_LOADER_LOAD__LA1_BIT);
 
 	
 	for (int i = 0; i < program_size; ++i) {
 		
 		logic_analyzer.rom_loader_data = hack_program[i];				
-		tmp_la0_data = (tmp_la0_data & ~(0xffff<<11)) | (logic_analyzer.rom_loader_data << 11);
+		tmp_la1_data = (tmp_la1_data & ~(0xffff<<ROM_LOADER_DATA__LA1_BIT)) | (logic_analyzer.rom_loader_data << ROM_LOADER_DATA__LA1_BIT);
 		logic_analyzer.rom_loader_sck = 1;
-		tmp_la0_data = (tmp_la0_data & ~(1<<9)) | (logic_analyzer.rom_loader_sck << 9);
-		reg_la0_data = tmp_la0_data;
+		tmp_la1_data = (tmp_la1_data & ~(1<<ROM_LOADER_SCK__LA1_BIT)) | (logic_analyzer.rom_loader_sck << ROM_LOADER_SCK__LA1_BIT);
+		reg_la1_data = tmp_la1_data;
 
 		logic_analyzer.rom_loader_sck = 0;
-		tmp_la0_data = (tmp_la0_data & ~(1<<9)) | (logic_analyzer.rom_loader_sck << 9);
-		reg_la0_data = tmp_la0_data;		
+		tmp_la1_data = (tmp_la1_data & ~(1<<ROM_LOADER_SCK__LA1_BIT)) | (logic_analyzer.rom_loader_sck << ROM_LOADER_SCK__LA1_BIT);
+		reg_la1_data = tmp_la1_data;		
 		
 	}
 
 
 	// Finished ROM LOADING
 	logic_analyzer.rom_loader_load = 0;
-	tmp_la0_data = (tmp_la0_data & ~(1<<10)) | (logic_analyzer.rom_loader_load << 10);
-	reg_la0_data = tmp_la0_data;		
+	tmp_la1_data = (tmp_la1_data & ~(1<<ROM_LOADER_LOAD__LA1_BIT)) | (logic_analyzer.rom_loader_load << ROM_LOADER_LOAD__LA1_BIT);
+	reg_la1_data = tmp_la1_data;		
 
 
 
 	logic_analyzer.hack_external_reset = 0;
-	tmp_la0_data = (tmp_la0_data & ~(1<<28)) | (logic_analyzer.hack_external_reset << 28);
-	reg_la0_data = tmp_la0_data;		
+	tmp_la1_data = (tmp_la1_data & ~(1<<HACK_EXTERNAL_RESET__LA1_BIT)) | (logic_analyzer.hack_external_reset << HACK_EXTERNAL_RESET__LA1_BIT);
+	reg_la1_data = tmp_la1_data;		
 	
 
     // // do something with the logic analyser
-    // reg_la0_iena = 0;
-    // reg_la0_oenb = 0;
-    // reg_la0_data |= 100;
+    // reg_la1_iena = 0;
+    // reg_la1_oenb = 0;
+    // reg_la1_data |= 100;
 }
 

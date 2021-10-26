@@ -43,8 +43,9 @@ async def test_all(dut):
     print("Waiting for the rom loader to start...")
     
     count = 0
-    while(dut.uut.mprj.la_data_in[10].value.binstr!='1' and count < 8000):
+    while(dut.uut.mprj.la1_data_in[10].value.binstr!='1' and count < 8000):
         count = count + 1
+        print(count, " cycles (timeout at 8000)", end="\r")
         await(ClockCycles(dut.uut.clock, 1))
     
     if(count==8000):
@@ -55,13 +56,13 @@ async def test_all(dut):
     count_sck = 0
     sck_was_high = 1
     print("Loading rom: 0/16 instructions loaded\r", end='\r')
-    while(dut.uut.mprj.la_data_in[10].value.binstr=='1' and count < 4000):
+    while(dut.uut.mprj.la1_data_in[10].value.binstr=='1' and count < 4000):
         count = count + 1            
-        if(sck_was_high and dut.uut.mprj.la_data_in[9].value.binstr=='0'):
+        if(sck_was_high and dut.uut.mprj.la1_data_in[9].value.binstr=='0'):
             count_sck = count_sck + 1
             sck_was_high = 0
             print("Loading rom: ", count_sck, "/16 instructions loaded", end='\r')        
-        if(dut.uut.mprj.la_data_in[9].value.binstr=='1'):
+        if(dut.uut.mprj.la1_data_in[9].value.binstr=='1'):
             sck_was_high = 1
         await(ClockCycles(dut.clock, 1))
 

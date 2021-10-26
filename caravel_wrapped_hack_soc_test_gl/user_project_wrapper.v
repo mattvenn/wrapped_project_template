@@ -26,6 +26,9 @@
  * example should be removed and replaced with the actual
  * user project.
  *
+ * THIS FILE HAS BEEN GENERATED USING multi_tools_project CODEGEN
+ * IF YOU NEED TO MAKE EDITS TO IT, EDIT codegen/caravel_iface_header.txt
+ *
  *-------------------------------------------------------------
  */
 
@@ -33,14 +36,14 @@ module user_project_wrapper #(
     parameter BITS = 32
 )(
 `ifdef USE_POWER_PINS
-    inout vdda1,	// User area 1 3.3V supply
-    inout vdda2,	// User area 2 3.3V supply
-    inout vssa1,	// User area 1 analog ground
-    inout vssa2,	// User area 2 analog ground
-    inout vccd1,	// User area 1 1.8V supply
-    inout vccd2,	// User area 2 1.8v supply
-    inout vssd1,	// User area 1 digital ground
-    inout vssd2,	// User area 2 digital ground
+    inout vdda1,       // User area 1 3.3V supply
+    inout vdda2,       // User area 2 3.3V supply
+    inout vssa1,       // User area 1 analog ground
+    inout vssa2,       // User area 2 analog ground
+    inout vccd1,       // User area 1 1.8V supply
+    inout vccd2,       // User area 2 1.8v supply
+    inout vssd1,       // User area 1 digital ground
+    inout vssd2,       // User area 2 digital ground
 `endif
 
     // Wishbone Slave ports (WB MI A)
@@ -78,51 +81,41 @@ module user_project_wrapper #(
     output [2:0] user_irq
 );
 
-    // instantiate user project here
-        wrapped_hack_soc wrapped_hack_soc(
+
+    // generate active wires
+    wire [31: 0] active;
+    assign active = la_data_in[31:0];
+
+    // split remaining 96 logic analizer wires into 3 chunks
+    wire [31: 0] la1_data_in, la1_data_out, la1_oenb;
+    assign la1_data_in = la_data_in[63:32];
+    assign la1_data_out = la_data_out[63:32];
+    assign la1_oenb = la_oenb[63:32];
+
+    wire [31: 0] la2_data_in, la2_data_out, la2_oenb;
+    assign la2_data_in = la_data_in[95:64];
+    assign la2_data_out = la_data_out[95:64];
+    assign la2_oenb = la_oenb[95:64];
+
+    wire [31: 0] la3_data_in, la3_data_out, la3_oenb;
+    assign la3_data_in = la_data_in[127:96];
+    assign la3_data_out = la_data_out[127:96];
+    assign la3_oenb = la_oenb[127:96];
+
+    wrapped_hack_soc wrapped_hack_soc_6(
         `ifdef USE_POWER_PINS
-        .vdda1(vdda1),  // User area 1 3.3V power
-        .vdda2(vdda2),  // User area 2 3.3V power
-        .vssa1(vssa1),  // User area 1 analog ground
-        .vssa2(vssa2),  // User area 2 analog ground
-        .vccd1(vccd1),  // User area 1 1.8V power
-        .vccd2(vccd2),  // User area 2 1.8V power
-        .vssd1(vssd1),  // User area 1 digital ground
-        .vssd2(vssd2),  // User area 2 digital ground 
+        .vccd1 (vccd1),
+        .vssd1 (vssd1),
         `endif
-    
-        // interface as user_proj_example.v
-        .wb_clk_i   (wb_clk_i),
-        .wb_rst_i   (wb_rst_i),
-        .wbs_stb_i  (wbs_stb_i),
-        .wbs_cyc_i  (wbs_cyc_i),
-        .wbs_we_i   (wbs_we_i),
-        .wbs_sel_i  (wbs_sel_i),
-        .wbs_dat_i  (wbs_dat_i),
-        .wbs_adr_i  (wbs_adr_i),
-        .wbs_ack_o  (wbs_ack_o),
-        .wbs_dat_o  (wbs_dat_o),
-
-        // only provide first 32 bits to reduce wiring congestion
-        .la_data_in (la_data_in [31:0]),
-        .la_data_out(la_data_out[31:0]),
-        .la_oenb    (la_oenb[31:0]),
-
-        // IOs
-        .io_in      (io_in),
-        .io_out     (io_out),
-        .io_oeb     (io_oeb),
-
-        // IRQs
-        .irq        (user_irq),
-
-        // Extra clock
-        .user_clock2        (user_clock2),
-        
-        // active input, only connect tristated outputs if this is high
-        .active     (la_data_in[32+6])
-        );
-
+        .wb_clk_i (wb_clk_i),
+        .active (active[6]),
+        .la1_data_in (la1_data_in[31:0]),
+        .la1_data_out (la1_data_out[31:0]),
+        .la1_oenb (la1_oenb[31:0]),
+        .io_in (io_in[37:0]),
+        .io_out (io_out[37:0]),
+        .io_oeb (io_oeb[37:0])
+    );
 
     // end of module instantiation
 

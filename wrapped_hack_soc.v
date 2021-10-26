@@ -3,12 +3,12 @@
     `define MPRJ_IO_PADS 38    
 `endif
 
-`define USE_WB  0
+//`define USE_WB  0
 `define USE_LA  1
 `define USE_IO  1
-`define USE_MEM 0
-`define USE_IRQ 0
-`define USE_CLK2 0
+//`define USE_MEM 0
+//`define USE_IRQ 0
+//`define USE_CLK2 0
 
 
 module wrapped_hack_soc(

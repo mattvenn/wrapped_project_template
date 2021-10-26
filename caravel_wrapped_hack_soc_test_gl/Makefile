@@ -40,6 +40,12 @@ PDK_PATH?=/ef/tech/SW/sky130A
 ## Simulation mode: RTL/GL
 SIM?=RTL
 
+# include the modules that cocotb needs for test
+#export PYTHONPATH := $(UPRJ_RTL_PATH)/wrapped_hack_soc/frequency_counter/test
+export COCOTB_REDUCED_LOG_FMT=1
+export LIBPYTHON_LOC=$(shell cocotb-config --libpython)
+
+
 .SUFFIXES:
 
 PATTERN = wrapped_hack_soc_test_2
