@@ -45,7 +45,7 @@ set ::env(GND_NETS) [list {vssd1}]
 #set ::env(GND_NETS) [list {vssd1} {vssd2} {vssa1} {vssa2}]
 
 # regular pin order seems to help with aggregating all the macros for the group project
-set ::env(FP_PIN_ORDER_CFG) $script_dir/pin_order.cfg
+#set ::env(FP_PIN_ORDER_CFG) $script_dir/pin_order.cfg
 
 # turn off CVC as we have multiple power domains
 set ::env(RUN_CVC) 0
@@ -54,14 +54,12 @@ set ::env(RUN_CVC) 0
 set ::env(PL_RESIZER_BUFFER_OUTPUT_PORTS) 0
 
 
-# Enables running Klayout XOR on 2 GDS-IIs, the defaults are the one produced by magic vs the one produced by klayout. 1 = Enabled, 0 = Disabled
-# (Default: 1)
+# save some time
 set ::env(RUN_KLAYOUT_XOR) 0
+set ::env(RUN_KLAYOUT_DRC) 0
 
 
 set ::env(SYNTH_STRATEGY) "AREA 2"
-
-
 
 # A flag that disables flattening the hierarchy during synthesis, only flattening it after synthesis, mapping and optimizations.
 # Enabled = 1, Disabled = 0

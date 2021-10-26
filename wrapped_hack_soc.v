@@ -2,7 +2,15 @@
 `ifdef FORMAL
     `define MPRJ_IO_PADS 38    
 `endif
-// update this to the name of your module
+
+`define USE_WB  0
+`define USE_LA  1
+`define USE_IO  1
+`define USE_MEM 0
+`define USE_IRQ 0
+`define USE_CLK2 0
+
+
 module wrapped_hack_soc(
 `ifdef USE_POWER_PINS
     // inout vdda1,	// User area 1 3.3V supply
@@ -16,6 +24,8 @@ module wrapped_hack_soc(
 `endif
     // wishbone interface
     input wire wb_clk_i,            // clock, runs at system clock
+
+`ifdef USE_WB
     input wire wb_rst_i,            // main system reset
     input wire wbs_stb_i,           // wishbone write strobe
     input wire wbs_cyc_i,           // wishbone cycle
@@ -25,12 +35,14 @@ module wrapped_hack_soc(
     input wire [31:0] wbs_adr_i,    // wishbone address
     output wire wbs_ack_o,          // wishbone ack
     output wire [31:0] wbs_dat_o,   // wishbone data out
+`endif
 
     // Logic Analyzer Signals
     // only provide first 32 bits to reduce wiring congestion
-    input  wire [31:0] la_data_in,  // from PicoRV32 to your project
-    output wire [31:0] la_data_out, // from your project to PicoRV32
-    input  wire [31:0] la_oenb,     // output enable bar (low for active)
+    input  wire [31:0] la1_data_in,  // from PicoRV32 to your project
+    output wire [31:0] la1_data_out, // from your project to PicoRV32
+    input  wire [31:0] la1_oenb,     // output enable bar (low for active)
+
 
     // IOs
     input  wire [`MPRJ_IO_PADS-1:0] io_in,  // in to your project
@@ -38,11 +50,15 @@ module wrapped_hack_soc(
     output wire [`MPRJ_IO_PADS-1:0] io_oeb, // out enable bar (low active)
 
     // IRQ
+`ifdef USE_IRQ
     output wire [2:0] irq,          // interrupt from project to PicoRV32
+`endif 
+
 
     // extra user clock
+`ifdef USE_CLK2
     input wire user_clock2,
-
+`endif
     
     // active input, only connect tristated outputs if this is high
     input wire active
@@ -51,28 +67,43 @@ module wrapped_hack_soc(
     // all outputs must be tristated before being passed onto the project
     wire buf_wbs_ack_o;
     wire [31:0] buf_wbs_dat_o;
-    wire [31:0] buf_la_data_out;
+    wire [31:0] buf_la1_data_out;
     wire [`MPRJ_IO_PADS-1:0] buf_io_out;
     wire [`MPRJ_IO_PADS-1:0] buf_io_oeb;
     wire [2:0] buf_irq;
 
     `ifdef FORMAL
-    // formal can't deal with z, so set all outputs to 0 if not active
-    assign wbs_ack_o    = active ? buf_wbs_ack_o    : 1'b0;
-    assign wbs_dat_o    = active ? buf_wbs_dat_o    : 32'b0;
-    assign la_data_out  = active ? buf_la_data_out  : 32'b0;
-    assign io_out       = active ? buf_io_out       : {`MPRJ_IO_PADS{1'b0}};
-    assign io_oeb       = active ? buf_io_oeb       : {`MPRJ_IO_PADS{1'b0}};
-    assign irq          = active ? buf_irq          : 3'b0;
-    `include "properties.v"
+        // formal can't deal with z, so set all outputs to 0 if not active
+        `ifdef USE_WB
+        assign wbs_ack_o    = active ? buf_wbs_ack_o    : 1'b0;
+        assign wbs_dat_o    = active ? buf_wbs_dat_o    : 32'b0;
+        `endif
+
+        assign la1_data_out  = active ? buf_la1_data_out  : 32'b0;
+        
+        assign io_out       = active ? buf_io_out       : {`MPRJ_IO_PADS{1'b0}};
+        assign io_oeb       = active ? buf_io_oeb       : {`MPRJ_IO_PADS{1'b0}};
+        
+        `ifdef USE_IRQ
+        assign irq          = active ? buf_irq          : 3'b0;
+        `endif
+
+        `include "properties.v"
     `else
-    // tristate buffers
-    assign wbs_ack_o    = active ? buf_wbs_ack_o    : 1'bz;
-    assign wbs_dat_o    = active ? buf_wbs_dat_o    : 32'bz;
-    assign la_data_out  = active ? buf_la_data_out  : 32'bz;
-    assign io_out       = active ? buf_io_out       : {`MPRJ_IO_PADS{1'bz}};
-    assign io_oeb       = active ? buf_io_oeb       : {`MPRJ_IO_PADS{1'bz}};
-    assign irq          = active ? buf_irq          : 3'bz;
+        // tristate buffers
+        `ifdef USE_WB
+        assign wbs_ack_o    = active ? buf_wbs_ack_o    : 1'bz;
+        assign wbs_dat_o    = active ? buf_wbs_dat_o    : 32'bz;
+        `endif
+
+        assign la1_data_out  = active ? buf_la1_data_out  : 32'bz;
+        assign io_out       = active ? buf_io_out       : {`MPRJ_IO_PADS{1'bz}};
+        assign io_oeb       = active ? buf_io_oeb       : {`MPRJ_IO_PADS{1'bz}};
+
+        `ifdef USE_IRQ
+        assign irq          = active ? buf_irq          : 3'bz;
+        `endif
+
     `endif
 
     
@@ -91,14 +122,14 @@ module wrapped_hack_soc(
     wire clk = wb_clk_i;
 
     // Logic Analyzer    
-    wire hack_soc_reset = la_data_in[0];
-    wire [7:0] keycode = la_data_in[8:1];
-    wire rom_loader_sck = la_data_in[9];
-    wire rom_loader_load = la_data_in[10];
-    wire [15:0] rom_loader_data = la_data_in[26:11];
+    wire hack_soc_reset = la1_data_in[0];
+    wire [7:0] keycode = la1_data_in[8:1];
+    wire rom_loader_sck = la1_data_in[9];
+    wire rom_loader_load = la1_data_in[10];
+    wire [15:0] rom_loader_data = la1_data_in[26:11];
     wire rom_loader_ack;
-    assign buf_la_data_out[27] = rom_loader_ack;
-    wire hack_external_reset_from_la = la_data_in[28];
+    assign buf_la1_data_out[27] = rom_loader_ack;
+    wire hack_external_reset_from_la = la1_data_in[28];
     
 
 

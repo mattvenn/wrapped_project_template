@@ -5,8 +5,10 @@ project:
   description: "Hardware implementation of the Hack Computer from the Nand to Tetris courses"
   picture: docs/project.jpg
   author: "Maximo Balestrini"
-  github: https://github.com/mbalestrini/wrapped_hack_soc
   license: LICENSE
+
+interfaces: ['la1', 'gpio']
+
 
 # test within caravel
 caravel_test:
