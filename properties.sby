@@ -6,7 +6,7 @@ smtbmc
 
 [script]
 read -formal wrapped_hack_soc.v 
-read -sv dmux8way.v hack_alu.v hack_clock.v hack_cpu.v hack_soc.v pc.v register.v spi_sram_encoder.v video_signal_generator_640x480.v spi_video_ram_2.v vram_write_fifo.v rom_stream_loader.v
+read -sv dmux8way.v hack_alu.v hack_clock.v hack_cpu.v hack_soc.v pc.v register.v spi_sram_encoder.v video_signal_generator_640x480.v spi_video_ram_2.v vram_write_fifo.v rom_stream_loader.v boot_logo.v
 prep -top wrapped_hack_soc
 
 [files]
@@ -24,4 +24,5 @@ hack_soc/src/video_signal_generator_640x480.v
 hack_soc/src/spi_video_ram_2.v
 hack_soc/src/vram_write_fifo.v
 hack_soc/src/rom_stream_loader.v
+hack_soc/src/boot_logo.v
 includes/params.v hack_soc/src/includes/params.v 
