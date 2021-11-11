@@ -64,3 +64,9 @@ set ::env(SYNTH_STRATEGY) "AREA 2"
 # A flag that disables flattening the hierarchy during synthesis, only flattening it after synthesis, mapping and optimizations.
 # Enabled = 1, Disabled = 0
 #set ::env(SYNTH_NO_FLAT) 1
+
+set ::env(PL_RESIZER_HOLD_SLACK_MARGIN) 0.2
+set ::env(GLB_RESIZER_HOLD_SLACK_MARGIN) 0.2
+
+set ::env(ROUTING_CORES) 8
+#set ::env(ROUTING_OPT_ITERS) 80
