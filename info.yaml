@@ -5,7 +5,6 @@ project:
   description: "A framebufferless VGA video generator, under CPU control"
   picture: fbless_graphics_core.gds.png
   author: "Tom Gwozdz"
-  github: https://github.com/tomgwozdz/fbless-graphics-core
   license: LICENSE
 
 # test within caravel

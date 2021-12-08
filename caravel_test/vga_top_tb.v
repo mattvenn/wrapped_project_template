@@ -70,13 +70,13 @@ module vga_top_tb;
 		$display("Monitor: Got VS Low");
 		wait(check_vgahs == 1'b1);
 		$display("Monitor: Got VS High");
-		wait(uut.mprj.fbless_graphics_core.vga_top_0.vga_core_0.vga_h_active && uut.mprj.fbless_graphics_core.vga_top_0.vga_core_0.vga_v_active);
+		wait(uut.mprj.fbless_graphics_core_10.vga_top_0.vga_core_0.vga_h_active && uut.mprj.fbless_graphics_core_10.vga_top_0.vga_core_0.vga_v_active);
 		$display("Monitor: Got H & V Active");
 		wait(check_rgb == 12'b111100000000);
 		$display("Monitor: Got BG Color");
-		wait(uut.mprj.fbless_graphics_core.vga_top_0.vga_core_0.vga_h_active == 1'b0);
+		wait(uut.mprj.fbless_graphics_core_10.vga_top_0.vga_core_0.vga_h_active == 1'b0);
 		$display("Monitor: Got H Active Low");
-		wait(uut.mprj.fbless_graphics_core.vga_top_0.vga_core_0.collision_bits == 12'b001100110010);
+		wait(uut.mprj.fbless_graphics_core_10.vga_top_0.vga_core_0.collision_bits == 12'b001100110010);
 		$display("Monitor: Passed!");
 		$finish;
 	end
