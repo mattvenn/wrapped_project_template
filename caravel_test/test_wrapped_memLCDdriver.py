@@ -65,7 +65,7 @@ async def test_start(dut):
     dut.RSTB <= 1
 
     # wait with a timeout for the project to become active
-    await with_timeout(RisingEdge(dut.uut.mprj.wrapped_memLCDdriver.active), 180, 'us')
+    await with_timeout(RisingEdge(dut.uut.mprj.wrapped_memLCDdriver_7.active), 180, 'us')
 
     await reset(dut)
 
@@ -90,8 +90,8 @@ async def test_start(dut):
         await ClockCycles(dut.clk, 1)
 
     assert dut.o_rempty == 1
-    assert dut.uut.mprj.wrapped_memLCDdriver.memLCDdriver.memlcd_fsm.r_count_v == 2
-    assert dut.uut.mprj.wrapped_memLCDdriver.memLCDdriver.memlcd_fsm.r_count_h == 121
+    assert dut.uut.mprj.wrapped_memLCDdriver_7.memLCDdriver.memlcd_fsm.r_count_v == 2
+    assert dut.uut.mprj.wrapped_memLCDdriver_7.memLCDdriver.memlcd_fsm.r_count_h == 121
 
     await ClockCycles(dut.clk, 1000) # .010ms
 

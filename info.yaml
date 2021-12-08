@@ -5,7 +5,6 @@ project:
   description: "SPI to 64-color memory LCD interface"
   picture: docs/wrapped_memLCDdriver.gds.png
   author: "Matt Beach"
-  github: https://github.com/matt-beach/wrapped_memLCDdriver.git
   license: LICENSE
 
 # test within caravel
