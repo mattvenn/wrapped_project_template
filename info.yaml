@@ -5,9 +5,7 @@ project:
   description: "Implementation of QARMA 64"
   picture: docs/qarma.png
   author: "Viktor H. Brange"
-  github: https://github.com/vbrange/verilog_qarma
   license: LICENSE
-  waive_gds: GDS is ~370x370um
 
 # test within caravel
 caravel_test:
