@@ -32,6 +32,9 @@ GCC_PATH?=/ef/apps/bin
 GCC_PREFIX?=riscv32-unknown-elf
 PDK_PATH?=/ef/tech/SW/sky130A
 
+export LIBPYTHON_LOC=$(shell cocotb-config --libpython)
+
+
 ## Simulation mode: RTL/GL
 SIM?=RTL
 

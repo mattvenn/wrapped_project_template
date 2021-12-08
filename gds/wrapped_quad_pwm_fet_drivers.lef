@@ -28,7 +28,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 79.600 300.000 80.200 ;
+        RECT 296.000 78.240 300.000 78.840 ;
     END
   END io_in[10]
   PIN io_in[11]
@@ -36,7 +36,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 87.080 300.000 87.680 ;
+        RECT 296.000 85.720 300.000 86.320 ;
     END
   END io_in[11]
   PIN io_in[12]
@@ -44,7 +44,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 95.240 300.000 95.840 ;
+        RECT 296.000 93.200 300.000 93.800 ;
     END
   END io_in[12]
   PIN io_in[13]
@@ -52,7 +52,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 102.720 300.000 103.320 ;
+        RECT 296.000 101.360 300.000 101.960 ;
     END
   END io_in[13]
   PIN io_in[14]
@@ -60,7 +60,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 110.880 300.000 111.480 ;
+        RECT 296.000 108.840 300.000 109.440 ;
     END
   END io_in[14]
   PIN io_in[15]
@@ -68,7 +68,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 119.040 300.000 119.640 ;
+        RECT 296.000 117.000 300.000 117.600 ;
     END
   END io_in[15]
   PIN io_in[16]
@@ -76,7 +76,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 126.520 300.000 127.120 ;
+        RECT 296.000 124.480 300.000 125.080 ;
     END
   END io_in[16]
   PIN io_in[17]
@@ -84,7 +84,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 134.680 300.000 135.280 ;
+        RECT 296.000 131.960 300.000 132.560 ;
     END
   END io_in[17]
   PIN io_in[18]
@@ -92,7 +92,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 142.160 300.000 142.760 ;
+        RECT 296.000 140.120 300.000 140.720 ;
     END
   END io_in[18]
   PIN io_in[19]
@@ -100,7 +100,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 150.320 300.000 150.920 ;
+        RECT 296.000 147.600 300.000 148.200 ;
     END
   END io_in[19]
   PIN io_in[1]
@@ -116,7 +116,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 158.480 300.000 159.080 ;
+        RECT 296.000 155.760 300.000 156.360 ;
     END
   END io_in[20]
   PIN io_in[21]
@@ -124,7 +124,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 165.960 300.000 166.560 ;
+        RECT 296.000 163.240 300.000 163.840 ;
     END
   END io_in[21]
   PIN io_in[22]
@@ -132,7 +132,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 174.120 300.000 174.720 ;
+        RECT 296.000 170.720 300.000 171.320 ;
     END
   END io_in[22]
   PIN io_in[23]
@@ -140,7 +140,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 181.600 300.000 182.200 ;
+        RECT 296.000 178.880 300.000 179.480 ;
     END
   END io_in[23]
   PIN io_in[24]
@@ -148,7 +148,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 189.760 300.000 190.360 ;
+        RECT 296.000 186.360 300.000 186.960 ;
     END
   END io_in[24]
   PIN io_in[25]
@@ -156,7 +156,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 197.920 300.000 198.520 ;
+        RECT 296.000 194.520 300.000 195.120 ;
     END
   END io_in[25]
   PIN io_in[26]
@@ -164,7 +164,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 205.400 300.000 206.000 ;
+        RECT 296.000 202.000 300.000 202.600 ;
     END
   END io_in[26]
   PIN io_in[27]
@@ -172,7 +172,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 213.560 300.000 214.160 ;
+        RECT 296.000 209.480 300.000 210.080 ;
     END
   END io_in[27]
   PIN io_in[28]
@@ -180,7 +180,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 221.040 300.000 221.640 ;
+        RECT 296.000 217.640 300.000 218.240 ;
     END
   END io_in[28]
   PIN io_in[29]
@@ -188,7 +188,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 229.200 300.000 229.800 ;
+        RECT 296.000 225.120 300.000 225.720 ;
     END
   END io_in[29]
   PIN io_in[2]
@@ -196,7 +196,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 16.360 300.000 16.960 ;
+        RECT 296.000 15.680 300.000 16.280 ;
     END
   END io_in[2]
   PIN io_in[30]
@@ -204,7 +204,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 237.360 300.000 237.960 ;
+        RECT 296.000 233.280 300.000 233.880 ;
     END
   END io_in[30]
   PIN io_in[31]
@@ -212,7 +212,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 244.840 300.000 245.440 ;
+        RECT 296.000 240.760 300.000 241.360 ;
     END
   END io_in[31]
   PIN io_in[32]
@@ -220,7 +220,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 253.000 300.000 253.600 ;
+        RECT 296.000 248.240 300.000 248.840 ;
     END
   END io_in[32]
   PIN io_in[33]
@@ -228,7 +228,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 260.480 300.000 261.080 ;
+        RECT 296.000 256.400 300.000 257.000 ;
     END
   END io_in[33]
   PIN io_in[34]
@@ -236,7 +236,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 268.640 300.000 269.240 ;
+        RECT 296.000 263.880 300.000 264.480 ;
     END
   END io_in[34]
   PIN io_in[35]
@@ -244,7 +244,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 276.800 300.000 277.400 ;
+        RECT 296.000 272.040 300.000 272.640 ;
     END
   END io_in[35]
   PIN io_in[36]
@@ -252,7 +252,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 284.280 300.000 284.880 ;
+        RECT 296.000 279.520 300.000 280.120 ;
     END
   END io_in[36]
   PIN io_in[37]
@@ -260,7 +260,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 292.440 300.000 293.040 ;
+        RECT 296.000 287.000 300.000 287.600 ;
     END
   END io_in[37]
   PIN io_in[3]
@@ -276,7 +276,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 32.000 300.000 32.600 ;
+        RECT 296.000 31.320 300.000 31.920 ;
     END
   END io_in[4]
   PIN io_in[5]
@@ -284,7 +284,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 40.160 300.000 40.760 ;
+        RECT 296.000 39.480 300.000 40.080 ;
     END
   END io_in[5]
   PIN io_in[6]
@@ -292,7 +292,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 47.640 300.000 48.240 ;
+        RECT 296.000 46.960 300.000 47.560 ;
     END
   END io_in[6]
   PIN io_in[7]
@@ -300,7 +300,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 55.800 300.000 56.400 ;
+        RECT 296.000 54.440 300.000 55.040 ;
     END
   END io_in[7]
   PIN io_in[8]
@@ -308,7 +308,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 63.280 300.000 63.880 ;
+        RECT 296.000 62.600 300.000 63.200 ;
     END
   END io_in[8]
   PIN io_in[9]
@@ -316,7 +316,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 71.440 300.000 72.040 ;
+        RECT 296.000 70.080 300.000 70.680 ;
     END
   END io_in[9]
   PIN io_oeb[0]
@@ -332,7 +332,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 84.360 300.000 84.960 ;
+        RECT 296.000 83.000 300.000 83.600 ;
     END
   END io_oeb[10]
   PIN io_oeb[11]
@@ -340,7 +340,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 92.520 300.000 93.120 ;
+        RECT 296.000 91.160 300.000 91.760 ;
     END
   END io_oeb[11]
   PIN io_oeb[12]
@@ -348,7 +348,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 100.680 300.000 101.280 ;
+        RECT 296.000 98.640 300.000 99.240 ;
     END
   END io_oeb[12]
   PIN io_oeb[13]
@@ -356,7 +356,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 108.160 300.000 108.760 ;
+        RECT 296.000 106.120 300.000 106.720 ;
     END
   END io_oeb[13]
   PIN io_oeb[14]
@@ -364,7 +364,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 116.320 300.000 116.920 ;
+        RECT 296.000 114.280 300.000 114.880 ;
     END
   END io_oeb[14]
   PIN io_oeb[15]
@@ -372,7 +372,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 123.800 300.000 124.400 ;
+        RECT 296.000 121.760 300.000 122.360 ;
     END
   END io_oeb[15]
   PIN io_oeb[16]
@@ -380,7 +380,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 131.960 300.000 132.560 ;
+        RECT 296.000 129.920 300.000 130.520 ;
     END
   END io_oeb[16]
   PIN io_oeb[17]
@@ -388,7 +388,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 140.120 300.000 140.720 ;
+        RECT 296.000 137.400 300.000 138.000 ;
     END
   END io_oeb[17]
   PIN io_oeb[18]
@@ -396,7 +396,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 147.600 300.000 148.200 ;
+        RECT 296.000 144.880 300.000 145.480 ;
     END
   END io_oeb[18]
   PIN io_oeb[19]
@@ -404,7 +404,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 155.760 300.000 156.360 ;
+        RECT 296.000 153.040 300.000 153.640 ;
     END
   END io_oeb[19]
   PIN io_oeb[1]
@@ -420,7 +420,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 163.240 300.000 163.840 ;
+        RECT 296.000 160.520 300.000 161.120 ;
     END
   END io_oeb[20]
   PIN io_oeb[21]
@@ -428,7 +428,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 171.400 300.000 172.000 ;
+        RECT 296.000 168.680 300.000 169.280 ;
     END
   END io_oeb[21]
   PIN io_oeb[22]
@@ -436,7 +436,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 179.560 300.000 180.160 ;
+        RECT 296.000 176.160 300.000 176.760 ;
     END
   END io_oeb[22]
   PIN io_oeb[23]
@@ -444,7 +444,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 187.040 300.000 187.640 ;
+        RECT 296.000 183.640 300.000 184.240 ;
     END
   END io_oeb[23]
   PIN io_oeb[24]
@@ -452,7 +452,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 195.200 300.000 195.800 ;
+        RECT 296.000 191.800 300.000 192.400 ;
     END
   END io_oeb[24]
   PIN io_oeb[25]
@@ -460,7 +460,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 202.680 300.000 203.280 ;
+        RECT 296.000 199.280 300.000 199.880 ;
     END
   END io_oeb[25]
   PIN io_oeb[26]
@@ -468,7 +468,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 210.840 300.000 211.440 ;
+        RECT 296.000 207.440 300.000 208.040 ;
     END
   END io_oeb[26]
   PIN io_oeb[27]
@@ -476,7 +476,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 219.000 300.000 219.600 ;
+        RECT 296.000 214.920 300.000 215.520 ;
     END
   END io_oeb[27]
   PIN io_oeb[28]
@@ -484,7 +484,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 226.480 300.000 227.080 ;
+        RECT 296.000 222.400 300.000 223.000 ;
     END
   END io_oeb[28]
   PIN io_oeb[29]
@@ -492,7 +492,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 234.640 300.000 235.240 ;
+        RECT 296.000 230.560 300.000 231.160 ;
     END
   END io_oeb[29]
   PIN io_oeb[2]
@@ -508,7 +508,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 242.120 300.000 242.720 ;
+        RECT 296.000 238.040 300.000 238.640 ;
     END
   END io_oeb[30]
   PIN io_oeb[31]
@@ -516,7 +516,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 250.280 300.000 250.880 ;
+        RECT 296.000 246.200 300.000 246.800 ;
     END
   END io_oeb[31]
   PIN io_oeb[32]
@@ -524,7 +524,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 258.440 300.000 259.040 ;
+        RECT 296.000 253.680 300.000 254.280 ;
     END
   END io_oeb[32]
   PIN io_oeb[33]
@@ -532,7 +532,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 265.920 300.000 266.520 ;
+        RECT 296.000 261.160 300.000 261.760 ;
     END
   END io_oeb[33]
   PIN io_oeb[34]
@@ -540,7 +540,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 274.080 300.000 274.680 ;
+        RECT 296.000 269.320 300.000 269.920 ;
     END
   END io_oeb[34]
   PIN io_oeb[35]
@@ -548,7 +548,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 281.560 300.000 282.160 ;
+        RECT 296.000 276.800 300.000 277.400 ;
     END
   END io_oeb[35]
   PIN io_oeb[36]
@@ -556,7 +556,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 289.720 300.000 290.320 ;
+        RECT 296.000 284.960 300.000 285.560 ;
     END
   END io_oeb[36]
   PIN io_oeb[37]
@@ -564,7 +564,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 297.880 300.000 298.480 ;
+        RECT 296.000 292.440 300.000 293.040 ;
     END
   END io_oeb[37]
   PIN io_oeb[3]
@@ -572,7 +572,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 29.280 300.000 29.880 ;
+        RECT 296.000 28.600 300.000 29.200 ;
     END
   END io_oeb[3]
   PIN io_oeb[4]
@@ -580,7 +580,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 37.440 300.000 38.040 ;
+        RECT 296.000 36.760 300.000 37.360 ;
     END
   END io_oeb[4]
   PIN io_oeb[5]
@@ -588,7 +588,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 44.920 300.000 45.520 ;
+        RECT 296.000 44.240 300.000 44.840 ;
     END
   END io_oeb[5]
   PIN io_oeb[6]
@@ -596,7 +596,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 53.080 300.000 53.680 ;
+        RECT 296.000 52.400 300.000 53.000 ;
     END
   END io_oeb[6]
   PIN io_oeb[7]
@@ -604,7 +604,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 60.560 300.000 61.160 ;
+        RECT 296.000 59.880 300.000 60.480 ;
     END
   END io_oeb[7]
   PIN io_oeb[8]
@@ -612,7 +612,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 68.720 300.000 69.320 ;
+        RECT 296.000 67.360 300.000 67.960 ;
     END
   END io_oeb[8]
   PIN io_oeb[9]
@@ -620,7 +620,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 76.880 300.000 77.480 ;
+        RECT 296.000 75.520 300.000 76.120 ;
     END
   END io_oeb[9]
   PIN io_out[0]
@@ -636,7 +636,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 81.640 300.000 82.240 ;
+        RECT 296.000 80.280 300.000 80.880 ;
     END
   END io_out[10]
   PIN io_out[11]
@@ -644,7 +644,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 89.800 300.000 90.400 ;
+        RECT 296.000 88.440 300.000 89.040 ;
     END
   END io_out[11]
   PIN io_out[12]
@@ -652,7 +652,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 97.960 300.000 98.560 ;
+        RECT 296.000 95.920 300.000 96.520 ;
     END
   END io_out[12]
   PIN io_out[13]
@@ -660,7 +660,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 105.440 300.000 106.040 ;
+        RECT 296.000 104.080 300.000 104.680 ;
     END
   END io_out[13]
   PIN io_out[14]
@@ -668,7 +668,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 113.600 300.000 114.200 ;
+        RECT 296.000 111.560 300.000 112.160 ;
     END
   END io_out[14]
   PIN io_out[15]
@@ -676,7 +676,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 121.080 300.000 121.680 ;
+        RECT 296.000 119.040 300.000 119.640 ;
     END
   END io_out[15]
   PIN io_out[16]
@@ -684,7 +684,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 129.240 300.000 129.840 ;
+        RECT 296.000 127.200 300.000 127.800 ;
     END
   END io_out[16]
   PIN io_out[17]
@@ -692,7 +692,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 137.400 300.000 138.000 ;
+        RECT 296.000 134.680 300.000 135.280 ;
     END
   END io_out[17]
   PIN io_out[18]
@@ -700,7 +700,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 144.880 300.000 145.480 ;
+        RECT 296.000 142.840 300.000 143.440 ;
     END
   END io_out[18]
   PIN io_out[19]
@@ -708,7 +708,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 153.040 300.000 153.640 ;
+        RECT 296.000 150.320 300.000 150.920 ;
     END
   END io_out[19]
   PIN io_out[1]
@@ -724,7 +724,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 160.520 300.000 161.120 ;
+        RECT 296.000 157.800 300.000 158.400 ;
     END
   END io_out[20]
   PIN io_out[21]
@@ -732,7 +732,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 168.680 300.000 169.280 ;
+        RECT 296.000 165.960 300.000 166.560 ;
     END
   END io_out[21]
   PIN io_out[22]
@@ -740,7 +740,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 176.840 300.000 177.440 ;
+        RECT 296.000 173.440 300.000 174.040 ;
     END
   END io_out[22]
   PIN io_out[23]
@@ -748,7 +748,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 184.320 300.000 184.920 ;
+        RECT 296.000 181.600 300.000 182.200 ;
     END
   END io_out[23]
   PIN io_out[24]
@@ -756,7 +756,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 192.480 300.000 193.080 ;
+        RECT 296.000 189.080 300.000 189.680 ;
     END
   END io_out[24]
   PIN io_out[25]
@@ -764,7 +764,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 200.640 300.000 201.240 ;
+        RECT 296.000 196.560 300.000 197.160 ;
     END
   END io_out[25]
   PIN io_out[26]
@@ -772,7 +772,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 208.120 300.000 208.720 ;
+        RECT 296.000 204.720 300.000 205.320 ;
     END
   END io_out[26]
   PIN io_out[27]
@@ -780,7 +780,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 216.280 300.000 216.880 ;
+        RECT 296.000 212.200 300.000 212.800 ;
     END
   END io_out[27]
   PIN io_out[28]
@@ -788,7 +788,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 223.760 300.000 224.360 ;
+        RECT 296.000 220.360 300.000 220.960 ;
     END
   END io_out[28]
   PIN io_out[29]
@@ -796,7 +796,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 231.920 300.000 232.520 ;
+        RECT 296.000 227.840 300.000 228.440 ;
     END
   END io_out[29]
   PIN io_out[2]
@@ -804,7 +804,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 19.080 300.000 19.680 ;
+        RECT 296.000 18.400 300.000 19.000 ;
     END
   END io_out[2]
   PIN io_out[30]
@@ -812,7 +812,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 240.080 300.000 240.680 ;
+        RECT 296.000 235.320 300.000 235.920 ;
     END
   END io_out[30]
   PIN io_out[31]
@@ -820,7 +820,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 247.560 300.000 248.160 ;
+        RECT 296.000 243.480 300.000 244.080 ;
     END
   END io_out[31]
   PIN io_out[32]
@@ -828,7 +828,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 255.720 300.000 256.320 ;
+        RECT 296.000 250.960 300.000 251.560 ;
     END
   END io_out[32]
   PIN io_out[33]
@@ -836,7 +836,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 263.200 300.000 263.800 ;
+        RECT 296.000 259.120 300.000 259.720 ;
     END
   END io_out[33]
   PIN io_out[34]
@@ -844,7 +844,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 271.360 300.000 271.960 ;
+        RECT 296.000 266.600 300.000 267.200 ;
     END
   END io_out[34]
   PIN io_out[35]
@@ -852,7 +852,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 279.520 300.000 280.120 ;
+        RECT 296.000 274.080 300.000 274.680 ;
     END
   END io_out[35]
   PIN io_out[36]
@@ -860,7 +860,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 287.000 300.000 287.600 ;
+        RECT 296.000 282.240 300.000 282.840 ;
     END
   END io_out[36]
   PIN io_out[37]
@@ -868,7 +868,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 295.160 300.000 295.760 ;
+        RECT 296.000 289.720 300.000 290.320 ;
     END
   END io_out[37]
   PIN io_out[3]
@@ -884,7 +884,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 34.720 300.000 35.320 ;
+        RECT 296.000 34.040 300.000 34.640 ;
     END
   END io_out[4]
   PIN io_out[5]
@@ -892,7 +892,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 42.200 300.000 42.800 ;
+        RECT 296.000 41.520 300.000 42.120 ;
     END
   END io_out[5]
   PIN io_out[6]
@@ -900,7 +900,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 50.360 300.000 50.960 ;
+        RECT 296.000 49.680 300.000 50.280 ;
     END
   END io_out[6]
   PIN io_out[7]
@@ -908,7 +908,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 58.520 300.000 59.120 ;
+        RECT 296.000 57.160 300.000 57.760 ;
     END
   END io_out[7]
   PIN io_out[8]
@@ -916,7 +916,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 66.000 300.000 66.600 ;
+        RECT 296.000 65.320 300.000 65.920 ;
     END
   END io_out[8]
   PIN io_out[9]
@@ -924,31 +924,31 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 296.000 74.160 300.000 74.760 ;
+        RECT 296.000 72.800 300.000 73.400 ;
     END
   END io_out[9]
   PIN irq[0]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     PORT
-      LAYER met2 ;
-        RECT 294.030 296.000 294.310 300.000 ;
+      LAYER met3 ;
+        RECT 296.000 295.160 300.000 295.760 ;
     END
   END irq[0]
   PIN irq[1]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     PORT
-      LAYER met2 ;
-        RECT 297.710 296.000 297.990 300.000 ;
+      LAYER met3 ;
+        RECT 296.000 297.880 300.000 298.480 ;
     END
   END irq[1]
   PIN irq[2]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     PORT
-      LAYER met3 ;
-        RECT 0.000 297.200 4.000 297.800 ;
+      LAYER met2 ;
+        RECT 297.710 296.000 297.990 300.000 ;
     END
   END irq[2]
   PIN la_data_in[0]
@@ -1468,7 +1468,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 149.640 4.000 150.240 ;
+        RECT 0.000 151.680 4.000 152.280 ;
     END
   END la_oenb[0]
   PIN la_oenb[10]
@@ -1476,7 +1476,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 195.200 4.000 195.800 ;
+        RECT 0.000 198.600 4.000 199.200 ;
     END
   END la_oenb[10]
   PIN la_oenb[11]
@@ -1484,7 +1484,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 199.960 4.000 200.560 ;
+        RECT 0.000 203.360 4.000 203.960 ;
     END
   END la_oenb[11]
   PIN la_oenb[12]
@@ -1492,7 +1492,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 204.720 4.000 205.320 ;
+        RECT 0.000 208.120 4.000 208.720 ;
     END
   END la_oenb[12]
   PIN la_oenb[13]
@@ -1500,7 +1500,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 209.480 4.000 210.080 ;
+        RECT 0.000 212.880 4.000 213.480 ;
     END
   END la_oenb[13]
   PIN la_oenb[14]
@@ -1508,7 +1508,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 214.240 4.000 214.840 ;
+        RECT 0.000 216.960 4.000 217.560 ;
     END
   END la_oenb[14]
   PIN la_oenb[15]
@@ -1516,7 +1516,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 218.320 4.000 218.920 ;
+        RECT 0.000 221.720 4.000 222.320 ;
     END
   END la_oenb[15]
   PIN la_oenb[16]
@@ -1524,7 +1524,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 223.080 4.000 223.680 ;
+        RECT 0.000 226.480 4.000 227.080 ;
     END
   END la_oenb[16]
   PIN la_oenb[17]
@@ -1532,7 +1532,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 227.840 4.000 228.440 ;
+        RECT 0.000 231.240 4.000 231.840 ;
     END
   END la_oenb[17]
   PIN la_oenb[18]
@@ -1540,7 +1540,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 232.600 4.000 233.200 ;
+        RECT 0.000 236.000 4.000 236.600 ;
     END
   END la_oenb[18]
   PIN la_oenb[19]
@@ -1548,7 +1548,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 237.360 4.000 237.960 ;
+        RECT 0.000 240.760 4.000 241.360 ;
     END
   END la_oenb[19]
   PIN la_oenb[1]
@@ -1556,7 +1556,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 153.720 4.000 154.320 ;
+        RECT 0.000 156.440 4.000 157.040 ;
     END
   END la_oenb[1]
   PIN la_oenb[20]
@@ -1564,7 +1564,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 241.440 4.000 242.040 ;
+        RECT 0.000 245.520 4.000 246.120 ;
     END
   END la_oenb[20]
   PIN la_oenb[21]
@@ -1572,7 +1572,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 246.200 4.000 246.800 ;
+        RECT 0.000 250.280 4.000 250.880 ;
     END
   END la_oenb[21]
   PIN la_oenb[22]
@@ -1580,7 +1580,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 250.960 4.000 251.560 ;
+        RECT 0.000 255.040 4.000 255.640 ;
     END
   END la_oenb[22]
   PIN la_oenb[23]
@@ -1588,7 +1588,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 255.720 4.000 256.320 ;
+        RECT 0.000 259.120 4.000 259.720 ;
     END
   END la_oenb[23]
   PIN la_oenb[24]
@@ -1596,7 +1596,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 259.800 4.000 260.400 ;
+        RECT 0.000 263.880 4.000 264.480 ;
     END
   END la_oenb[24]
   PIN la_oenb[25]
@@ -1604,7 +1604,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 264.560 4.000 265.160 ;
+        RECT 0.000 268.640 4.000 269.240 ;
     END
   END la_oenb[25]
   PIN la_oenb[26]
@@ -1612,7 +1612,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 269.320 4.000 269.920 ;
+        RECT 0.000 273.400 4.000 274.000 ;
     END
   END la_oenb[26]
   PIN la_oenb[27]
@@ -1620,7 +1620,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 274.080 4.000 274.680 ;
+        RECT 0.000 278.160 4.000 278.760 ;
     END
   END la_oenb[27]
   PIN la_oenb[28]
@@ -1628,7 +1628,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 278.840 4.000 279.440 ;
+        RECT 0.000 282.920 4.000 283.520 ;
     END
   END la_oenb[28]
   PIN la_oenb[29]
@@ -1636,7 +1636,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 282.920 4.000 283.520 ;
+        RECT 0.000 287.680 4.000 288.280 ;
     END
   END la_oenb[29]
   PIN la_oenb[2]
@@ -1644,7 +1644,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 158.480 4.000 159.080 ;
+        RECT 0.000 161.200 4.000 161.800 ;
     END
   END la_oenb[2]
   PIN la_oenb[30]
@@ -1652,7 +1652,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 287.680 4.000 288.280 ;
+        RECT 0.000 292.440 4.000 293.040 ;
     END
   END la_oenb[30]
   PIN la_oenb[31]
@@ -1660,7 +1660,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 292.440 4.000 293.040 ;
+        RECT 0.000 297.200 4.000 297.800 ;
     END
   END la_oenb[31]
   PIN la_oenb[3]
@@ -1668,7 +1668,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 163.240 4.000 163.840 ;
+        RECT 0.000 165.960 4.000 166.560 ;
     END
   END la_oenb[3]
   PIN la_oenb[4]
@@ -1676,7 +1676,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 168.000 4.000 168.600 ;
+        RECT 0.000 170.720 4.000 171.320 ;
     END
   END la_oenb[4]
   PIN la_oenb[5]
@@ -1684,7 +1684,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 172.760 4.000 173.360 ;
+        RECT 0.000 174.800 4.000 175.400 ;
     END
   END la_oenb[5]
   PIN la_oenb[6]
@@ -1692,7 +1692,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 176.840 4.000 177.440 ;
+        RECT 0.000 179.560 4.000 180.160 ;
     END
   END la_oenb[6]
   PIN la_oenb[7]
@@ -1700,7 +1700,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 181.600 4.000 182.200 ;
+        RECT 0.000 184.320 4.000 184.920 ;
     END
   END la_oenb[7]
   PIN la_oenb[8]
@@ -1708,7 +1708,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 186.360 4.000 186.960 ;
+        RECT 0.000 189.080 4.000 189.680 ;
     END
   END la_oenb[8]
   PIN la_oenb[9]
@@ -1716,7 +1716,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 191.120 4.000 191.720 ;
+        RECT 0.000 193.840 4.000 194.440 ;
     END
   END la_oenb[9]
   PIN user_clock2
@@ -1724,9 +1724,33 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 28.610 296.000 28.890 300.000 ;
+        RECT 29.070 296.000 29.350 300.000 ;
     END
   END user_clock2
+  PIN vccd1
+    DIRECTION INPUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 21.040 10.640 22.640 288.560 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 174.640 10.640 176.240 288.560 ;
+    END
+  END vccd1
+  PIN vssd1
+    DIRECTION INPUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 97.840 10.640 99.440 288.560 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 251.440 10.640 253.040 288.560 ;
+    END
+  END vssd1
   PIN wb_clk_i
     DIRECTION INPUT ;
     USE SIGNAL ;
@@ -1748,7 +1772,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 20.790 296.000 21.070 300.000 ;
+        RECT 21.250 296.000 21.530 300.000 ;
     END
   END wbs_ack_o
   PIN wbs_adr_i[0]
@@ -1756,7 +1780,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 47.930 296.000 48.210 300.000 ;
+        RECT 48.390 296.000 48.670 300.000 ;
     END
   END wbs_adr_i[0]
   PIN wbs_adr_i[10]
@@ -1764,7 +1788,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 86.110 296.000 86.390 300.000 ;
+        RECT 87.490 296.000 87.770 300.000 ;
     END
   END wbs_adr_i[10]
   PIN wbs_adr_i[11]
@@ -1772,7 +1796,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 90.250 296.000 90.530 300.000 ;
+        RECT 91.170 296.000 91.450 300.000 ;
     END
   END wbs_adr_i[11]
   PIN wbs_adr_i[12]
@@ -1780,7 +1804,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 93.930 296.000 94.210 300.000 ;
+        RECT 95.310 296.000 95.590 300.000 ;
     END
   END wbs_adr_i[12]
   PIN wbs_adr_i[13]
@@ -1788,7 +1812,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 97.610 296.000 97.890 300.000 ;
+        RECT 98.990 296.000 99.270 300.000 ;
     END
   END wbs_adr_i[13]
   PIN wbs_adr_i[14]
@@ -1796,7 +1820,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 101.750 296.000 102.030 300.000 ;
+        RECT 103.130 296.000 103.410 300.000 ;
     END
   END wbs_adr_i[14]
   PIN wbs_adr_i[15]
@@ -1804,7 +1828,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 105.430 296.000 105.710 300.000 ;
+        RECT 106.810 296.000 107.090 300.000 ;
     END
   END wbs_adr_i[15]
   PIN wbs_adr_i[16]
@@ -1812,7 +1836,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 109.570 296.000 109.850 300.000 ;
+        RECT 110.950 296.000 111.230 300.000 ;
     END
   END wbs_adr_i[16]
   PIN wbs_adr_i[17]
@@ -1820,7 +1844,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 113.250 296.000 113.530 300.000 ;
+        RECT 114.630 296.000 114.910 300.000 ;
     END
   END wbs_adr_i[17]
   PIN wbs_adr_i[18]
@@ -1828,7 +1852,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 116.930 296.000 117.210 300.000 ;
+        RECT 118.770 296.000 119.050 300.000 ;
     END
   END wbs_adr_i[18]
   PIN wbs_adr_i[19]
@@ -1836,7 +1860,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 121.070 296.000 121.350 300.000 ;
+        RECT 122.450 296.000 122.730 300.000 ;
     END
   END wbs_adr_i[19]
   PIN wbs_adr_i[1]
@@ -1844,7 +1868,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 51.610 296.000 51.890 300.000 ;
+        RECT 52.530 296.000 52.810 300.000 ;
     END
   END wbs_adr_i[1]
   PIN wbs_adr_i[20]
@@ -1852,7 +1876,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 124.750 296.000 125.030 300.000 ;
+        RECT 126.130 296.000 126.410 300.000 ;
     END
   END wbs_adr_i[20]
   PIN wbs_adr_i[21]
@@ -1860,7 +1884,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 128.430 296.000 128.710 300.000 ;
+        RECT 130.270 296.000 130.550 300.000 ;
     END
   END wbs_adr_i[21]
   PIN wbs_adr_i[22]
@@ -1868,7 +1892,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 132.570 296.000 132.850 300.000 ;
+        RECT 133.950 296.000 134.230 300.000 ;
     END
   END wbs_adr_i[22]
   PIN wbs_adr_i[23]
@@ -1876,7 +1900,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 136.250 296.000 136.530 300.000 ;
+        RECT 138.090 296.000 138.370 300.000 ;
     END
   END wbs_adr_i[23]
   PIN wbs_adr_i[24]
@@ -1884,7 +1908,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 139.930 296.000 140.210 300.000 ;
+        RECT 141.770 296.000 142.050 300.000 ;
     END
   END wbs_adr_i[24]
   PIN wbs_adr_i[25]
@@ -1892,7 +1916,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 144.070 296.000 144.350 300.000 ;
+        RECT 145.910 296.000 146.190 300.000 ;
     END
   END wbs_adr_i[25]
   PIN wbs_adr_i[26]
@@ -1900,7 +1924,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 147.750 296.000 148.030 300.000 ;
+        RECT 149.590 296.000 149.870 300.000 ;
     END
   END wbs_adr_i[26]
   PIN wbs_adr_i[27]
@@ -1908,7 +1932,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 151.890 296.000 152.170 300.000 ;
+        RECT 153.730 296.000 154.010 300.000 ;
     END
   END wbs_adr_i[27]
   PIN wbs_adr_i[28]
@@ -1916,7 +1940,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 155.570 296.000 155.850 300.000 ;
+        RECT 157.410 296.000 157.690 300.000 ;
     END
   END wbs_adr_i[28]
   PIN wbs_adr_i[29]
@@ -1924,7 +1948,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 159.250 296.000 159.530 300.000 ;
+        RECT 161.550 296.000 161.830 300.000 ;
     END
   END wbs_adr_i[29]
   PIN wbs_adr_i[2]
@@ -1932,7 +1956,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 55.750 296.000 56.030 300.000 ;
+        RECT 56.210 296.000 56.490 300.000 ;
     END
   END wbs_adr_i[2]
   PIN wbs_adr_i[30]
@@ -1940,7 +1964,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 163.390 296.000 163.670 300.000 ;
+        RECT 165.230 296.000 165.510 300.000 ;
     END
   END wbs_adr_i[30]
   PIN wbs_adr_i[31]
@@ -1948,7 +1972,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 167.070 296.000 167.350 300.000 ;
+        RECT 169.370 296.000 169.650 300.000 ;
     END
   END wbs_adr_i[31]
   PIN wbs_adr_i[3]
@@ -1956,7 +1980,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 59.430 296.000 59.710 300.000 ;
+        RECT 60.350 296.000 60.630 300.000 ;
     END
   END wbs_adr_i[3]
   PIN wbs_adr_i[4]
@@ -1964,7 +1988,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 63.110 296.000 63.390 300.000 ;
+        RECT 64.030 296.000 64.310 300.000 ;
     END
   END wbs_adr_i[4]
   PIN wbs_adr_i[5]
@@ -1972,7 +1996,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 67.250 296.000 67.530 300.000 ;
+        RECT 67.710 296.000 67.990 300.000 ;
     END
   END wbs_adr_i[5]
   PIN wbs_adr_i[6]
@@ -1980,7 +2004,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 70.930 296.000 71.210 300.000 ;
+        RECT 71.850 296.000 72.130 300.000 ;
     END
   END wbs_adr_i[6]
   PIN wbs_adr_i[7]
@@ -1988,7 +2012,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 74.610 296.000 74.890 300.000 ;
+        RECT 75.530 296.000 75.810 300.000 ;
     END
   END wbs_adr_i[7]
   PIN wbs_adr_i[8]
@@ -1996,7 +2020,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 78.750 296.000 79.030 300.000 ;
+        RECT 79.670 296.000 79.950 300.000 ;
     END
   END wbs_adr_i[8]
   PIN wbs_adr_i[9]
@@ -2004,7 +2028,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 82.430 296.000 82.710 300.000 ;
+        RECT 83.350 296.000 83.630 300.000 ;
     END
   END wbs_adr_i[9]
   PIN wbs_cyc_i
@@ -2020,7 +2044,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 170.750 296.000 171.030 300.000 ;
+        RECT 173.050 296.000 173.330 300.000 ;
     END
   END wbs_dat_i[0]
   PIN wbs_dat_i[10]
@@ -2028,7 +2052,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 209.390 296.000 209.670 300.000 ;
+        RECT 212.150 296.000 212.430 300.000 ;
     END
   END wbs_dat_i[10]
   PIN wbs_dat_i[11]
@@ -2036,7 +2060,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 213.070 296.000 213.350 300.000 ;
+        RECT 215.830 296.000 216.110 300.000 ;
     END
   END wbs_dat_i[11]
   PIN wbs_dat_i[12]
@@ -2044,7 +2068,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 217.210 296.000 217.490 300.000 ;
+        RECT 219.970 296.000 220.250 300.000 ;
     END
   END wbs_dat_i[12]
   PIN wbs_dat_i[13]
@@ -2052,7 +2076,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 220.890 296.000 221.170 300.000 ;
+        RECT 223.650 296.000 223.930 300.000 ;
     END
   END wbs_dat_i[13]
   PIN wbs_dat_i[14]
@@ -2060,7 +2084,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 224.570 296.000 224.850 300.000 ;
+        RECT 227.790 296.000 228.070 300.000 ;
     END
   END wbs_dat_i[14]
   PIN wbs_dat_i[15]
@@ -2068,7 +2092,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 228.710 296.000 228.990 300.000 ;
+        RECT 231.470 296.000 231.750 300.000 ;
     END
   END wbs_dat_i[15]
   PIN wbs_dat_i[16]
@@ -2076,7 +2100,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 232.390 296.000 232.670 300.000 ;
+        RECT 235.610 296.000 235.890 300.000 ;
     END
   END wbs_dat_i[16]
   PIN wbs_dat_i[17]
@@ -2084,7 +2108,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 236.070 296.000 236.350 300.000 ;
+        RECT 239.290 296.000 239.570 300.000 ;
     END
   END wbs_dat_i[17]
   PIN wbs_dat_i[18]
@@ -2092,7 +2116,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 240.210 296.000 240.490 300.000 ;
+        RECT 242.970 296.000 243.250 300.000 ;
     END
   END wbs_dat_i[18]
   PIN wbs_dat_i[19]
@@ -2100,7 +2124,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 243.890 296.000 244.170 300.000 ;
+        RECT 247.110 296.000 247.390 300.000 ;
     END
   END wbs_dat_i[19]
   PIN wbs_dat_i[1]
@@ -2108,7 +2132,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 174.890 296.000 175.170 300.000 ;
+        RECT 177.190 296.000 177.470 300.000 ;
     END
   END wbs_dat_i[1]
   PIN wbs_dat_i[20]
@@ -2116,7 +2140,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 247.570 296.000 247.850 300.000 ;
+        RECT 250.790 296.000 251.070 300.000 ;
     END
   END wbs_dat_i[20]
   PIN wbs_dat_i[21]
@@ -2124,7 +2148,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 251.710 296.000 251.990 300.000 ;
+        RECT 254.930 296.000 255.210 300.000 ;
     END
   END wbs_dat_i[21]
   PIN wbs_dat_i[22]
@@ -2132,7 +2156,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 255.390 296.000 255.670 300.000 ;
+        RECT 258.610 296.000 258.890 300.000 ;
     END
   END wbs_dat_i[22]
   PIN wbs_dat_i[23]
@@ -2140,7 +2164,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 259.530 296.000 259.810 300.000 ;
+        RECT 262.750 296.000 263.030 300.000 ;
     END
   END wbs_dat_i[23]
   PIN wbs_dat_i[24]
@@ -2148,7 +2172,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 263.210 296.000 263.490 300.000 ;
+        RECT 266.430 296.000 266.710 300.000 ;
     END
   END wbs_dat_i[24]
   PIN wbs_dat_i[25]
@@ -2156,7 +2180,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 266.890 296.000 267.170 300.000 ;
+        RECT 270.570 296.000 270.850 300.000 ;
     END
   END wbs_dat_i[25]
   PIN wbs_dat_i[26]
@@ -2164,7 +2188,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 271.030 296.000 271.310 300.000 ;
+        RECT 274.250 296.000 274.530 300.000 ;
     END
   END wbs_dat_i[26]
   PIN wbs_dat_i[27]
@@ -2172,7 +2196,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 274.710 296.000 274.990 300.000 ;
+        RECT 278.390 296.000 278.670 300.000 ;
     END
   END wbs_dat_i[27]
   PIN wbs_dat_i[28]
@@ -2180,7 +2204,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 278.390 296.000 278.670 300.000 ;
+        RECT 282.070 296.000 282.350 300.000 ;
     END
   END wbs_dat_i[28]
   PIN wbs_dat_i[29]
@@ -2188,7 +2212,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 282.530 296.000 282.810 300.000 ;
+        RECT 286.210 296.000 286.490 300.000 ;
     END
   END wbs_dat_i[29]
   PIN wbs_dat_i[2]
@@ -2196,7 +2220,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 178.570 296.000 178.850 300.000 ;
+        RECT 180.870 296.000 181.150 300.000 ;
     END
   END wbs_dat_i[2]
   PIN wbs_dat_i[30]
@@ -2204,7 +2228,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 286.210 296.000 286.490 300.000 ;
+        RECT 289.890 296.000 290.170 300.000 ;
     END
   END wbs_dat_i[30]
   PIN wbs_dat_i[31]
@@ -2212,7 +2236,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 289.890 296.000 290.170 300.000 ;
+        RECT 294.030 296.000 294.310 300.000 ;
     END
   END wbs_dat_i[31]
   PIN wbs_dat_i[3]
@@ -2220,7 +2244,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 182.250 296.000 182.530 300.000 ;
+        RECT 184.550 296.000 184.830 300.000 ;
     END
   END wbs_dat_i[3]
   PIN wbs_dat_i[4]
@@ -2228,7 +2252,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 186.390 296.000 186.670 300.000 ;
+        RECT 188.690 296.000 188.970 300.000 ;
     END
   END wbs_dat_i[4]
   PIN wbs_dat_i[5]
@@ -2236,7 +2260,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 190.070 296.000 190.350 300.000 ;
+        RECT 192.370 296.000 192.650 300.000 ;
     END
   END wbs_dat_i[5]
   PIN wbs_dat_i[6]
@@ -2244,7 +2268,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 193.750 296.000 194.030 300.000 ;
+        RECT 196.510 296.000 196.790 300.000 ;
     END
   END wbs_dat_i[6]
   PIN wbs_dat_i[7]
@@ -2252,7 +2276,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 197.890 296.000 198.170 300.000 ;
+        RECT 200.190 296.000 200.470 300.000 ;
     END
   END wbs_dat_i[7]
   PIN wbs_dat_i[8]
@@ -2260,7 +2284,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 201.570 296.000 201.850 300.000 ;
+        RECT 204.330 296.000 204.610 300.000 ;
     END
   END wbs_dat_i[8]
   PIN wbs_dat_i[9]
@@ -2268,7 +2292,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 205.710 296.000 205.990 300.000 ;
+        RECT 208.010 296.000 208.290 300.000 ;
     END
   END wbs_dat_i[9]
   PIN wbs_dat_o[0]
@@ -2284,7 +2308,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 47.640 4.000 48.240 ;
+        RECT 0.000 48.320 4.000 48.920 ;
     END
   END wbs_dat_o[10]
   PIN wbs_dat_o[11]
@@ -2292,7 +2316,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 52.400 4.000 53.000 ;
+        RECT 0.000 53.080 4.000 53.680 ;
     END
   END wbs_dat_o[11]
   PIN wbs_dat_o[12]
@@ -2300,7 +2324,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 57.160 4.000 57.760 ;
+        RECT 0.000 57.840 4.000 58.440 ;
     END
   END wbs_dat_o[12]
   PIN wbs_dat_o[13]
@@ -2308,7 +2332,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 61.920 4.000 62.520 ;
+        RECT 0.000 62.600 4.000 63.200 ;
     END
   END wbs_dat_o[13]
   PIN wbs_dat_o[14]
@@ -2316,7 +2340,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 66.000 4.000 66.600 ;
+        RECT 0.000 67.360 4.000 67.960 ;
     END
   END wbs_dat_o[14]
   PIN wbs_dat_o[15]
@@ -2324,7 +2348,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 70.760 4.000 71.360 ;
+        RECT 0.000 72.120 4.000 72.720 ;
     END
   END wbs_dat_o[15]
   PIN wbs_dat_o[16]
@@ -2332,7 +2356,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 75.520 4.000 76.120 ;
+        RECT 0.000 76.880 4.000 77.480 ;
     END
   END wbs_dat_o[16]
   PIN wbs_dat_o[17]
@@ -2340,7 +2364,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 80.280 4.000 80.880 ;
+        RECT 0.000 81.640 4.000 82.240 ;
     END
   END wbs_dat_o[17]
   PIN wbs_dat_o[18]
@@ -2348,7 +2372,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 85.040 4.000 85.640 ;
+        RECT 0.000 86.400 4.000 87.000 ;
     END
   END wbs_dat_o[18]
   PIN wbs_dat_o[19]
@@ -2356,7 +2380,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 89.120 4.000 89.720 ;
+        RECT 0.000 90.480 4.000 91.080 ;
     END
   END wbs_dat_o[19]
   PIN wbs_dat_o[1]
@@ -2372,7 +2396,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 93.880 4.000 94.480 ;
+        RECT 0.000 95.240 4.000 95.840 ;
     END
   END wbs_dat_o[20]
   PIN wbs_dat_o[21]
@@ -2380,7 +2404,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 98.640 4.000 99.240 ;
+        RECT 0.000 100.000 4.000 100.600 ;
     END
   END wbs_dat_o[21]
   PIN wbs_dat_o[22]
@@ -2388,7 +2412,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 103.400 4.000 104.000 ;
+        RECT 0.000 104.760 4.000 105.360 ;
     END
   END wbs_dat_o[22]
   PIN wbs_dat_o[23]
@@ -2396,7 +2420,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 108.160 4.000 108.760 ;
+        RECT 0.000 109.520 4.000 110.120 ;
     END
   END wbs_dat_o[23]
   PIN wbs_dat_o[24]
@@ -2404,7 +2428,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 112.240 4.000 112.840 ;
+        RECT 0.000 114.280 4.000 114.880 ;
     END
   END wbs_dat_o[24]
   PIN wbs_dat_o[25]
@@ -2412,7 +2436,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 117.000 4.000 117.600 ;
+        RECT 0.000 119.040 4.000 119.640 ;
     END
   END wbs_dat_o[25]
   PIN wbs_dat_o[26]
@@ -2420,7 +2444,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 121.760 4.000 122.360 ;
+        RECT 0.000 123.800 4.000 124.400 ;
     END
   END wbs_dat_o[26]
   PIN wbs_dat_o[27]
@@ -2428,7 +2452,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 126.520 4.000 127.120 ;
+        RECT 0.000 128.560 4.000 129.160 ;
     END
   END wbs_dat_o[27]
   PIN wbs_dat_o[28]
@@ -2436,7 +2460,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 130.600 4.000 131.200 ;
+        RECT 0.000 132.640 4.000 133.240 ;
     END
   END wbs_dat_o[28]
   PIN wbs_dat_o[29]
@@ -2444,7 +2468,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 135.360 4.000 135.960 ;
+        RECT 0.000 137.400 4.000 138.000 ;
     END
   END wbs_dat_o[29]
   PIN wbs_dat_o[2]
@@ -2460,7 +2484,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 140.120 4.000 140.720 ;
+        RECT 0.000 142.160 4.000 142.760 ;
     END
   END wbs_dat_o[30]
   PIN wbs_dat_o[31]
@@ -2468,7 +2492,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 144.880 4.000 145.480 ;
+        RECT 0.000 146.920 4.000 147.520 ;
     END
   END wbs_dat_o[31]
   PIN wbs_dat_o[3]
@@ -2492,7 +2516,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 24.520 4.000 25.120 ;
+        RECT 0.000 25.200 4.000 25.800 ;
     END
   END wbs_dat_o[5]
   PIN wbs_dat_o[6]
@@ -2500,7 +2524,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 29.280 4.000 29.880 ;
+        RECT 0.000 29.960 4.000 30.560 ;
     END
   END wbs_dat_o[6]
   PIN wbs_dat_o[7]
@@ -2508,7 +2532,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 34.040 4.000 34.640 ;
+        RECT 0.000 34.720 4.000 35.320 ;
     END
   END wbs_dat_o[7]
   PIN wbs_dat_o[8]
@@ -2516,7 +2540,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 38.800 4.000 39.400 ;
+        RECT 0.000 39.480 4.000 40.080 ;
     END
   END wbs_dat_o[8]
   PIN wbs_dat_o[9]
@@ -2524,7 +2548,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 43.560 4.000 44.160 ;
+        RECT 0.000 44.240 4.000 44.840 ;
     END
   END wbs_dat_o[9]
   PIN wbs_sel_i[0]
@@ -2532,7 +2556,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 32.290 296.000 32.570 300.000 ;
+        RECT 32.750 296.000 33.030 300.000 ;
     END
   END wbs_sel_i[0]
   PIN wbs_sel_i[1]
@@ -2540,7 +2564,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 36.430 296.000 36.710 300.000 ;
+        RECT 36.890 296.000 37.170 300.000 ;
     END
   END wbs_sel_i[1]
   PIN wbs_sel_i[2]
@@ -2548,7 +2572,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 40.110 296.000 40.390 300.000 ;
+        RECT 40.570 296.000 40.850 300.000 ;
     END
   END wbs_sel_i[2]
   PIN wbs_sel_i[3]
@@ -2556,7 +2580,7 @@ MACRO wrapped_quad_pwm_fet_drivers
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 43.790 296.000 44.070 300.000 ;
+        RECT 44.710 296.000 44.990 300.000 ;
     END
   END wbs_sel_i[3]
   PIN wbs_stb_i
@@ -2575,283 +2599,154 @@ MACRO wrapped_quad_pwm_fet_drivers
         RECT 17.110 296.000 17.390 300.000 ;
     END
   END wbs_we_i
-  PIN vccd1
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER met4 ;
-        RECT 174.640 10.640 176.240 288.560 ;
-    END
-  END vccd1
-  PIN vccd1
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER met4 ;
-        RECT 21.040 10.640 22.640 288.560 ;
-    END
-  END vccd1
-  PIN vssd1
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER met4 ;
-        RECT 251.440 10.640 253.040 288.560 ;
-    END
-  END vssd1
-  PIN vssd1
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER met4 ;
-        RECT 97.840 10.640 99.440 288.560 ;
-    END
-  END vssd1
-  PIN vccd2
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER met4 ;
-        RECT 177.940 10.880 179.540 288.320 ;
-    END
-  END vccd2
-  PIN vccd2
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER met4 ;
-        RECT 24.340 10.880 25.940 288.320 ;
-    END
-  END vccd2
-  PIN vssd2
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER met4 ;
-        RECT 254.740 10.880 256.340 288.320 ;
-    END
-  END vssd2
-  PIN vssd2
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER met4 ;
-        RECT 101.140 10.880 102.740 288.320 ;
-    END
-  END vssd2
-  PIN vdda1
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER met4 ;
-        RECT 181.240 10.880 182.840 288.320 ;
-    END
-  END vdda1
-  PIN vdda1
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER met4 ;
-        RECT 27.640 10.880 29.240 288.320 ;
-    END
-  END vdda1
-  PIN vssa1
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER met4 ;
-        RECT 258.040 10.880 259.640 288.320 ;
-    END
-  END vssa1
-  PIN vssa1
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER met4 ;
-        RECT 104.440 10.880 106.040 288.320 ;
-    END
-  END vssa1
-  PIN vdda2
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER met4 ;
-        RECT 184.540 10.880 186.140 288.320 ;
-    END
-  END vdda2
-  PIN vdda2
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER met4 ;
-        RECT 30.940 10.880 32.540 288.320 ;
-    END
-  END vdda2
-  PIN vssa2
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER met4 ;
-        RECT 261.340 10.880 262.940 288.320 ;
-    END
-  END vssa2
-  PIN vssa2
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER met4 ;
-        RECT 107.740 10.880 109.340 288.320 ;
-    END
-  END vssa2
   OBS
       LAYER li1 ;
-        RECT 5.520 10.795 294.400 288.405 ;
+        RECT 5.520 10.795 295.635 288.405 ;
       LAYER met1 ;
-        RECT 1.910 6.160 298.010 295.420 ;
+        RECT 1.910 6.500 298.010 288.560 ;
       LAYER met2 ;
         RECT 2.490 295.720 5.330 298.365 ;
         RECT 6.170 295.720 9.010 298.365 ;
         RECT 9.850 295.720 13.150 298.365 ;
         RECT 13.990 295.720 16.830 298.365 ;
-        RECT 17.670 295.720 20.510 298.365 ;
-        RECT 21.350 295.720 24.650 298.365 ;
-        RECT 25.490 295.720 28.330 298.365 ;
-        RECT 29.170 295.720 32.010 298.365 ;
-        RECT 32.850 295.720 36.150 298.365 ;
-        RECT 36.990 295.720 39.830 298.365 ;
-        RECT 40.670 295.720 43.510 298.365 ;
-        RECT 44.350 295.720 47.650 298.365 ;
-        RECT 48.490 295.720 51.330 298.365 ;
-        RECT 52.170 295.720 55.470 298.365 ;
-        RECT 56.310 295.720 59.150 298.365 ;
-        RECT 59.990 295.720 62.830 298.365 ;
-        RECT 63.670 295.720 66.970 298.365 ;
-        RECT 67.810 295.720 70.650 298.365 ;
-        RECT 71.490 295.720 74.330 298.365 ;
-        RECT 75.170 295.720 78.470 298.365 ;
-        RECT 79.310 295.720 82.150 298.365 ;
-        RECT 82.990 295.720 85.830 298.365 ;
-        RECT 86.670 295.720 89.970 298.365 ;
-        RECT 90.810 295.720 93.650 298.365 ;
-        RECT 94.490 295.720 97.330 298.365 ;
-        RECT 98.170 295.720 101.470 298.365 ;
-        RECT 102.310 295.720 105.150 298.365 ;
-        RECT 105.990 295.720 109.290 298.365 ;
-        RECT 110.130 295.720 112.970 298.365 ;
-        RECT 113.810 295.720 116.650 298.365 ;
-        RECT 117.490 295.720 120.790 298.365 ;
-        RECT 121.630 295.720 124.470 298.365 ;
-        RECT 125.310 295.720 128.150 298.365 ;
-        RECT 128.990 295.720 132.290 298.365 ;
-        RECT 133.130 295.720 135.970 298.365 ;
-        RECT 136.810 295.720 139.650 298.365 ;
-        RECT 140.490 295.720 143.790 298.365 ;
-        RECT 144.630 295.720 147.470 298.365 ;
-        RECT 148.310 295.720 151.610 298.365 ;
-        RECT 152.450 295.720 155.290 298.365 ;
-        RECT 156.130 295.720 158.970 298.365 ;
-        RECT 159.810 295.720 163.110 298.365 ;
-        RECT 163.950 295.720 166.790 298.365 ;
-        RECT 167.630 295.720 170.470 298.365 ;
-        RECT 171.310 295.720 174.610 298.365 ;
-        RECT 175.450 295.720 178.290 298.365 ;
-        RECT 179.130 295.720 181.970 298.365 ;
-        RECT 182.810 295.720 186.110 298.365 ;
-        RECT 186.950 295.720 189.790 298.365 ;
-        RECT 190.630 295.720 193.470 298.365 ;
-        RECT 194.310 295.720 197.610 298.365 ;
-        RECT 198.450 295.720 201.290 298.365 ;
-        RECT 202.130 295.720 205.430 298.365 ;
-        RECT 206.270 295.720 209.110 298.365 ;
-        RECT 209.950 295.720 212.790 298.365 ;
-        RECT 213.630 295.720 216.930 298.365 ;
-        RECT 217.770 295.720 220.610 298.365 ;
-        RECT 221.450 295.720 224.290 298.365 ;
-        RECT 225.130 295.720 228.430 298.365 ;
-        RECT 229.270 295.720 232.110 298.365 ;
-        RECT 232.950 295.720 235.790 298.365 ;
-        RECT 236.630 295.720 239.930 298.365 ;
-        RECT 240.770 295.720 243.610 298.365 ;
-        RECT 244.450 295.720 247.290 298.365 ;
-        RECT 248.130 295.720 251.430 298.365 ;
-        RECT 252.270 295.720 255.110 298.365 ;
-        RECT 255.950 295.720 259.250 298.365 ;
-        RECT 260.090 295.720 262.930 298.365 ;
-        RECT 263.770 295.720 266.610 298.365 ;
-        RECT 267.450 295.720 270.750 298.365 ;
-        RECT 271.590 295.720 274.430 298.365 ;
-        RECT 275.270 295.720 278.110 298.365 ;
-        RECT 278.950 295.720 282.250 298.365 ;
-        RECT 283.090 295.720 285.930 298.365 ;
+        RECT 17.670 295.720 20.970 298.365 ;
+        RECT 21.810 295.720 24.650 298.365 ;
+        RECT 25.490 295.720 28.790 298.365 ;
+        RECT 29.630 295.720 32.470 298.365 ;
+        RECT 33.310 295.720 36.610 298.365 ;
+        RECT 37.450 295.720 40.290 298.365 ;
+        RECT 41.130 295.720 44.430 298.365 ;
+        RECT 45.270 295.720 48.110 298.365 ;
+        RECT 48.950 295.720 52.250 298.365 ;
+        RECT 53.090 295.720 55.930 298.365 ;
+        RECT 56.770 295.720 60.070 298.365 ;
+        RECT 60.910 295.720 63.750 298.365 ;
+        RECT 64.590 295.720 67.430 298.365 ;
+        RECT 68.270 295.720 71.570 298.365 ;
+        RECT 72.410 295.720 75.250 298.365 ;
+        RECT 76.090 295.720 79.390 298.365 ;
+        RECT 80.230 295.720 83.070 298.365 ;
+        RECT 83.910 295.720 87.210 298.365 ;
+        RECT 88.050 295.720 90.890 298.365 ;
+        RECT 91.730 295.720 95.030 298.365 ;
+        RECT 95.870 295.720 98.710 298.365 ;
+        RECT 99.550 295.720 102.850 298.365 ;
+        RECT 103.690 295.720 106.530 298.365 ;
+        RECT 107.370 295.720 110.670 298.365 ;
+        RECT 111.510 295.720 114.350 298.365 ;
+        RECT 115.190 295.720 118.490 298.365 ;
+        RECT 119.330 295.720 122.170 298.365 ;
+        RECT 123.010 295.720 125.850 298.365 ;
+        RECT 126.690 295.720 129.990 298.365 ;
+        RECT 130.830 295.720 133.670 298.365 ;
+        RECT 134.510 295.720 137.810 298.365 ;
+        RECT 138.650 295.720 141.490 298.365 ;
+        RECT 142.330 295.720 145.630 298.365 ;
+        RECT 146.470 295.720 149.310 298.365 ;
+        RECT 150.150 295.720 153.450 298.365 ;
+        RECT 154.290 295.720 157.130 298.365 ;
+        RECT 157.970 295.720 161.270 298.365 ;
+        RECT 162.110 295.720 164.950 298.365 ;
+        RECT 165.790 295.720 169.090 298.365 ;
+        RECT 169.930 295.720 172.770 298.365 ;
+        RECT 173.610 295.720 176.910 298.365 ;
+        RECT 177.750 295.720 180.590 298.365 ;
+        RECT 181.430 295.720 184.270 298.365 ;
+        RECT 185.110 295.720 188.410 298.365 ;
+        RECT 189.250 295.720 192.090 298.365 ;
+        RECT 192.930 295.720 196.230 298.365 ;
+        RECT 197.070 295.720 199.910 298.365 ;
+        RECT 200.750 295.720 204.050 298.365 ;
+        RECT 204.890 295.720 207.730 298.365 ;
+        RECT 208.570 295.720 211.870 298.365 ;
+        RECT 212.710 295.720 215.550 298.365 ;
+        RECT 216.390 295.720 219.690 298.365 ;
+        RECT 220.530 295.720 223.370 298.365 ;
+        RECT 224.210 295.720 227.510 298.365 ;
+        RECT 228.350 295.720 231.190 298.365 ;
+        RECT 232.030 295.720 235.330 298.365 ;
+        RECT 236.170 295.720 239.010 298.365 ;
+        RECT 239.850 295.720 242.690 298.365 ;
+        RECT 243.530 295.720 246.830 298.365 ;
+        RECT 247.670 295.720 250.510 298.365 ;
+        RECT 251.350 295.720 254.650 298.365 ;
+        RECT 255.490 295.720 258.330 298.365 ;
+        RECT 259.170 295.720 262.470 298.365 ;
+        RECT 263.310 295.720 266.150 298.365 ;
+        RECT 266.990 295.720 270.290 298.365 ;
+        RECT 271.130 295.720 273.970 298.365 ;
+        RECT 274.810 295.720 278.110 298.365 ;
+        RECT 278.950 295.720 281.790 298.365 ;
+        RECT 282.630 295.720 285.930 298.365 ;
         RECT 286.770 295.720 289.610 298.365 ;
         RECT 290.450 295.720 293.750 298.365 ;
         RECT 294.590 295.720 297.430 298.365 ;
         RECT 1.940 4.280 297.980 295.720 ;
-        RECT 1.940 0.835 2.110 4.280 ;
-        RECT 2.950 0.835 6.710 4.280 ;
-        RECT 7.550 0.835 11.310 4.280 ;
-        RECT 12.150 0.835 15.910 4.280 ;
-        RECT 16.750 0.835 20.510 4.280 ;
-        RECT 21.350 0.835 25.110 4.280 ;
-        RECT 25.950 0.835 30.170 4.280 ;
-        RECT 31.010 0.835 34.770 4.280 ;
-        RECT 35.610 0.835 39.370 4.280 ;
-        RECT 40.210 0.835 43.970 4.280 ;
-        RECT 44.810 0.835 48.570 4.280 ;
-        RECT 49.410 0.835 53.630 4.280 ;
-        RECT 54.470 0.835 58.230 4.280 ;
-        RECT 59.070 0.835 62.830 4.280 ;
-        RECT 63.670 0.835 67.430 4.280 ;
-        RECT 68.270 0.835 72.030 4.280 ;
-        RECT 72.870 0.835 77.090 4.280 ;
-        RECT 77.930 0.835 81.690 4.280 ;
-        RECT 82.530 0.835 86.290 4.280 ;
-        RECT 87.130 0.835 90.890 4.280 ;
-        RECT 91.730 0.835 95.490 4.280 ;
-        RECT 96.330 0.835 100.090 4.280 ;
-        RECT 100.930 0.835 105.150 4.280 ;
-        RECT 105.990 0.835 109.750 4.280 ;
-        RECT 110.590 0.835 114.350 4.280 ;
-        RECT 115.190 0.835 118.950 4.280 ;
-        RECT 119.790 0.835 123.550 4.280 ;
-        RECT 124.390 0.835 128.610 4.280 ;
-        RECT 129.450 0.835 133.210 4.280 ;
-        RECT 134.050 0.835 137.810 4.280 ;
-        RECT 138.650 0.835 142.410 4.280 ;
-        RECT 143.250 0.835 147.010 4.280 ;
-        RECT 147.850 0.835 152.070 4.280 ;
-        RECT 152.910 0.835 156.670 4.280 ;
-        RECT 157.510 0.835 161.270 4.280 ;
-        RECT 162.110 0.835 165.870 4.280 ;
-        RECT 166.710 0.835 170.470 4.280 ;
-        RECT 171.310 0.835 175.070 4.280 ;
-        RECT 175.910 0.835 180.130 4.280 ;
-        RECT 180.970 0.835 184.730 4.280 ;
-        RECT 185.570 0.835 189.330 4.280 ;
-        RECT 190.170 0.835 193.930 4.280 ;
-        RECT 194.770 0.835 198.530 4.280 ;
-        RECT 199.370 0.835 203.590 4.280 ;
-        RECT 204.430 0.835 208.190 4.280 ;
-        RECT 209.030 0.835 212.790 4.280 ;
-        RECT 213.630 0.835 217.390 4.280 ;
-        RECT 218.230 0.835 221.990 4.280 ;
-        RECT 222.830 0.835 227.050 4.280 ;
-        RECT 227.890 0.835 231.650 4.280 ;
-        RECT 232.490 0.835 236.250 4.280 ;
-        RECT 237.090 0.835 240.850 4.280 ;
-        RECT 241.690 0.835 245.450 4.280 ;
-        RECT 246.290 0.835 250.050 4.280 ;
-        RECT 250.890 0.835 255.110 4.280 ;
-        RECT 255.950 0.835 259.710 4.280 ;
-        RECT 260.550 0.835 264.310 4.280 ;
-        RECT 265.150 0.835 268.910 4.280 ;
-        RECT 269.750 0.835 273.510 4.280 ;
-        RECT 274.350 0.835 278.570 4.280 ;
-        RECT 279.410 0.835 283.170 4.280 ;
-        RECT 284.010 0.835 287.770 4.280 ;
-        RECT 288.610 0.835 292.370 4.280 ;
-        RECT 293.210 0.835 296.970 4.280 ;
-        RECT 297.810 0.835 297.980 4.280 ;
+        RECT 1.940 2.195 2.110 4.280 ;
+        RECT 2.950 2.195 6.710 4.280 ;
+        RECT 7.550 2.195 11.310 4.280 ;
+        RECT 12.150 2.195 15.910 4.280 ;
+        RECT 16.750 2.195 20.510 4.280 ;
+        RECT 21.350 2.195 25.110 4.280 ;
+        RECT 25.950 2.195 30.170 4.280 ;
+        RECT 31.010 2.195 34.770 4.280 ;
+        RECT 35.610 2.195 39.370 4.280 ;
+        RECT 40.210 2.195 43.970 4.280 ;
+        RECT 44.810 2.195 48.570 4.280 ;
+        RECT 49.410 2.195 53.630 4.280 ;
+        RECT 54.470 2.195 58.230 4.280 ;
+        RECT 59.070 2.195 62.830 4.280 ;
+        RECT 63.670 2.195 67.430 4.280 ;
+        RECT 68.270 2.195 72.030 4.280 ;
+        RECT 72.870 2.195 77.090 4.280 ;
+        RECT 77.930 2.195 81.690 4.280 ;
+        RECT 82.530 2.195 86.290 4.280 ;
+        RECT 87.130 2.195 90.890 4.280 ;
+        RECT 91.730 2.195 95.490 4.280 ;
+        RECT 96.330 2.195 100.090 4.280 ;
+        RECT 100.930 2.195 105.150 4.280 ;
+        RECT 105.990 2.195 109.750 4.280 ;
+        RECT 110.590 2.195 114.350 4.280 ;
+        RECT 115.190 2.195 118.950 4.280 ;
+        RECT 119.790 2.195 123.550 4.280 ;
+        RECT 124.390 2.195 128.610 4.280 ;
+        RECT 129.450 2.195 133.210 4.280 ;
+        RECT 134.050 2.195 137.810 4.280 ;
+        RECT 138.650 2.195 142.410 4.280 ;
+        RECT 143.250 2.195 147.010 4.280 ;
+        RECT 147.850 2.195 152.070 4.280 ;
+        RECT 152.910 2.195 156.670 4.280 ;
+        RECT 157.510 2.195 161.270 4.280 ;
+        RECT 162.110 2.195 165.870 4.280 ;
+        RECT 166.710 2.195 170.470 4.280 ;
+        RECT 171.310 2.195 175.070 4.280 ;
+        RECT 175.910 2.195 180.130 4.280 ;
+        RECT 180.970 2.195 184.730 4.280 ;
+        RECT 185.570 2.195 189.330 4.280 ;
+        RECT 190.170 2.195 193.930 4.280 ;
+        RECT 194.770 2.195 198.530 4.280 ;
+        RECT 199.370 2.195 203.590 4.280 ;
+        RECT 204.430 2.195 208.190 4.280 ;
+        RECT 209.030 2.195 212.790 4.280 ;
+        RECT 213.630 2.195 217.390 4.280 ;
+        RECT 218.230 2.195 221.990 4.280 ;
+        RECT 222.830 2.195 227.050 4.280 ;
+        RECT 227.890 2.195 231.650 4.280 ;
+        RECT 232.490 2.195 236.250 4.280 ;
+        RECT 237.090 2.195 240.850 4.280 ;
+        RECT 241.690 2.195 245.450 4.280 ;
+        RECT 246.290 2.195 250.050 4.280 ;
+        RECT 250.890 2.195 255.110 4.280 ;
+        RECT 255.950 2.195 259.710 4.280 ;
+        RECT 260.550 2.195 264.310 4.280 ;
+        RECT 265.150 2.195 268.910 4.280 ;
+        RECT 269.750 2.195 273.510 4.280 ;
+        RECT 274.350 2.195 278.570 4.280 ;
+        RECT 279.410 2.195 283.170 4.280 ;
+        RECT 284.010 2.195 287.770 4.280 ;
+        RECT 288.610 2.195 292.370 4.280 ;
+        RECT 293.210 2.195 296.970 4.280 ;
+        RECT 297.810 2.195 297.980 4.280 ;
       LAYER met3 ;
         RECT 4.000 298.200 295.600 298.345 ;
         RECT 4.400 297.480 295.600 298.200 ;
@@ -2866,300 +2761,304 @@ MACRO wrapped_quad_pwm_fet_drivers
         RECT 4.400 288.000 296.000 288.680 ;
         RECT 4.400 287.280 295.600 288.000 ;
         RECT 4.000 286.600 295.600 287.280 ;
-        RECT 4.000 285.280 296.000 286.600 ;
-        RECT 4.000 283.920 295.600 285.280 ;
-        RECT 4.400 283.880 295.600 283.920 ;
-        RECT 4.400 282.560 296.000 283.880 ;
-        RECT 4.400 282.520 295.600 282.560 ;
-        RECT 4.000 281.160 295.600 282.520 ;
-        RECT 4.000 280.520 296.000 281.160 ;
-        RECT 4.000 279.840 295.600 280.520 ;
-        RECT 4.400 279.120 295.600 279.840 ;
-        RECT 4.400 278.440 296.000 279.120 ;
-        RECT 4.000 277.800 296.000 278.440 ;
-        RECT 4.000 276.400 295.600 277.800 ;
+        RECT 4.000 285.960 296.000 286.600 ;
+        RECT 4.000 284.560 295.600 285.960 ;
+        RECT 4.000 283.920 296.000 284.560 ;
+        RECT 4.400 283.240 296.000 283.920 ;
+        RECT 4.400 282.520 295.600 283.240 ;
+        RECT 4.000 281.840 295.600 282.520 ;
+        RECT 4.000 280.520 296.000 281.840 ;
+        RECT 4.000 279.160 295.600 280.520 ;
+        RECT 4.400 279.120 295.600 279.160 ;
+        RECT 4.400 277.800 296.000 279.120 ;
+        RECT 4.400 277.760 295.600 277.800 ;
+        RECT 4.000 276.400 295.600 277.760 ;
         RECT 4.000 275.080 296.000 276.400 ;
-        RECT 4.400 273.680 295.600 275.080 ;
-        RECT 4.000 272.360 296.000 273.680 ;
-        RECT 4.000 270.960 295.600 272.360 ;
-        RECT 4.000 270.320 296.000 270.960 ;
-        RECT 4.400 269.640 296.000 270.320 ;
+        RECT 4.000 274.400 295.600 275.080 ;
+        RECT 4.400 273.680 295.600 274.400 ;
+        RECT 4.400 273.040 296.000 273.680 ;
+        RECT 4.400 273.000 295.600 273.040 ;
+        RECT 4.000 271.640 295.600 273.000 ;
+        RECT 4.000 270.320 296.000 271.640 ;
+        RECT 4.000 269.640 295.600 270.320 ;
         RECT 4.400 268.920 295.600 269.640 ;
-        RECT 4.000 268.240 295.600 268.920 ;
-        RECT 4.000 266.920 296.000 268.240 ;
-        RECT 4.000 265.560 295.600 266.920 ;
-        RECT 4.400 265.520 295.600 265.560 ;
-        RECT 4.400 264.200 296.000 265.520 ;
-        RECT 4.400 264.160 295.600 264.200 ;
-        RECT 4.000 262.800 295.600 264.160 ;
-        RECT 4.000 261.480 296.000 262.800 ;
-        RECT 4.000 260.800 295.600 261.480 ;
-        RECT 4.400 260.080 295.600 260.800 ;
-        RECT 4.400 259.440 296.000 260.080 ;
-        RECT 4.400 259.400 295.600 259.440 ;
-        RECT 4.000 258.040 295.600 259.400 ;
-        RECT 4.000 256.720 296.000 258.040 ;
-        RECT 4.400 255.320 295.600 256.720 ;
-        RECT 4.000 254.000 296.000 255.320 ;
-        RECT 4.000 252.600 295.600 254.000 ;
-        RECT 4.000 251.960 296.000 252.600 ;
-        RECT 4.400 251.280 296.000 251.960 ;
+        RECT 4.400 268.240 296.000 268.920 ;
+        RECT 4.000 267.600 296.000 268.240 ;
+        RECT 4.000 266.200 295.600 267.600 ;
+        RECT 4.000 264.880 296.000 266.200 ;
+        RECT 4.400 263.480 295.600 264.880 ;
+        RECT 4.000 262.160 296.000 263.480 ;
+        RECT 4.000 260.760 295.600 262.160 ;
+        RECT 4.000 260.120 296.000 260.760 ;
+        RECT 4.400 258.720 295.600 260.120 ;
+        RECT 4.000 257.400 296.000 258.720 ;
+        RECT 4.000 256.040 295.600 257.400 ;
+        RECT 4.400 256.000 295.600 256.040 ;
+        RECT 4.400 254.680 296.000 256.000 ;
+        RECT 4.400 254.640 295.600 254.680 ;
+        RECT 4.000 253.280 295.600 254.640 ;
+        RECT 4.000 251.960 296.000 253.280 ;
+        RECT 4.000 251.280 295.600 251.960 ;
         RECT 4.400 250.560 295.600 251.280 ;
-        RECT 4.000 249.880 295.600 250.560 ;
-        RECT 4.000 248.560 296.000 249.880 ;
-        RECT 4.000 247.200 295.600 248.560 ;
-        RECT 4.400 247.160 295.600 247.200 ;
-        RECT 4.400 245.840 296.000 247.160 ;
-        RECT 4.400 245.800 295.600 245.840 ;
-        RECT 4.000 244.440 295.600 245.800 ;
-        RECT 4.000 243.120 296.000 244.440 ;
-        RECT 4.000 242.440 295.600 243.120 ;
-        RECT 4.400 241.720 295.600 242.440 ;
-        RECT 4.400 241.080 296.000 241.720 ;
-        RECT 4.400 241.040 295.600 241.080 ;
-        RECT 4.000 239.680 295.600 241.040 ;
-        RECT 4.000 238.360 296.000 239.680 ;
-        RECT 4.400 236.960 295.600 238.360 ;
-        RECT 4.000 235.640 296.000 236.960 ;
-        RECT 4.000 234.240 295.600 235.640 ;
-        RECT 4.000 233.600 296.000 234.240 ;
-        RECT 4.400 232.920 296.000 233.600 ;
-        RECT 4.400 232.200 295.600 232.920 ;
-        RECT 4.000 231.520 295.600 232.200 ;
-        RECT 4.000 230.200 296.000 231.520 ;
-        RECT 4.000 228.840 295.600 230.200 ;
-        RECT 4.400 228.800 295.600 228.840 ;
-        RECT 4.400 227.480 296.000 228.800 ;
+        RECT 4.400 249.880 296.000 250.560 ;
+        RECT 4.000 249.240 296.000 249.880 ;
+        RECT 4.000 247.840 295.600 249.240 ;
+        RECT 4.000 247.200 296.000 247.840 ;
+        RECT 4.000 246.520 295.600 247.200 ;
+        RECT 4.400 245.800 295.600 246.520 ;
+        RECT 4.400 245.120 296.000 245.800 ;
+        RECT 4.000 244.480 296.000 245.120 ;
+        RECT 4.000 243.080 295.600 244.480 ;
+        RECT 4.000 241.760 296.000 243.080 ;
+        RECT 4.400 240.360 295.600 241.760 ;
+        RECT 4.000 239.040 296.000 240.360 ;
+        RECT 4.000 237.640 295.600 239.040 ;
+        RECT 4.000 237.000 296.000 237.640 ;
+        RECT 4.400 236.320 296.000 237.000 ;
+        RECT 4.400 235.600 295.600 236.320 ;
+        RECT 4.000 234.920 295.600 235.600 ;
+        RECT 4.000 234.280 296.000 234.920 ;
+        RECT 4.000 232.880 295.600 234.280 ;
+        RECT 4.000 232.240 296.000 232.880 ;
+        RECT 4.400 231.560 296.000 232.240 ;
+        RECT 4.400 230.840 295.600 231.560 ;
+        RECT 4.000 230.160 295.600 230.840 ;
+        RECT 4.000 228.840 296.000 230.160 ;
+        RECT 4.000 227.480 295.600 228.840 ;
         RECT 4.400 227.440 295.600 227.480 ;
-        RECT 4.000 226.080 295.600 227.440 ;
-        RECT 4.000 224.760 296.000 226.080 ;
-        RECT 4.000 224.080 295.600 224.760 ;
-        RECT 4.400 223.360 295.600 224.080 ;
-        RECT 4.400 222.680 296.000 223.360 ;
-        RECT 4.000 222.040 296.000 222.680 ;
-        RECT 4.000 220.640 295.600 222.040 ;
-        RECT 4.000 220.000 296.000 220.640 ;
-        RECT 4.000 219.320 295.600 220.000 ;
-        RECT 4.400 218.600 295.600 219.320 ;
-        RECT 4.400 217.920 296.000 218.600 ;
-        RECT 4.000 217.280 296.000 217.920 ;
-        RECT 4.000 215.880 295.600 217.280 ;
-        RECT 4.000 215.240 296.000 215.880 ;
-        RECT 4.400 214.560 296.000 215.240 ;
-        RECT 4.400 213.840 295.600 214.560 ;
-        RECT 4.000 213.160 295.600 213.840 ;
-        RECT 4.000 211.840 296.000 213.160 ;
-        RECT 4.000 210.480 295.600 211.840 ;
-        RECT 4.400 210.440 295.600 210.480 ;
-        RECT 4.400 209.120 296.000 210.440 ;
+        RECT 4.400 226.120 296.000 227.440 ;
+        RECT 4.400 226.080 295.600 226.120 ;
+        RECT 4.000 224.720 295.600 226.080 ;
+        RECT 4.000 223.400 296.000 224.720 ;
+        RECT 4.000 222.720 295.600 223.400 ;
+        RECT 4.400 222.000 295.600 222.720 ;
+        RECT 4.400 221.360 296.000 222.000 ;
+        RECT 4.400 221.320 295.600 221.360 ;
+        RECT 4.000 219.960 295.600 221.320 ;
+        RECT 4.000 218.640 296.000 219.960 ;
+        RECT 4.000 217.960 295.600 218.640 ;
+        RECT 4.400 217.240 295.600 217.960 ;
+        RECT 4.400 216.560 296.000 217.240 ;
+        RECT 4.000 215.920 296.000 216.560 ;
+        RECT 4.000 214.520 295.600 215.920 ;
+        RECT 4.000 213.880 296.000 214.520 ;
+        RECT 4.400 213.200 296.000 213.880 ;
+        RECT 4.400 212.480 295.600 213.200 ;
+        RECT 4.000 211.800 295.600 212.480 ;
+        RECT 4.000 210.480 296.000 211.800 ;
+        RECT 4.000 209.120 295.600 210.480 ;
         RECT 4.400 209.080 295.600 209.120 ;
-        RECT 4.000 207.720 295.600 209.080 ;
-        RECT 4.000 206.400 296.000 207.720 ;
-        RECT 4.000 205.720 295.600 206.400 ;
-        RECT 4.400 205.000 295.600 205.720 ;
-        RECT 4.400 204.320 296.000 205.000 ;
-        RECT 4.000 203.680 296.000 204.320 ;
-        RECT 4.000 202.280 295.600 203.680 ;
-        RECT 4.000 201.640 296.000 202.280 ;
-        RECT 4.000 200.960 295.600 201.640 ;
-        RECT 4.400 200.240 295.600 200.960 ;
-        RECT 4.400 199.560 296.000 200.240 ;
-        RECT 4.000 198.920 296.000 199.560 ;
-        RECT 4.000 197.520 295.600 198.920 ;
-        RECT 4.000 196.200 296.000 197.520 ;
-        RECT 4.400 194.800 295.600 196.200 ;
-        RECT 4.000 193.480 296.000 194.800 ;
-        RECT 4.000 192.120 295.600 193.480 ;
-        RECT 4.400 192.080 295.600 192.120 ;
-        RECT 4.400 190.760 296.000 192.080 ;
-        RECT 4.400 190.720 295.600 190.760 ;
-        RECT 4.000 189.360 295.600 190.720 ;
-        RECT 4.000 188.040 296.000 189.360 ;
-        RECT 4.000 187.360 295.600 188.040 ;
-        RECT 4.400 186.640 295.600 187.360 ;
-        RECT 4.400 185.960 296.000 186.640 ;
+        RECT 4.400 208.440 296.000 209.080 ;
+        RECT 4.400 207.720 295.600 208.440 ;
+        RECT 4.000 207.040 295.600 207.720 ;
+        RECT 4.000 205.720 296.000 207.040 ;
+        RECT 4.000 204.360 295.600 205.720 ;
+        RECT 4.400 204.320 295.600 204.360 ;
+        RECT 4.400 203.000 296.000 204.320 ;
+        RECT 4.400 202.960 295.600 203.000 ;
+        RECT 4.000 201.600 295.600 202.960 ;
+        RECT 4.000 200.280 296.000 201.600 ;
+        RECT 4.000 199.600 295.600 200.280 ;
+        RECT 4.400 198.880 295.600 199.600 ;
+        RECT 4.400 198.200 296.000 198.880 ;
+        RECT 4.000 197.560 296.000 198.200 ;
+        RECT 4.000 196.160 295.600 197.560 ;
+        RECT 4.000 195.520 296.000 196.160 ;
+        RECT 4.000 194.840 295.600 195.520 ;
+        RECT 4.400 194.120 295.600 194.840 ;
+        RECT 4.400 193.440 296.000 194.120 ;
+        RECT 4.000 192.800 296.000 193.440 ;
+        RECT 4.000 191.400 295.600 192.800 ;
+        RECT 4.000 190.080 296.000 191.400 ;
+        RECT 4.400 188.680 295.600 190.080 ;
+        RECT 4.000 187.360 296.000 188.680 ;
+        RECT 4.000 185.960 295.600 187.360 ;
         RECT 4.000 185.320 296.000 185.960 ;
-        RECT 4.000 183.920 295.600 185.320 ;
-        RECT 4.000 182.600 296.000 183.920 ;
-        RECT 4.400 181.200 295.600 182.600 ;
+        RECT 4.400 184.640 296.000 185.320 ;
+        RECT 4.400 183.920 295.600 184.640 ;
+        RECT 4.000 183.240 295.600 183.920 ;
+        RECT 4.000 182.600 296.000 183.240 ;
+        RECT 4.000 181.200 295.600 182.600 ;
         RECT 4.000 180.560 296.000 181.200 ;
-        RECT 4.000 179.160 295.600 180.560 ;
-        RECT 4.000 177.840 296.000 179.160 ;
-        RECT 4.400 176.440 295.600 177.840 ;
-        RECT 4.000 175.120 296.000 176.440 ;
-        RECT 4.000 173.760 295.600 175.120 ;
-        RECT 4.400 173.720 295.600 173.760 ;
-        RECT 4.400 172.400 296.000 173.720 ;
-        RECT 4.400 172.360 295.600 172.400 ;
-        RECT 4.000 171.000 295.600 172.360 ;
-        RECT 4.000 169.680 296.000 171.000 ;
-        RECT 4.000 169.000 295.600 169.680 ;
-        RECT 4.400 168.280 295.600 169.000 ;
-        RECT 4.400 167.600 296.000 168.280 ;
-        RECT 4.000 166.960 296.000 167.600 ;
-        RECT 4.000 165.560 295.600 166.960 ;
+        RECT 4.400 179.880 296.000 180.560 ;
+        RECT 4.400 179.160 295.600 179.880 ;
+        RECT 4.000 178.480 295.600 179.160 ;
+        RECT 4.000 177.160 296.000 178.480 ;
+        RECT 4.000 175.800 295.600 177.160 ;
+        RECT 4.400 175.760 295.600 175.800 ;
+        RECT 4.400 174.440 296.000 175.760 ;
+        RECT 4.400 174.400 295.600 174.440 ;
+        RECT 4.000 173.040 295.600 174.400 ;
+        RECT 4.000 171.720 296.000 173.040 ;
+        RECT 4.400 170.320 295.600 171.720 ;
+        RECT 4.000 169.680 296.000 170.320 ;
+        RECT 4.000 168.280 295.600 169.680 ;
+        RECT 4.000 166.960 296.000 168.280 ;
+        RECT 4.400 165.560 295.600 166.960 ;
         RECT 4.000 164.240 296.000 165.560 ;
-        RECT 4.400 162.840 295.600 164.240 ;
-        RECT 4.000 161.520 296.000 162.840 ;
-        RECT 4.000 160.120 295.600 161.520 ;
-        RECT 4.000 159.480 296.000 160.120 ;
-        RECT 4.400 158.080 295.600 159.480 ;
-        RECT 4.000 156.760 296.000 158.080 ;
-        RECT 4.000 155.360 295.600 156.760 ;
-        RECT 4.000 154.720 296.000 155.360 ;
-        RECT 4.400 154.040 296.000 154.720 ;
-        RECT 4.400 153.320 295.600 154.040 ;
-        RECT 4.000 152.640 295.600 153.320 ;
-        RECT 4.000 151.320 296.000 152.640 ;
-        RECT 4.000 150.640 295.600 151.320 ;
-        RECT 4.400 149.920 295.600 150.640 ;
-        RECT 4.400 149.240 296.000 149.920 ;
-        RECT 4.000 148.600 296.000 149.240 ;
-        RECT 4.000 147.200 295.600 148.600 ;
-        RECT 4.000 145.880 296.000 147.200 ;
-        RECT 4.400 144.480 295.600 145.880 ;
-        RECT 4.000 143.160 296.000 144.480 ;
-        RECT 4.000 141.760 295.600 143.160 ;
+        RECT 4.000 162.840 295.600 164.240 ;
+        RECT 4.000 162.200 296.000 162.840 ;
+        RECT 4.400 161.520 296.000 162.200 ;
+        RECT 4.400 160.800 295.600 161.520 ;
+        RECT 4.000 160.120 295.600 160.800 ;
+        RECT 4.000 158.800 296.000 160.120 ;
+        RECT 4.000 157.440 295.600 158.800 ;
+        RECT 4.400 157.400 295.600 157.440 ;
+        RECT 4.400 156.760 296.000 157.400 ;
+        RECT 4.400 156.040 295.600 156.760 ;
+        RECT 4.000 155.360 295.600 156.040 ;
+        RECT 4.000 154.040 296.000 155.360 ;
+        RECT 4.000 152.680 295.600 154.040 ;
+        RECT 4.400 152.640 295.600 152.680 ;
+        RECT 4.400 151.320 296.000 152.640 ;
+        RECT 4.400 151.280 295.600 151.320 ;
+        RECT 4.000 149.920 295.600 151.280 ;
+        RECT 4.000 148.600 296.000 149.920 ;
+        RECT 4.000 147.920 295.600 148.600 ;
+        RECT 4.400 147.200 295.600 147.920 ;
+        RECT 4.400 146.520 296.000 147.200 ;
+        RECT 4.000 145.880 296.000 146.520 ;
+        RECT 4.000 144.480 295.600 145.880 ;
+        RECT 4.000 143.840 296.000 144.480 ;
+        RECT 4.000 143.160 295.600 143.840 ;
+        RECT 4.400 142.440 295.600 143.160 ;
+        RECT 4.400 141.760 296.000 142.440 ;
         RECT 4.000 141.120 296.000 141.760 ;
-        RECT 4.400 139.720 295.600 141.120 ;
+        RECT 4.000 139.720 295.600 141.120 ;
         RECT 4.000 138.400 296.000 139.720 ;
-        RECT 4.000 137.000 295.600 138.400 ;
-        RECT 4.000 136.360 296.000 137.000 ;
-        RECT 4.400 135.680 296.000 136.360 ;
-        RECT 4.400 134.960 295.600 135.680 ;
-        RECT 4.000 134.280 295.600 134.960 ;
-        RECT 4.000 132.960 296.000 134.280 ;
-        RECT 4.000 131.600 295.600 132.960 ;
-        RECT 4.400 131.560 295.600 131.600 ;
-        RECT 4.400 130.240 296.000 131.560 ;
-        RECT 4.400 130.200 295.600 130.240 ;
-        RECT 4.000 128.840 295.600 130.200 ;
-        RECT 4.000 127.520 296.000 128.840 ;
-        RECT 4.400 126.120 295.600 127.520 ;
-        RECT 4.000 124.800 296.000 126.120 ;
-        RECT 4.000 123.400 295.600 124.800 ;
+        RECT 4.400 137.000 295.600 138.400 ;
+        RECT 4.000 135.680 296.000 137.000 ;
+        RECT 4.000 134.280 295.600 135.680 ;
+        RECT 4.000 133.640 296.000 134.280 ;
+        RECT 4.400 132.960 296.000 133.640 ;
+        RECT 4.400 132.240 295.600 132.960 ;
+        RECT 4.000 131.560 295.600 132.240 ;
+        RECT 4.000 130.920 296.000 131.560 ;
+        RECT 4.000 129.560 295.600 130.920 ;
+        RECT 4.400 129.520 295.600 129.560 ;
+        RECT 4.400 128.200 296.000 129.520 ;
+        RECT 4.400 128.160 295.600 128.200 ;
+        RECT 4.000 126.800 295.600 128.160 ;
+        RECT 4.000 125.480 296.000 126.800 ;
+        RECT 4.000 124.800 295.600 125.480 ;
+        RECT 4.400 124.080 295.600 124.800 ;
+        RECT 4.400 123.400 296.000 124.080 ;
         RECT 4.000 122.760 296.000 123.400 ;
-        RECT 4.400 122.080 296.000 122.760 ;
-        RECT 4.400 121.360 295.600 122.080 ;
-        RECT 4.000 120.680 295.600 121.360 ;
-        RECT 4.000 120.040 296.000 120.680 ;
-        RECT 4.000 118.640 295.600 120.040 ;
+        RECT 4.000 121.360 295.600 122.760 ;
+        RECT 4.000 120.040 296.000 121.360 ;
+        RECT 4.400 118.640 295.600 120.040 ;
         RECT 4.000 118.000 296.000 118.640 ;
-        RECT 4.400 117.320 296.000 118.000 ;
-        RECT 4.400 116.600 295.600 117.320 ;
-        RECT 4.000 115.920 295.600 116.600 ;
-        RECT 4.000 114.600 296.000 115.920 ;
-        RECT 4.000 113.240 295.600 114.600 ;
-        RECT 4.400 113.200 295.600 113.240 ;
-        RECT 4.400 111.880 296.000 113.200 ;
-        RECT 4.400 111.840 295.600 111.880 ;
-        RECT 4.000 110.480 295.600 111.840 ;
-        RECT 4.000 109.160 296.000 110.480 ;
-        RECT 4.400 107.760 295.600 109.160 ;
-        RECT 4.000 106.440 296.000 107.760 ;
-        RECT 4.000 105.040 295.600 106.440 ;
-        RECT 4.000 104.400 296.000 105.040 ;
-        RECT 4.400 103.720 296.000 104.400 ;
-        RECT 4.400 103.000 295.600 103.720 ;
-        RECT 4.000 102.320 295.600 103.000 ;
-        RECT 4.000 101.680 296.000 102.320 ;
-        RECT 4.000 100.280 295.600 101.680 ;
-        RECT 4.000 99.640 296.000 100.280 ;
-        RECT 4.400 98.960 296.000 99.640 ;
-        RECT 4.400 98.240 295.600 98.960 ;
-        RECT 4.000 97.560 295.600 98.240 ;
-        RECT 4.000 96.240 296.000 97.560 ;
-        RECT 4.000 94.880 295.600 96.240 ;
-        RECT 4.400 94.840 295.600 94.880 ;
-        RECT 4.400 93.520 296.000 94.840 ;
-        RECT 4.400 93.480 295.600 93.520 ;
-        RECT 4.000 92.120 295.600 93.480 ;
-        RECT 4.000 90.800 296.000 92.120 ;
-        RECT 4.000 90.120 295.600 90.800 ;
-        RECT 4.400 89.400 295.600 90.120 ;
-        RECT 4.400 88.720 296.000 89.400 ;
-        RECT 4.000 88.080 296.000 88.720 ;
-        RECT 4.000 86.680 295.600 88.080 ;
-        RECT 4.000 86.040 296.000 86.680 ;
-        RECT 4.400 85.360 296.000 86.040 ;
-        RECT 4.400 84.640 295.600 85.360 ;
-        RECT 4.000 83.960 295.600 84.640 ;
-        RECT 4.000 82.640 296.000 83.960 ;
-        RECT 4.000 81.280 295.600 82.640 ;
+        RECT 4.000 116.600 295.600 118.000 ;
+        RECT 4.000 115.280 296.000 116.600 ;
+        RECT 4.400 113.880 295.600 115.280 ;
+        RECT 4.000 112.560 296.000 113.880 ;
+        RECT 4.000 111.160 295.600 112.560 ;
+        RECT 4.000 110.520 296.000 111.160 ;
+        RECT 4.400 109.840 296.000 110.520 ;
+        RECT 4.400 109.120 295.600 109.840 ;
+        RECT 4.000 108.440 295.600 109.120 ;
+        RECT 4.000 107.120 296.000 108.440 ;
+        RECT 4.000 105.760 295.600 107.120 ;
+        RECT 4.400 105.720 295.600 105.760 ;
+        RECT 4.400 105.080 296.000 105.720 ;
+        RECT 4.400 104.360 295.600 105.080 ;
+        RECT 4.000 103.680 295.600 104.360 ;
+        RECT 4.000 102.360 296.000 103.680 ;
+        RECT 4.000 101.000 295.600 102.360 ;
+        RECT 4.400 100.960 295.600 101.000 ;
+        RECT 4.400 99.640 296.000 100.960 ;
+        RECT 4.400 99.600 295.600 99.640 ;
+        RECT 4.000 98.240 295.600 99.600 ;
+        RECT 4.000 96.920 296.000 98.240 ;
+        RECT 4.000 96.240 295.600 96.920 ;
+        RECT 4.400 95.520 295.600 96.240 ;
+        RECT 4.400 94.840 296.000 95.520 ;
+        RECT 4.000 94.200 296.000 94.840 ;
+        RECT 4.000 92.800 295.600 94.200 ;
+        RECT 4.000 92.160 296.000 92.800 ;
+        RECT 4.000 91.480 295.600 92.160 ;
+        RECT 4.400 90.760 295.600 91.480 ;
+        RECT 4.400 90.080 296.000 90.760 ;
+        RECT 4.000 89.440 296.000 90.080 ;
+        RECT 4.000 88.040 295.600 89.440 ;
+        RECT 4.000 87.400 296.000 88.040 ;
+        RECT 4.400 86.720 296.000 87.400 ;
+        RECT 4.400 86.000 295.600 86.720 ;
+        RECT 4.000 85.320 295.600 86.000 ;
+        RECT 4.000 84.000 296.000 85.320 ;
+        RECT 4.000 82.640 295.600 84.000 ;
+        RECT 4.400 82.600 295.600 82.640 ;
+        RECT 4.400 81.280 296.000 82.600 ;
         RECT 4.400 81.240 295.600 81.280 ;
-        RECT 4.400 80.600 296.000 81.240 ;
-        RECT 4.400 79.880 295.600 80.600 ;
-        RECT 4.000 79.200 295.600 79.880 ;
-        RECT 4.000 77.880 296.000 79.200 ;
-        RECT 4.000 76.520 295.600 77.880 ;
+        RECT 4.000 79.880 295.600 81.240 ;
+        RECT 4.000 79.240 296.000 79.880 ;
+        RECT 4.000 77.880 295.600 79.240 ;
+        RECT 4.400 77.840 295.600 77.880 ;
+        RECT 4.400 76.520 296.000 77.840 ;
         RECT 4.400 76.480 295.600 76.520 ;
-        RECT 4.400 75.160 296.000 76.480 ;
-        RECT 4.400 75.120 295.600 75.160 ;
-        RECT 4.000 73.760 295.600 75.120 ;
-        RECT 4.000 72.440 296.000 73.760 ;
-        RECT 4.000 71.760 295.600 72.440 ;
-        RECT 4.400 71.040 295.600 71.760 ;
-        RECT 4.400 70.360 296.000 71.040 ;
-        RECT 4.000 69.720 296.000 70.360 ;
-        RECT 4.000 68.320 295.600 69.720 ;
-        RECT 4.000 67.000 296.000 68.320 ;
-        RECT 4.400 65.600 295.600 67.000 ;
-        RECT 4.000 64.280 296.000 65.600 ;
-        RECT 4.000 62.920 295.600 64.280 ;
-        RECT 4.400 62.880 295.600 62.920 ;
-        RECT 4.400 61.560 296.000 62.880 ;
-        RECT 4.400 61.520 295.600 61.560 ;
-        RECT 4.000 60.160 295.600 61.520 ;
-        RECT 4.000 59.520 296.000 60.160 ;
-        RECT 4.000 58.160 295.600 59.520 ;
-        RECT 4.400 58.120 295.600 58.160 ;
-        RECT 4.400 56.800 296.000 58.120 ;
-        RECT 4.400 56.760 295.600 56.800 ;
-        RECT 4.000 55.400 295.600 56.760 ;
-        RECT 4.000 54.080 296.000 55.400 ;
-        RECT 4.000 53.400 295.600 54.080 ;
+        RECT 4.000 75.120 295.600 76.480 ;
+        RECT 4.000 73.800 296.000 75.120 ;
+        RECT 4.000 73.120 295.600 73.800 ;
+        RECT 4.400 72.400 295.600 73.120 ;
+        RECT 4.400 71.720 296.000 72.400 ;
+        RECT 4.000 71.080 296.000 71.720 ;
+        RECT 4.000 69.680 295.600 71.080 ;
+        RECT 4.000 68.360 296.000 69.680 ;
+        RECT 4.400 66.960 295.600 68.360 ;
+        RECT 4.000 66.320 296.000 66.960 ;
+        RECT 4.000 64.920 295.600 66.320 ;
+        RECT 4.000 63.600 296.000 64.920 ;
+        RECT 4.400 62.200 295.600 63.600 ;
+        RECT 4.000 60.880 296.000 62.200 ;
+        RECT 4.000 59.480 295.600 60.880 ;
+        RECT 4.000 58.840 296.000 59.480 ;
+        RECT 4.400 58.160 296.000 58.840 ;
+        RECT 4.400 57.440 295.600 58.160 ;
+        RECT 4.000 56.760 295.600 57.440 ;
+        RECT 4.000 55.440 296.000 56.760 ;
+        RECT 4.000 54.080 295.600 55.440 ;
+        RECT 4.400 54.040 295.600 54.080 ;
+        RECT 4.400 53.400 296.000 54.040 ;
         RECT 4.400 52.680 295.600 53.400 ;
-        RECT 4.400 52.000 296.000 52.680 ;
-        RECT 4.000 51.360 296.000 52.000 ;
-        RECT 4.000 49.960 295.600 51.360 ;
-        RECT 4.000 48.640 296.000 49.960 ;
-        RECT 4.400 47.240 295.600 48.640 ;
-        RECT 4.000 45.920 296.000 47.240 ;
-        RECT 4.000 44.560 295.600 45.920 ;
-        RECT 4.400 44.520 295.600 44.560 ;
-        RECT 4.400 43.200 296.000 44.520 ;
-        RECT 4.400 43.160 295.600 43.200 ;
-        RECT 4.000 41.800 295.600 43.160 ;
-        RECT 4.000 41.160 296.000 41.800 ;
-        RECT 4.000 39.800 295.600 41.160 ;
-        RECT 4.400 39.760 295.600 39.800 ;
-        RECT 4.400 38.440 296.000 39.760 ;
-        RECT 4.400 38.400 295.600 38.440 ;
-        RECT 4.000 37.040 295.600 38.400 ;
-        RECT 4.000 35.720 296.000 37.040 ;
-        RECT 4.000 35.040 295.600 35.720 ;
+        RECT 4.000 52.000 295.600 52.680 ;
+        RECT 4.000 50.680 296.000 52.000 ;
+        RECT 4.000 49.320 295.600 50.680 ;
+        RECT 4.400 49.280 295.600 49.320 ;
+        RECT 4.400 47.960 296.000 49.280 ;
+        RECT 4.400 47.920 295.600 47.960 ;
+        RECT 4.000 46.560 295.600 47.920 ;
+        RECT 4.000 45.240 296.000 46.560 ;
+        RECT 4.400 43.840 295.600 45.240 ;
+        RECT 4.000 42.520 296.000 43.840 ;
+        RECT 4.000 41.120 295.600 42.520 ;
+        RECT 4.000 40.480 296.000 41.120 ;
+        RECT 4.400 39.080 295.600 40.480 ;
+        RECT 4.000 37.760 296.000 39.080 ;
+        RECT 4.000 36.360 295.600 37.760 ;
+        RECT 4.000 35.720 296.000 36.360 ;
+        RECT 4.400 35.040 296.000 35.720 ;
         RECT 4.400 34.320 295.600 35.040 ;
-        RECT 4.400 33.640 296.000 34.320 ;
-        RECT 4.000 33.000 296.000 33.640 ;
-        RECT 4.000 31.600 295.600 33.000 ;
-        RECT 4.000 30.280 296.000 31.600 ;
-        RECT 4.400 28.880 295.600 30.280 ;
-        RECT 4.000 27.560 296.000 28.880 ;
-        RECT 4.000 26.160 295.600 27.560 ;
-        RECT 4.000 25.520 296.000 26.160 ;
-        RECT 4.400 24.840 296.000 25.520 ;
-        RECT 4.400 24.120 295.600 24.840 ;
-        RECT 4.000 23.440 295.600 24.120 ;
+        RECT 4.000 33.640 295.600 34.320 ;
+        RECT 4.000 32.320 296.000 33.640 ;
+        RECT 4.000 30.960 295.600 32.320 ;
+        RECT 4.400 30.920 295.600 30.960 ;
+        RECT 4.400 29.600 296.000 30.920 ;
+        RECT 4.400 29.560 295.600 29.600 ;
+        RECT 4.000 28.200 295.600 29.560 ;
+        RECT 4.000 27.560 296.000 28.200 ;
+        RECT 4.000 26.200 295.600 27.560 ;
+        RECT 4.400 26.160 295.600 26.200 ;
+        RECT 4.400 24.840 296.000 26.160 ;
+        RECT 4.400 24.800 295.600 24.840 ;
+        RECT 4.000 23.440 295.600 24.800 ;
         RECT 4.000 22.120 296.000 23.440 ;
         RECT 4.000 21.440 295.600 22.120 ;
         RECT 4.400 20.720 295.600 21.440 ;
-        RECT 4.400 20.080 296.000 20.720 ;
-        RECT 4.400 20.040 295.600 20.080 ;
-        RECT 4.000 18.680 295.600 20.040 ;
-        RECT 4.000 17.360 296.000 18.680 ;
-        RECT 4.000 16.680 295.600 17.360 ;
-        RECT 4.400 15.960 295.600 16.680 ;
-        RECT 4.400 15.280 296.000 15.960 ;
+        RECT 4.400 20.040 296.000 20.720 ;
+        RECT 4.000 19.400 296.000 20.040 ;
+        RECT 4.000 18.000 295.600 19.400 ;
+        RECT 4.000 16.680 296.000 18.000 ;
+        RECT 4.400 15.280 295.600 16.680 ;
         RECT 4.000 14.640 296.000 15.280 ;
         RECT 4.000 13.240 295.600 14.640 ;
         RECT 4.000 11.920 296.000 13.240 ;
@@ -3173,9 +3072,7 @@ MACRO wrapped_quad_pwm_fet_drivers
         RECT 4.000 3.760 296.000 5.080 ;
         RECT 4.000 3.080 295.600 3.760 ;
         RECT 4.400 2.360 295.600 3.080 ;
-        RECT 4.400 1.720 296.000 2.360 ;
-        RECT 4.400 1.680 295.600 1.720 ;
-        RECT 4.000 0.855 295.600 1.680 ;
+        RECT 4.400 2.215 296.000 2.360 ;
   END
 END wrapped_quad_pwm_fet_drivers
 END LIBRARY

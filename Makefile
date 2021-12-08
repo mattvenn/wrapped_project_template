@@ -1,5 +1,6 @@
 # cocotb setup
 export COCOTB_REDUCED_LOG_FMT=1
+export LIBPYTHON_LOC=$(shell cocotb-config --libpython)
 
 prove_wrapper:
 	sby -f properties.sby
