@@ -43,3 +43,6 @@ set ::env(RUN_CVC) 0
 
 # Disable inserted clock buffers (tristate bug fix)
 set ::env(PL_RESIZER_BUFFER_OUTPUT_PORTS) 0
+
+set ::env(FP_IO_VTHICKNESS_MULT) 4
+set ::env(FP_IO_HTHICKNESS_MULT) 4
