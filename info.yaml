@@ -9,6 +9,7 @@ project:
 
 interfaces: ['la1', 'gpio']
 
+custom_cells_file: gds/DFFRF_2R1W.powered.nl.v
 
 # test within caravel
 caravel_test:
