@@ -53,7 +53,7 @@ void main()
 
     // activate the project by setting the 0th bit of 1st bank of LA
     reg_la0_iena = 0; // input enable off
-    reg_la0_oenb = 1; // enable logic analyser output (ignore the name, 1 is on, 0 off)
+    reg_la0_oenb = 0xFFFFFFFF; // enable all of bank0 logic analyser outputs (ignore the name, 1 is on, 0 off)
     reg_la0_data |= (1 << PROJECT_ID); // enable the project
 
     // reset design with 0bit of 2nd bank of LA
