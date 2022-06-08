@@ -1,3 +1,5 @@
+[![multi_tool](https://github.com/mattvenn/wrapped_project_template/actions/workflows/multi_tool.yaml/badge.svg)](https://github.com/mattvenn/wrapped_project_template/actions/workflows/multi_tool.yaml)
+
 # Information about your project
 
 This is a template project you can clone and use to take part in the multi project submission to the
