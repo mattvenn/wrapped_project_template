@@ -52,22 +52,6 @@ jobs:
         make
         sudo make install
 
-#    # need python
-#    - name: setup python
-#      uses: actions/setup-python@v4
-#      with:
-#        python-version: '3.10' # install the python version needed
-## doesn't work
-##        cache: 'pip'
-##        cache-dependency-path: "/home/runner/multi_project_tools/requirements.txt"
-#
-#    # python deps from reqirements file, use a marketplace action
-#    - name: Install Python dependencies
-#      uses: py-actions/py-dependency-install@v4
-#      with:
-#        path: "/home/runner/multi_project_tools/requirements.txt"
-
-
     # install riscv gcc
     - name: riscv gcc
       run: |
@@ -95,14 +79,8 @@ jobs:
 
     # install requirements
     - name: install python libs
-      continue-on-error: true
       run: |
-        which python
-        which python3
-        which pip
-        which pip3
         pip install -r /home/runner/multi_project_tools/requirements.txt
-        
 
     # fetch all the repos
     - name: fetch all
