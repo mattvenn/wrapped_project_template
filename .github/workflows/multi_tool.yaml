@@ -7,8 +7,8 @@ jobs:
         OPENLANE_ROOT:  /home/runner/openlane
         PDK_ROOT:       /home/runner/pdk
         PDK:            sky130B
-        NETGEN_VERSION:         1.5.219
-        MAGIC_VERSION:          8.3.311
+        NETGEN_VERSION:         1.5.242
+        MAGIC_VERSION:          8.3.331
 
     # ubuntu
     runs-on: ubuntu-latest
@@ -63,7 +63,7 @@ jobs:
     - name: pdk & caravel
       run: |
         cd $HOME
-        git clone https://github.com/efabless/caravel_user_project.git -b mpw-7a
+        git clone https://github.com/efabless/caravel_user_project.git -b mpw-8c
         cd caravel_user_project
         make setup
 
