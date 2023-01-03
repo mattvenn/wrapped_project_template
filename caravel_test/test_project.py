@@ -5,7 +5,7 @@ from cocotb.triggers import RisingEdge, FallingEdge, ClockCycles, with_timeout
 @cocotb.test()
 async def test_start(dut):
     clock = Clock(dut.clk, 25, units="ns") # 40M
-    cocotb.fork(clock.start())
+    cocotb.start_soon(clock.start())
     
     dut.RSTB <= 0
     dut.power1 <= 0;
